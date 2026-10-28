@@ -34,6 +34,8 @@ jobs:
       - name: Objava i Story
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
         run: python alati/objavi.py
       - name: Komentari
         if: always()

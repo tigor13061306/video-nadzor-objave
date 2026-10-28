@@ -142,6 +142,44 @@ def story(api, ime, prva):
     return "ok" if "id" in p else "story objava: %s" % p.get("error", p)
 
 
+FB_V = "https://graph.facebook.com/v23.0/"
+
+
+def facebook(ime):
+    """Ista objava na Facebook stranicu (ako postoje FB_PAGE_TOKEN i FB_PAGE_ID)."""
+    tok, pid = os.environ.get("FB_PAGE_TOKEN", "").strip(), os.environ.get("FB_PAGE_ID", "").strip()
+    if not tok or not pid:
+        return "preskočeno (nema FB ključa)"
+    h = {"Authorization": "Bearer " + tok}
+    folder = os.path.join(ROOT, "objave", ime)
+    base = RAW + "objave/" + ime + "/"
+    tekst = opis(folder)
+    try:
+        if os.path.exists(os.path.join(folder, "video.mp4")):
+            r = requests.post(FB_V + pid + "/videos", headers=h, timeout=300,
+                              data={"file_url": base + "video.mp4", "description": tekst}).json()
+        else:
+            slike = sorted(f for f in os.listdir(folder) if re.fullmatch(r"\d\d\.jpg", f))
+            if len(slike) == 1:
+                r = requests.post(FB_V + pid + "/photos", headers=h, timeout=120,
+                                  data={"url": base + slike[0], "message": tekst}).json()
+            else:
+                ids = []
+                for s in slike:
+                    p = requests.post(FB_V + pid + "/photos", headers=h, timeout=120,
+                                      data={"url": base + s, "published": "false"}).json()
+                    if "id" not in p:
+                        return "fb slika %s: %s" % (s, p.get("error", {}).get("message", p))
+                    ids.append(p["id"])
+                data = {"message": tekst}
+                for i, fid in enumerate(ids):
+                    data["attached_media[%d]" % i] = json.dumps({"media_fbid": fid})
+                r = requests.post(FB_V + pid + "/feed", headers=h, timeout=120, data=data).json()
+        return "ok " + r["id"] if "id" in r else "fb: %s" % r.get("error", {}).get("message", r)
+    except Exception as e:
+        return "fb greška: %s" % e
+
+
 def main():
     token = os.environ.get("IG_TOKEN", "").strip()
     if not token:
@@ -185,6 +223,8 @@ def main():
             log("GREŠKA", ime, e)
             break  # ne nastavljaj sa ostalim; sljedeće pokretanje pokušava ponovo
         r["story"] = story(api, ime, r.pop("prva"))
+        r["facebook"] = facebook(ime)
+        log("facebook:", r["facebook"])
         r["vrijeme"] = dt.datetime.now(ZoneInfo("Europe/Sarajevo")).isoformat(timespec="minutes")
         r["naknadno"] = not ime.startswith(danas.isoformat())
         stanje[ime] = r
