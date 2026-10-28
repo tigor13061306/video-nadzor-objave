@@ -1,0 +1,19 @@
+name: Provjera ključeva
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "5 8 * * 1"
+
+jobs:
+  provjera:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install requests
+      - env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+        run: python alati/provjera.py
