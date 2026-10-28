@@ -12,9 +12,11 @@ REPO = "tigor13061306/video-nadzor-objave"
 
 def main():
     t = os.environ["IG_TOKEN"].strip()
-    r = requests.get("https://graph.instagram.com/refresh_access_token",
-                     params={"grant_type": "ig_refresh_token"},
-                     headers={"Authorization": "Bearer " + t}, timeout=60).json()
+    # ključ ide u tijelo zahtjeva (POST), ne u adresu
+    url = "https://graph.instagram.com/refresh_access_token"
+    r = requests.post(url, data={"grant_type": "ig_refresh_token", "access_token": t}, timeout=60).json()
+    if not r.get("access_token"):
+        r = requests.get(url, params={"grant_type": "ig_refresh_token", "access_token": t}, timeout=60).json()
     novi = r.get("access_token")
     if not novi:
         raise SystemExit("Obnova ključa nije uspjela: %s" % r.get("error", {}).get("message", "nepoznato"))
