@@ -165,8 +165,19 @@ def main():
         log("nema objava za danas")
         return
     api = IGApi(token)
+    nedavne = api.get(IG + "/media", fields="caption,permalink", limit=25).get("data", [])
     greske = []
     for ime in kandidati:
+        # zaštita od duplog objavljivanja (npr. ako je objavu već objavio Claude sa računara)
+        pocetak = opis(os.path.join(ROOT, "objave", ime))[:60]
+        vec = next((m for m in nedavne if (m.get("caption") or "").startswith(pocetak)), None)
+        if vec:
+            log("već objavljeno, samo upisujem:", ime, vec.get("permalink"))
+            stanje[ime] = {"link": vec.get("permalink", ""), "vrsta": "?", "story": "?", "naknadno": False, "napomena": "objavljeno van GitHuba"}
+            os.makedirs(os.path.dirname(STANJE), exist_ok=True)
+            json.dump(stanje, open(STANJE, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+            push("Upisano: " + ime)
+            continue
         try:
             r = objavi_folder(api, ime)
         except Exception as e:
