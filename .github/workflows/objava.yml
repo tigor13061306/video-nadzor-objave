@@ -1,0 +1,45 @@
+name: Instagram dnevna objava
+
+on:
+  schedule:
+    # 17:43 po bosanskom vremenu: 15:43 UTC ljeti, 16:43 UTC zimi. Skripta sama provjerava vrijeme.
+    - cron: "43 15 * * *"
+    - cron: "43 16 * * *"
+    # rezervno pokretanje uveče, za slučaj da je GitHub kasnio ili Instagram nije radio
+    - cron: "30 19 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: objava
+  cancel-in-progress: false
+
+jobs:
+  objavi:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests pillow
+      - name: Git korisnik
+        run: |
+          git config user.name "video-nadzor-bot"
+          git config user.email "actions@users.noreply.github.com"
+      - name: Objava i Story
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+        run: python alati/objavi.py
+      - name: Komentari
+        if: always()
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python alati/komentari.py
+          git add stanje && (git diff --cached --quiet || (git commit -q -m "Komentari" && (git push -q || (git pull -q --rebase && git push -q))))

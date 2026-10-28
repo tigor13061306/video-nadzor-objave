@@ -1,0 +1,21 @@
+name: Obnova Instagram ključa
+
+on:
+  schedule:
+    - cron: "17 9 1,15 * *"
+  workflow_dispatch:
+
+jobs:
+  obnovi:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests pynacl
+      - env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: python alati/obnovi_kljuc.py

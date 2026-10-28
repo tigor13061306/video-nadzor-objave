@@ -1,0 +1,4 @@
+*kljuc*.txt
+*kljuc*.json
+!alati/obnovi_kljuc.py
+__pycache__/
