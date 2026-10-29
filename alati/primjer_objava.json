@@ -1,0 +1,20 @@
+{
+  "tema": "5 grešaka pri postavljanju kamera",
+  "slajdovi": [
+    {"sablon": "naslovna", "foto": "../../02_materijal/odobreno/AI_kamera_izbliza.jpg", "fokus": [0.5, 0.45],
+     "oznaka": "5 grešaka", "naslov": "zbog kojih kamera ne snimi ono što treba"},
+    {"sablon": "foto_traka", "foto": "../../02_materijal/odobreno/AI_kamera_previsoko.jpg", "fokus": [0.5, 0.22],
+     "broj": "01", "naslov": "Kamera previsoko", "tekst": "Vidiš tjeme, a ne lice. Za ulaz je idealno 2,5 do 3 metra."},
+    {"sablon": "foto_traka", "foto": "../../02_materijal/odobreno/AI_kamera_prema_suncu.jpg", "fokus": [0.5, 0.4],
+     "broj": "02", "naslov": "Kamera prema suncu", "tekst": "Lice postaje crna silueta. Svjetlo treba da pada na osobu."},
+    {"sablon": "foto_traka", "foto": "../../02_materijal/odobreno/AI_prilaz_dan.jpg", "fokus": [0.4, 0.5],
+     "broj": "03", "naslov": "Jedna kamera za sve", "tekst": "Sve vidiš, a ništa ne prepoznaš. Za lice treba kamera bliže ulazu."},
+    {"sablon": "foto_traka", "foto": "../../02_materijal/odobreno/AI_snimac_ormaric.jpg",
+     "broj": "04", "naslov": "Snimač na vidnom mjestu", "tekst": "Ko ukrade snimač, ukrao je i snimke. Zaključaj ga u ormarić."},
+    {"sablon": "foto_traka", "foto": "../../02_materijal/odobreno/AI_telefon_pregled.jpg",
+     "broj": "05", "naslov": "Nikad nisi provjerio snimak", "tekst": "Sistem izgleda ispravno dok ne zatreba. Pregledaj snimke jednom mjesečno."},
+    {"sablon": "foto_kutija", "foto": "../../02_materijal/odobreno/AI_montaza.jpg", "fokus": [0.5, 0.4],
+     "red1": "Pošalji fotku objekta u DM", "red2": "i dobićeš savjet gdje postaviti kamere."}
+  ],
+  "opis": "Većina sistema koje vidim na terenu ima bar jednu od ovih grešaka.\nKoju ćeš provjeriti večeras? Sačuvaj objavu za kasnije.\n\nPošalji fotku svog objekta u DM i dobićeš savjet gdje postaviti kamere.\n\n#videonadzor #doboj #kamere #ugradnjakamera #sigurnost #nadzor #dahua #hikvision #bih\n\n[Pri objavi uključi AI info]"
+}
