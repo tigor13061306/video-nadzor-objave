@@ -2,11 +2,15 @@ name: Instagram dnevna objava
 
 on:
   schedule:
-    # 17:43 po bosanskom vremenu: 15:43 UTC ljeti, 16:43 UTC zimi. Skripta sama provjerava vrijeme.
+    # 17:43 po bosanskom vremenu; GitHub zna kasniti ili preskočiti pokretanje, zato više pokušaja.
+    # Skripta sama provjerava vrijeme i ne objavljuje dvaput.
     - cron: "43 15 * * *"
     - cron: "43 16 * * *"
-    # rezervno pokretanje uveče, za slučaj da je GitHub kasnio ili Instagram nije radio
-    - cron: "30 19 * * *"
+    - cron: "13,43 17,18,19 * * *"
+    - cron: "30 21 * * *"
+  push:
+    paths:
+      - "stanje/pokreni.txt"
   workflow_dispatch:
 
 permissions:
