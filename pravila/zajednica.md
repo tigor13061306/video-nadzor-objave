@@ -8,7 +8,7 @@ Radi se kad je računar upaljen (zakazani zadatak "Instagram – dnevna objava i
 - Odgovor: `POST <comment_id>/replies` sa `message`, u ugrađenom pregledniku na https://graph.instagram.com/ (ključ samo u zaglavlju).
 - Pravila:
   - kratko, stručno, kao profil, prvo lice i "ti", bez emotikona ili najviše jedan;
-  - nikad cijene, rokovi, termini ni obećanja; kad neko pokaže interes (cijena, ponuda, ugradnja, termin), odgovori "Pošalji mi u DM broj telefona i mjesto, nazvaću te da se dogovorimo za izlazak na teren." i odmah javi Igoru (Claude ne šalje privatne poruke);
+  - nikad cijene, rokovi, termini ni obećanja; kad neko pokaže interes (cijena, ponuda, ugradnja, termin), odgovori "Pošalji mi u DM broj telefona i mjesto, nazvaću te. Procjena je besplatna." i odmah javi Igoru (Claude ne šalje privatne poruke);
   - ako je neko ostavio broj telefona u komentaru, komentar sakrij (POST <comment_id> hide=true) da broj ne bude javan, odgovori "Hvala, javiću ti se." i odmah javi Igoru korisnika i broj;
   - na uvrede, spam i reklame ne odgovaraj, samo navedi Igoru;
   - na privatne poruke (DM) nikad ne odgovaraj, samo ih navedi Igoru.
