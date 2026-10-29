@@ -1,0 +1,18 @@
+{
+  "tema": "2, 4 ili 8 MP: šta se stvarno vidi",
+  "slajdovi": [
+    {"sablon": "tekst", "oznaka": "EDUKACIJA",
+     "naslov": "2, 4 ili 8 MP: šta to znači za tvoju sliku?",
+     "tekst": "MP (megapiksel) je broj tačaka od kojih je slika napravljena. Više tačaka znači više detalja na istoj udaljenosti.",
+     "poziv": "Prevuci za poređenje", "poziv2": "i šta još utiče na oštrinu slike."},
+    {"sablon": "tekst", "oznaka": "UKRATKO",
+     "naslov": "Rezolucija kamere",
+     "stavke": [
+       "2 MP (1920 × 1080, Full HD): osnovni detalji, za kraće udaljenosti.",
+       "4 MP (2560 × 1440): oštrija slika, dobar odnos detalja i prostora na disku.",
+       "8 MP (3840 × 2160, 4K): najviše detalja, ali i najviše prostora na disku.",
+       "Nije sve u MP: objektiv, svjetlo i položaj kamere su jednako važni."
+     ]}
+  ],
+  "opis": "Više megapiksela znači više detalja, ali i veće snimke na disku.\n2 MP je Full HD, 4 MP daje primjetno oštriju sliku, a 8 MP (4K) najviše detalja.\nIpak, loše postavljena kamera od 8 MP snimiće lošije od dobro postavljene od 4 MP.\n\nNe znaš koja rezolucija ti treba? Piši u DM.\n\n#videonadzor #kamere #kamerezakucu #doboj #bih"
+}
