@@ -1,0 +1,17 @@
+{
+  "_opis": "Status fotografija. slobodna = smije se upotrijebiti (samo jednom), iskoristena = već objavljena ili rezervisana za spremnu objavu, odbijena = ne koristiti (tekst, kablovi, kamera iznad vrata...). Ko upotrijebi fotku, promijeni status u iskoristena i upiše folder objave.",
+  "materijal/ulaz/AI_dvoriste_dan.jpg": {"status": "iskoristena", "objava": "2026-10-26_dan-noc"},
+  "materijal/ulaz/AI_dvoriste_noc.jpg": {"status": "iskoristena", "objava": "2026-10-26_dan-noc"},
+  "materijal/ulaz/AI_kamera_garaza.jpg": {"status": "iskoristena", "objava": "2026-10-29_savjet-gdje-kamera"},
+  "materijal/ulaz/AI_kamera_svjetlo_iza.jpg": {"status": "iskoristena", "objava": "2026-10-29_savjet-gdje-kamera"},
+  "materijal/ulaz/AI_kamera_ulaz_visina.jpg": {"status": "iskoristena", "objava": "2026-10-29_savjet-gdje-kamera"},
+  "materijal/ulaz/AI_mini_rack.jpg": {"status": "iskoristena", "objava": "2026-10-30_mini-rack"},
+  "materijal/ulaz/AI_snimac_router_polica.jpg": {"status": "iskoristena", "objava": "2026-11-01_sacuvaj-kamera-ne-radi"},
+  "materijal/ulaz/AI_ugradni_ormar.jpg": {"status": "slobodna", "napomena": "planirano za 2026-11-03 Rješenje: ugradni ormar"},
+  "materijal/ulaz/AI_ormar_monitor.jpg": {"status": "slobodna", "napomena": "planirano za 2026-11-10 Rješenje: ormar sa monitorom"},
+  "materijal/ulaz/AI_kuca_kapija_garaza.jpg": {"status": "odbijena", "razlog": "natpisi C1/C2/C3, kamera iznad nadstrešnice"},
+  "materijal/ulaz/AI_poe_switch_provjera.jpg": {"status": "odbijena", "razlog": "engleski natpisi na kablovima"},
+  "materijal/ulaz/AI_rack_ormar.jpg": {"status": "odbijena", "razlog": "nerealan veliki rack"},
+  "materijal/ulaz/AI_snimac_polica.jpg": {"status": "odbijena", "razlog": "ne koristiti"},
+  "materijal/oprema/dahua/kamere/IPC-HDW2441T-S": {"status": "iskoristena", "objava": "2026-11-04_oprema-dahua-turret", "napomena": "zvanične slike opreme smiju se ponovo koristiti tek za 2 mjeseca"}
+}
