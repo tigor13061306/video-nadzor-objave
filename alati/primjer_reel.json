@@ -1,0 +1,9 @@
+{
+  "kadrovi": [
+    {"foto": "../../02_materijal/odobreno/AI_primjer1.jpg", "fokus": [0.5, 0.5], "tekst": "Kratak naslov prvog kadra", "podtekst": "Jedna rečenica objašnjenja."},
+    {"foto": "../../02_materijal/odobreno/AI_primjer2.jpg", "fokus": [0.5, 0.4], "tekst": "Drugi kadar", "podtekst": "Jedna rečenica."},
+    {"foto": "../../02_materijal/odobreno/AI_primjer3.jpg", "fokus": [0.5, 0.5], "tekst": "Treći kadar", "podtekst": "Jedna rečenica."}
+  ],
+  "trajanje_kadra": 3.5,
+  "kraj": {"tekst": "Treba ti video nadzor?", "podtekst": "Piši u DM za ponudu"}
+}
