@@ -23,6 +23,17 @@ Radi se kad je računar upaljen (zakazani zadatak "Instagram – dnevna objava i
 ## Facebook grupe (kao stranica "Video nadzor kamere", nikad Igorov lični profil)
 
 - Stranica je članica grupa: Oglasi Teslić, Jelah, Tešanj, Doboj, Zenica, Banja Luka; Mali oglasi-DOBOJ; Doboj Oglasi; DOBOJSKI MEGA OGLASI; Doboj. ("Kupujem Prodajem Doboj" ne prima stranice.)
+- Grupe za učlanjenje (nađene 31.10.2026), dnevni zadatak se kao stranica učlani u najviše 2 dnevno: prvo pročita pravila grupe, preskoči grupe koje ne primaju stranice ili zabranjuju poslovne objave, odgovori na pitanja za učlanjenje istinito (stranica za ugradnju video nadzora). Status upiše u `07_statistika/grupe.csv` (status "učlanjenje poslano"/"primljeno"/"ne prima stranice").
+  - Oglasi Doboj, Tesanj, Teslić, Maglaj (35 hilj.)
+  - Oglasi Gracanica, Doboj, Tesanj, Teslic, Maglaj (29 hilj.)
+  - Grupa za prodaju Maglaj-Tesanj-Doboj. (16 hilj.)
+  - Mali Oglasi Derventa Doboj Stanari Banja Luka Prnjavor (16 hilj.)
+  - Oglasi Tešanj,Jelah,Doboj,Teslić,Maglaj i okolica (12 hilj.)
+  - MAJSTORI I MAJSTORSKE USLUGE (12 hilj.)
+  - Tesanj, Doboj, Modrica, Prnjavor, B.Luka OGLASI (10 hilj.)
+  - Prnjavor, Tesanj, Doboj, Modrica OGLASI (8,6 hilj.)
+  - Gradnja kuće savjeti i iskustva (9,5 hilj., privatna; tu samo korisni savjeti, bez oglasa)
+  - Grupe prodavaca opreme za video nadzor se preskaču (to su konkurenti, ne kupci).
 - Prije objave provjeri da je u gornjem desnom uglu Facebooka aktivan profil stranice (logo), ne Igorov.
 - Jedna objava dnevno, u jednoj grupi; ista grupa najviše jednom sedmično. Evidencija: `07_statistika/grupe.csv` (datum;grupa;tema;status).
 - Sadržaj: koristan savjet iz neke od naših objava (3 do 6 redova) + link https://www.instagram.com/video.nadzorkamere/ + "Za ugradnju ili savjet pošalji poruku sa brojem telefona i mjestom, javiću se." Bez cijena, bez "najbolji/najjeftiniji", bez područja rada.
