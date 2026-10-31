@@ -22,7 +22,7 @@ Radi se kad je računar upaljen (zakazani zadatak "Instagram – dnevna objava i
 
 ## Facebook grupe (kao stranica "Video nadzor kamere", nikad Igorov lični profil)
 
-- Stranica je članica grupa: Oglasi Teslić, Jelah, Tešanj, Doboj, Zenica, Banja Luka; Mali oglasi-DOBOJ; Doboj Oglasi; DOBOJSKI MEGA OGLASI; Doboj. ("Kupujem Prodajem Doboj" ne prima stranice.)
+- Stranica je članica grupa: Oglasi Teslić, Jelah, Tešanj, Doboj, Zenica, Banja Luka; Mali oglasi-DOBOJ; Doboj Oglasi; DOBOJSKI MEGA OGLASI; Doboj. Od 31.10.2026 i: Oglasi Tešanj,Jelah,Doboj,Teslić,Maglaj i okolica; Grupa za prodaju Maglaj-Tesanj-Doboj. (samo kupovina/prodaja: tu ide oglas usluge, ne savjet); MAJSTORI I MAJSTORSKE USLUGE. ("Kupujem Prodajem Doboj" ne prima stranice; "Oglasi Doboj, Tesanj, Teslić, Maglaj" traži ime i prezime i cijenu - preskače se.)
 - Grupe za učlanjenje (nađene 31.10.2026), dnevni zadatak se kao stranica učlani u najviše 2 dnevno: prvo pročita pravila grupe, preskoči grupe koje ne primaju stranice ili zabranjuju poslovne objave, odgovori na pitanja za učlanjenje istinito (stranica za ugradnju video nadzora). Status upiše u `07_statistika/grupe.csv` (status "učlanjenje poslano"/"primljeno"/"ne prima stranice").
   - Oglasi Doboj, Tesanj, Teslić, Maglaj (35 hilj.)
   - Oglasi Gracanica, Doboj, Tesanj, Teslic, Maglaj (29 hilj.)
