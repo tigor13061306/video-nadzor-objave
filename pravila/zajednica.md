@@ -40,3 +40,16 @@ Radi se kad je računar upaljen (zakazani zadatak "Instagram – dnevna objava i
 - Pretraga grupa: ako neko traži majstora za kamere ili pita o video nadzoru, odgovori kratkim stručnim komentarom kao stranica i ponudi "Piši u poruke". Najviše 3 takva odgovora dnevno. Ne komentariši ništa drugo.
 - Dan poslije svake objave u grupi pogledaj komentare na njoj i odgovori kratko i stručno kao stranica; objava ne smije ostati bez odgovora. Prvo korisno, pa tek onda poziv na kontakt.
 - Ako administrator odbije ili ukloni objavu, tu grupu preskači 2 sedmice.
+
+## Svaki dan: traženje kupaca i posmatranje grupa (Igor, 31.10.2026; dio koraka 4 dnevnog zadatka)
+
+**A) Traženje potencijalnih kupaca (svaki dan, kao stranica, samo čitanje):**
+- U svakoj grupi u kojoj je stranica članica, i u Facebook pretrazi objava (https://www.facebook.com/search/posts/?q=..., filter "Nedavne objave"), traži objave iz zadnjih 7 dana sa riječima: kamere, video nadzor, kamera, snimač, alarm, majstor za kamere, ugradnja kamera, "treba mi kamera", "preporučite majstora". Upiti iz Doboja i okoline (Teslić, Tešanj, Maglaj, Modriča, Derventa, Gračanica, Stanari, Prnjavor) imaju prednost.
+- Svaki pravi upit (neko traži ugradnju, popravku, savjet za kupovinu) upiši u `07_statistika/kupci.csv` (datum;grupa;link objave;šta traži;mjesto;status). Isti link se ne upisuje dvaput.
+- U grupama gdje je stranica članica može kratko i stručno odgovoriti kao stranica (najviše 3 dnevno, "Piši u poruke"), status "odgovoreno". Gdje stranica nije članica: ništa ne piše, status "za Igora".
+- Igoru u poruci dnevnog zadatka: broj novih upita i linkovi (najviše 5), da im se javi sam.
+
+**B) Posmatranje grupa o video nadzoru (za sada samo posmatranje, bez učlanjenja i objava):**
+- Grupe: VIDEO NADZOR - ALARMI PRODAJA (facebook.com/groups/152468741528682), Alarm i Video Nadzor (facebook.com/groups/711311573066881), cctv ip ptz wifi video kamera nadzor security (facebook.com/groups/624700464810744), Alarmi Kamere Gladijator (facebook.com/groups/907082759977732), plus lokalni majstori koji se pojave u pretrazi (npr. AVUR Technik Teslić).
+- Svaki dan pregledaj nove objave (zadnja 24 h) i one sa najviše komentara; upiši u `07_statistika/grupe_teme.csv` (datum;grupa;link;tema;vrsta;komentara;reakcija). Vrsta: završen posao / pitanje / prodaja opreme / traži majstora / ostalo.
+- Prve nedjelje u mjesecu nedjeljna priprema sabere `grupe_teme.csv` i `kupci.csv` u `07_statistika/statistika.csv` (koje teme i vrste objava imaju najviše komentara, koliko upita i odakle) i po tome dopuni plan objava.
