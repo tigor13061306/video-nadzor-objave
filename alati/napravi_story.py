@@ -21,13 +21,20 @@ def main(src, out):
     post = ImageOps.exif_transpose(Image.open(src)).convert("RGB")
     pw = W - 2 * M; ph = round(post.height * pw / post.width)
     post = post.resize((pw, ph), Image.LANCZOS)
-    d.text((M, 300), "NOVA OBJAVA", font=font("Inter-SemiBold.otf", 44), fill=ACCENT)
-    y0 = 390
+    MAXH = 1110  # visoke slike (npr. cover Reela 9:16) se srežu po sredini
+    if ph > MAXH:
+        top = (ph - MAXH) // 2
+        post = post.crop((0, top, pw, top + MAXH)); ph = MAXH
+    d.text((M, 230), "NOVA OBJAVA", font=font("Inter-SemiBold.otf", 44), fill=ACCENT)
+    y0 = 310
     d.rounded_rectangle([M - 8, y0 - 8, M + pw + 8, y0 + ph + 8], radius=20, fill=ACCENT)
     img.paste(post, (M, y0))
-    y = y0 + ph + 80
-    d.text((M, y), "Pogledaj cijelu objavu", font=font("InterDisplay-Bold.otf", 60), fill=WHITE)
-    d.text((M, y + 82), "na profilu  →", font=font("InterDisplay-Bold.otf", 60), fill=ACCENT)
+    y = y0 + ph + 64
+    d.text((M, y), "Pogledaj cijelu objavu", font=font("InterDisplay-Bold.otf", 58), fill=WHITE)
+    d.text((M, y + 76), "na profilu  →", font=font("InterDisplay-Bold.otf", 58), fill=ACCENT)
+    # poziv na odgovor: odgovor na priču stiže Igoru u DM
+    d.text((M, y + 186), "Imaš pitanje o kamerama? Odgovori na ovu priču.",
+           font=font("Inter-Medium.otf", 36), fill=(170, 190, 210))
     img.save(out, quality=92)
     print("snimljeno:", out)
 

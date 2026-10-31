@@ -21,4 +21,5 @@ Radi se kad je računar upaljen (zakazani zadatak "Instagram – dnevna objava i
 - Jedna objava dnevno, u jednoj grupi; ista grupa najviše jednom sedmično. Evidencija: `07_statistika/grupe.csv` (datum;grupa;tema;status).
 - Sadržaj: koristan savjet iz neke od naših objava (3 do 6 redova) + link https://www.instagram.com/video.nadzorkamere/ + "Za ugradnju ili savjet pošalji poruku sa brojem telefona i mjestom, javiću se." Bez cijena, bez "najbolji/najjeftiniji", bez područja rada.
 - Pretraga grupa: ako neko traži majstora za kamere ili pita o video nadzoru, odgovori kratkim stručnim komentarom kao stranica i ponudi "Piši u poruke". Najviše 3 takva odgovora dnevno. Ne komentariši ništa drugo.
+- Dan poslije svake objave u grupi pogledaj komentare na njoj i odgovori kratko i stručno kao stranica; objava ne smije ostati bez odgovora. Prvo korisno, pa tek onda poziv na kontakt.
 - Ako administrator odbije ili ukloni objavu, tu grupu preskači 2 sedmice.

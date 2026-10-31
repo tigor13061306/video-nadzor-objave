@@ -85,6 +85,23 @@ def opis(folder):
     return t
 
 
+def alt_tekst(folder, tekst):
+    """Alt tekst za slike (alt.txt u folderu, inače prva rečenica opisa). Pomaže Instagram pretrazi."""
+    p = os.path.join(folder, "alt.txt")
+    if os.path.exists(p):
+        return open(p, encoding="utf-8").read().strip()[:1000]
+    prvi = tekst.strip().split("\n")[0]
+    return prvi[:300]
+
+
+def kontejner(api, alt, **params):
+    """Pravi kontejner sa alt tekstom; ako ga API ne prihvati, pokuša bez njega."""
+    c = api.post(IG + "/media", alt_text=alt, **params) if alt else {}
+    if "id" not in c:
+        c = api.post(IG + "/media", **params)
+    return c
+
+
 def objavi_folder(api, ime):
     folder = os.path.join(ROOT, "objave", ime)
     base = RAW + "objave/" + ime + "/"
@@ -99,12 +116,13 @@ def objavi_folder(api, ime):
         slike = sorted(f for f in os.listdir(folder) if re.fullmatch(r"\d\d\.jpg", f))
         if not slike:
             raise RuntimeError("nema slika (01.jpg…)")
+        alt = alt_tekst(folder, tekst)
         if len(slike) == 1:
-            c = api.post(IG + "/media", image_url=base + slike[0], caption=tekst)
+            c = kontejner(api, alt, image_url=base + slike[0], caption=tekst)
         else:
             djeca = []
             for s in slike:
-                d = api.post(IG + "/media", image_url=base + s, is_carousel_item="true")
+                d = kontejner(api, alt, image_url=base + s, is_carousel_item="true")
                 if "id" not in d:
                     raise RuntimeError("slika %s: %s" % (s, d.get("error", d)))
                 djeca.append(d["id"])

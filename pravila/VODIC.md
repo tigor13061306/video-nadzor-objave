@@ -48,12 +48,24 @@ Ako želiš izmijeniti objavu prije nego izađe, napiši šta u `napomene.txt` u
 | Srijeda | Oprema koju ugrađujem: jedan model, Hikvision i Dahua naizmjenično (šablon proizvod, bez AI napomene) |
 | Četvrtak | Savjet, kao Reel |
 | Petak | Česti problemi i kako se rješavaju |
-| Subota | Lokacije sa kamerama. Dok Igor ne počne snimati prave lokacije, ide AI fotografija sa naslovom "Primjer: …" i AI napomenom, nikad kao Igorov urađeni posao |
+| Subota | Lokacije sa kamerama, kao Reel (3 do 4 fotke, sa muzikom). Dok Igor ne počne snimati prave lokacije, ide AI fotografija sa naslovom "Primjer: …" i AI napomenom, nikad kao Igorov urađeni posao |
 | Nedjelja | Objave za čuvanje: checkliste, tabele i podsjetnici koje ljudi sačuvaju ("Sačuvaj: …"), tekst na tamnoj pozadini + jedna fotka; poziv "Sačuvaj objavu" u opisu |
 
 - Uz svaku objavu ide Story "Nova objava".
 - Tvrdnje i brojke (dometi, dani snimanja, mitovi) samo provjerene, iz katalog_opreme.csv ili zvaničnih stranica proizvođača.
 - Kad Igor ubaci prave fotke lokacija u `02_materijal/ulaz`, subota ide sa njima (zamutiti lica, tablice, kućne brojeve).
+
+## Pravila za rast (od 31.10.2026)
+
+Instagram danas nove ljude dovodi preko pretrage po ključnim riječima, Reelsa i dijeljenja u porukama. Zato:
+
+- **Prvi red opisa** (do ~125 znakova, prije "više"): pitanje ili tvrdnja koja zaintrigira, sa riječima koje ljudi stvarno ukucaju u pretragu: "video nadzor", "kamere za kuću", "kamera za ulaz", "ugradnja kamera", "snimač", "kamera ne radi". Primjer: "Koliko megapiksela treba kameri za video nadzor?" Bez nabrajanja ključnih riječi jedne za drugom.
+- **alt.txt** u svakom folderu objave sa slikama: jedna rečenica šta je stvarno na slici, sa ključnom riječi (npr. "Ugradni ormar u hodniku sa snimačem za video nadzor i UPS uređajem."). Mora odgovarati slici. GitHub ga šalje Instagramu kao alternativni tekst.
+- **Dijeljenje:** prije svake objave odgovori sebi "ko će ovo poslati kome i zašto". Kod korisnih objava (checkliste, savjeti, česti problemi) prije poziva na kontakt ide jedan red tipa "Pošalji ovo nekome ko gradi kuću." ili "Pošalji je i nekome ko ima kamere kod kuće." Ne na svakoj objavi, samo kad sadržaj to zaslužuje.
+- **Reels su glavni put do novih ljudi:** četvrtak i subota idu kao Reel sa muzikom (`alati/napravi_reel.py`). Prve 1 do 3 sekunde: tekst na ekranu koji odmah kaže o čemu je riječ, sa ključnom riječi; mora se razumjeti bez zvuka. Bez tuđih vodenih žigova.
+- **Carousel:** naslovni slajd obećava šta se dobije prevlačenjem ("Prevuci →"), jedan slajd jedna misao, zadnji slajd sažetak i poziv.
+- **Story** "Nova objava" na dnu ima poziv "Imaš pitanje o kamerama? Odgovori na ovu priču." Odgovori stižu Igoru u DM.
+- **Mjerenje** (prva nedjelja u mjesecu): za svaku objavu upiši doseg, dijeljenja (shares), čuvanja (saved) i preglede; najbolji pokazatelj su dijeljenja i čuvanja u odnosu na doseg, ne lajkovi ni broj pratilaca. Teme koje se najviše dijele i čuvaju ponavljaj u novom obliku.
 
 ## Objavljivanje preko GitHuba (od 28.10.2026)
 
