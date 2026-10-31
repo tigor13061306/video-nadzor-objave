@@ -14,6 +14,12 @@ Radi se kad je računar upaljen (zakazani zadatak "Instagram – dnevna objava i
   - na privatne poruke (DM) nikad ne odgovaraj, samo ih navedi Igoru.
 - Poslije odgovora u `stanje/komentari.json` stavi `"odgovoreno": true`.
 
+## Poziv "Napiši KAMERA" (odobrio Igor 31.10.2026)
+
+- Na jednoj do dvije objave sedmično (najbolje Reels i korisne objave) poziv na kraju opisa glasi: "Napiši KAMERA u komentar i javiću ti se. Procjena je besplatna." Na ostalim objavama ostaje "Pošalji mi u DM broj telefona i mjesto…".
+- Komentar sa riječju KAMERA odmah ide Igoru na mail (GitHub issue "UPIT"); Igor se javlja u DM.
+- Claude na takav komentar odgovara javno samo kratko: "Hvala! Javljam ti se u poruke." Bez cijena i termina.
+
 ## Facebook grupe (kao stranica "Video nadzor kamere", nikad Igorov lični profil)
 
 - Stranica je članica grupa: Oglasi Teslić, Jelah, Tešanj, Doboj, Zenica, Banja Luka; Mali oglasi-DOBOJ; Doboj Oglasi; DOBOJSKI MEGA OGLASI; Doboj. ("Kupujem Prodajem Doboj" ne prima stranice.)

@@ -1,7 +1,7 @@
 """Provjerava nove komentare na objavama i upisuje ih u stanje/komentari.json.
 
 - Komentar sa brojem telefona: sakrije se (da broj ne bude javan), označi kao UPIT i Igor dobije mail odmah.
-- Komentar koji pita za cijenu, ponudu, ugradnju ili izlazak: označi se kao UPIT (mail Igoru).
+- Komentar sa riječju KAMERA (poziv iz objave "Napiši KAMERA u komentar") ili koji pita za cijenu, ponudu, ugradnju ili izlazak: označi se kao UPIT (mail Igoru).
 - Ostali novi komentari: GitHub issue "Novi komentari" (mail), a Claude odgovara kad je računar upaljen.
 """
 import json, os, re, requests
@@ -12,7 +12,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 F = os.path.join(ROOT, "stanje", "komentari.json")
 REPO = "tigor13061306/video-nadzor-objave"
 TELEFON = re.compile(r"(\+?387|\b0)\s*6\d[\s/.-]*\d{3}[\s/.-]*\d{3,4}")
-UPIT = re.compile(r"cijen|cena|košt|kost|ponud|ugrad|postav|montir|izlaz|teren|kontakt|broj|nazov|pozov|zainteres|treba mi|trebam|koliko", re.I)
+UPIT = re.compile(r"\bkamer|cijen|cena|košt|kost|ponud|ugrad|postav|montir|izlaz|teren|kontakt|broj|nazov|pozov|zainteres|treba mi|trebam|koliko", re.I)
 
 
 def issue(gh, naslov, oznaka, tijelo):

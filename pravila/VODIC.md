@@ -64,6 +64,7 @@ Instagram danas nove ljude dovodi preko pretrage po ključnim riječima, Reelsa 
 - **Dijeljenje:** prije svake objave odgovori sebi "ko će ovo poslati kome i zašto". Kod korisnih objava (checkliste, savjeti, česti problemi) prije poziva na kontakt ide jedan red tipa "Pošalji ovo nekome ko gradi kuću." ili "Pošalji je i nekome ko ima kamere kod kuće." Ne na svakoj objavi, samo kad sadržaj to zaslužuje.
 - **Reels su glavni put do novih ljudi:** četvrtak i subota idu kao Reel sa muzikom (`alati/napravi_reel.py`). Prve 1 do 3 sekunde: tekst na ekranu koji odmah kaže o čemu je riječ, sa ključnom riječi; mora se razumjeti bez zvuka. Bez tuđih vodenih žigova.
 - **Carousel:** naslovni slajd obećava šta se dobije prevlačenjem ("Prevuci →"), jedan slajd jedna misao, zadnji slajd sažetak i poziv.
+- **Poziv "Napiši KAMERA u komentar i javiću ti se."** na jednoj do dvije objave sedmično umjesto poziva na DM (pravila u `alati/zajednica.md`). Komentari podižu doseg, a Igor odmah dobija mail.
 - **Story** "Nova objava" na dnu ima poziv "Imaš pitanje o kamerama? Odgovori na ovu priču." Odgovori stižu Igoru u DM.
 - **Mjerenje** (prva nedjelja u mjesecu): za svaku objavu upiši doseg, dijeljenja (shares), čuvanja (saved) i preglede; najbolji pokazatelj su dijeljenja i čuvanja u odnosu na doseg, ne lajkovi ni broj pratilaca. Teme koje se najviše dijele i čuvaju ponavljaj u novom obliku.
 
