@@ -27,14 +27,14 @@ datum;dan;format;tema;sablon;materijal;status;napomena
 2026-11-20;petak;carousel;Kamera se gasi noću: napajanje i PoE;naslovna + foto_traka;AI kamera, PoE switch, adapter;za pripremu;ČESTI PROBLEMI
 2026-11-21;subota;reel;Primjer: vikendica pod nadzorom;reel od fotki;AI vikendica sa kamerama (3-4 AI fotke);za pripremu;LOKACIJA - AI primjer, ne Igorov rad
 2026-11-22;nedjelja;carousel;Sačuvaj: koliko dana snima disk od 1, 2 i 4 TB;naslovna + tekst;jedna AI fotka diska;za pripremu;ZA ČUVANJE - tabela; brojke samo iz kalkulatora proizvođača (Hikvision/Dahua), navedi pretpostavke: broj kamera, MP, H.265, 24 h snimanje
-2026-11-23;ponedjeljak;carousel;Gdje postaviti kameru na ulazu da se vidi lice;naslovna + foto_traka;AI ulaz u kuću;za pripremu;EDUKACIJA
+2026-11-23;ponedjeljak;reel;Gdje postaviti kameru na ulazu da se vidi lice;reel od fotki;AI ulaz u kuću;za pripremu;EDUKACIJA; Reel umjesto carousela (statistika oktobar: Reel doseg 131, fotke 1-3)
 2026-11-24;utorak;slika;Kamera daleko od kuće bez kopanja: bežični most;foto_kutija;AI bežični most na stubu;za pripremu;RJEŠENJE
 2026-11-25;srijeda;slika;Oprema koju ugrađujem: Hikvision DS-7608NXI-K2-8P;proizvod;oprema/hikvision/snimaci/DS-7608NXI-K2-8P;za pripremu;OPREMA - bez AI napomene
 2026-11-26;četvrtak;reel;Obavještenja na telefonu: da te ne budi svaka mačka;reel od fotki;AI telefon i dvorište;za pripremu;SAVJET - Reel
 2026-11-27;petak;carousel;Slika kasni ili se zamrzava na telefonu;naslovna + foto_traka;AI telefon, ruter;za pripremu;ČESTI PROBLEMI
 2026-11-28;subota;reel;Primjer: dvorište i garaža;reel od fotki;AI dvorište sa garažom (3-4 AI fotke);za pripremu;LOKACIJA - AI primjer, ne Igorov rad
 2026-11-29;nedjelja;carousel;Sačuvaj: kuća pod nadzorom prije odlaska na put;naslovna + tekst;AI telefon i kuća;za pripremu;ZA ČUVANJE - checklista
-2026-11-30;ponedjeljak;carousel;Kamera bez interneta: kako ipak snima i kako je gledaš (SD kartica, snimač, TV preko HDMI);naslovna + foto_traka;AI kamera, snimač, TV;za pripremu;EDUKACIJA - tema iz FB grupa (često pitanje)
+2026-11-30;ponedjeljak;reel;Kamera bez interneta: kako ipak snima i kako je gledaš (SD kartica, snimač, TV preko HDMI);reel od fotki;AI kamera, snimač, TV;za pripremu;EDUKACIJA - tema iz FB grupa (često pitanje); Reel umjesto carousela (statistika oktobar: Reel doseg 131, fotke 1-3)
 2026-12-01;utorak;slika;Kamera za vikendicu bez struje i interneta: solarni panel i 4G;foto_kutija;AI vikendica sa solarnom kamerom (bez vidljivih kablova);za pripremu;RJEŠENJE - najkomentarisanije pitanje u grupama; tvrdnje samo provjerene
 2026-12-02;srijeda;slika;Oprema koju ugrađujem: Dahua IPC-HFW2441S-S;proizvod;oprema/dahua/kamere/IPC-HFW2441S-S;za pripremu;OPREMA - bez AI napomene
 2026-12-03;četvrtak;reel;Imaš stari sistem? Šta možeš zadržati kad mijenjaš kamere (kablovi, napajanje, snimač);reel od fotki;AI stari i novi snimač;za pripremu;SAVJET - Reel - tema iz FB grupa

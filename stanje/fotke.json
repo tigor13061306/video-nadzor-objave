@@ -155,5 +155,8 @@
   "materijal/ulaz/AI_telefon_reprodukcija.jpg": {
     "status": "iskoristena",
     "objava": "2026-11-13_izgubljen-snimak"
+  },
+  "materijal/ulaz/AI_snimac_ormaric.jpg": {
+    "status": "slobodna"
   }
 }
