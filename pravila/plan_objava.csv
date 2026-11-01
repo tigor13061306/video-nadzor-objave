@@ -5,11 +5,11 @@ datum;dan;format;tema;sablon;materijal;status;napomena
 2026-10-29;četvrtak;reel;Gdje postaviti kameru: 3 pravila;reel od fotki;AI_kamera_ulaz_visina + AI_kamera_svjetlo_iza + AI_kamera_garaza;objavljeno;https://www.instagram.com/reel/DfFjJR8Dd5_/ (GitHub, ručno pokrenut u 18:31 jer zakazano pokretanje nije krenulo)
 2026-10-30;petak;slika;Uredna instalacija: snimač i mreža u jednom ormariću;foto_kutija;AI_mini_rack;objavljeno;https://www.instagram.com/p/DfIHAbTIG_J/
 2026-10-31;subota;slika;Primjer: prilaz i kapija noću;foto_traka;AI_prilaz_noc;objavljeno;https://www.instagram.com/p/DfKocJSlld4/ (GitHub; i na Facebook stranici)
-2026-11-01;nedjelja;carousel;Sačuvaj: kamera ne radi, provjeri ovo prije poziva;naslovna + tekst (stavke);AI_snimac_router_polica;spremno;ZA ČUVANJE - checklista
+2026-11-01;nedjelja;carousel;Sačuvaj: kamera ne radi, provjeri ovo prije poziva;naslovna + tekst (stavke);AI_snimac_router_polica;objavljeno;https://www.instagram.com/p/DfNNMnTFSJV/ (GitHub; i na Facebook stranici)
 2026-11-02;ponedjeljak;carousel;2, 4 ili 8 MP: šta se stvarno vidi;naslovna + foto_traka;isti kadar u tri rezolucije (Gemini);spremno;napravio kontrolor
 2026-11-03;utorak;slika;Oprema koja se ne vidi: ugradni ormar u hodniku;foto_kutija;AI_ugradni_ormar;spremno;napravio kontrolor
 2026-11-04;srijeda;slika;Oprema koju ugrađujem: Dahua IPC-HDW2441T-S;proizvod;oprema/dahua/kamere/IPC-HDW2441T-S;spremno;OPREMA - bez AI napomene
-2026-11-05;četvrtak;carousel;3 stvari koje provjeriš prije kupovine kamera;tekst (stavke);bez fotke (nema slobodnih);spremno;napravio kontrolor - SAVJET
+2026-11-05;četvrtak;carousel;3 stvari koje provjeriš prije kupovine kamera;naslovna + tekst;bez fotke;spremno;napravio kontrolor (tekst, bez fotke)
 2026-11-06;petak;carousel;Noću slika bijela ili mutna: 4 razloga i rješenja;naslovna + foto_traka;AI: paučina, IR odsjaj od strehe, prljavo staklo, kamera iza stakla;za pripremu;ČESTI PROBLEMI
 2026-11-07;subota;slika;Primjer: porodična kuća sa 4 kamere;foto_kutija;AI kuća sa vidljivim kamerama;za pripremu;LOKACIJA - AI primjer, ne Igorov rad
 2026-11-08;nedjelja;carousel;Sačuvaj: održavanje video nadzora svakih 6 mjeseci;naslovna + tekst;jedna AI fotka kamere ili snimača;za pripremu;ZA ČUVANJE - checklista
@@ -34,6 +34,11 @@ datum;dan;format;tema;sablon;materijal;status;napomena
 2026-11-27;petak;carousel;Slika kasni ili se zamrzava na telefonu;naslovna + foto_traka;AI telefon, ruter;za pripremu;ČESTI PROBLEMI
 2026-11-28;subota;slika;Primjer: dvorište i garaža;foto_kutija;AI dvorište sa garažom;za pripremu;LOKACIJA - AI primjer, ne Igorov rad
 2026-11-29;nedjelja;carousel;Sačuvaj: kuća pod nadzorom prije odlaska na put;naslovna + tekst;AI telefon i kuća;za pripremu;ZA ČUVANJE - checklista
+2026-11-30;nedjelja;carousel;Sačuvaj: kamera bez interneta - kako ipak snima i kako je gledaš (SD kartica, snimač, TV preko HDMI);naslovna + tekst;jedna AI fotka;za pripremu;ZA ČUVANJE - tema iz FB grupa (često pitanje)
+2026-12-01;ponedjeljak;carousel;WiFi ili kablovska (PoE) kamera: šta izabrati za kuću;naslovna + foto_traka;AI fotke kamera na kući;za pripremu;EDUKACIJA - tema iz FB grupa
+2026-12-02;utorak;slika;Kamera za vikendicu bez struje i interneta: solarni panel i 4G;foto_kutija;AI vikendica sa solarnom kamerom (bez vidljivih kablova);za pripremu;RJEŠENJE - najkomentarisanije pitanje u grupama (20 komentara); tvrdnje samo provjerene
+2026-12-04;četvrtak;reel;Imaš stari sistem? Šta možeš zadržati kad mijenjaš kamere (kablovi, napajanje, snimač);reel od fotki;AI stari i novi snimač;za pripremu;SAVJET - Reel - tema iz FB grupa
+2026-12-05;petak;carousel;Kamera ne snima na disk: 4 najčešća razloga;naslovna + foto_traka;AI snimač i disk;za pripremu;ČESTI PROBLEMI
 kasnije;;reel;Kako izgleda pregled na telefonu;snimak ekrana;snimak ekrana aplikacije (DMSS ili Hik-Connect);čeka materijal;bez šifri i imena uređaja
 kasnije;;reel;Montaža kamere za 30 sekundi;video;Igorovi snimci montaže;čeka materijal;
 kasnije;;carousel;Paketi: 2, 4 i 8 kamera;naslovna + foto_traka;fotke kamera;čeka cijene;Igor treba dati cijene "od"
