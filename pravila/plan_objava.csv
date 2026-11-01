@@ -11,34 +11,33 @@ datum;dan;format;tema;sablon;materijal;status;napomena
 2026-11-04;srijeda;slika;Oprema koju ugrađujem: Dahua IPC-HDW2441T-S;proizvod;oprema/dahua/kamere/IPC-HDW2441T-S;spremno;OPREMA - bez AI napomene
 2026-11-05;četvrtak;carousel;3 stvari koje provjeriš prije kupovine kamera;naslovna + tekst;bez fotke;spremno;napravio kontrolor (tekst, bez fotke)
 2026-11-06;petak;carousel;Noću slika bijela ili mutna: 4 razloga i rješenja;naslovna + foto_traka;AI: paučina, IR odsjaj od strehe, prljavo staklo, kamera iza stakla;za pripremu;ČESTI PROBLEMI
-2026-11-07;subota;slika;Primjer: porodična kuća sa 4 kamere;foto_kutija;AI kuća sa vidljivim kamerama;za pripremu;LOKACIJA - AI primjer, ne Igorov rad
-2026-11-08;nedjelja;carousel;Sačuvaj: održavanje video nadzora svakih 6 mjeseci;naslovna + tekst;jedna AI fotka kamere ili snimača;za pripremu;ZA ČUVANJE - checklista
+2026-11-07;subota;reel;Primjer: porodična kuća sa 4 kamere;reel od fotki;AI kuća sa vidljivim kamerama (3-4 AI fotke);za pripremu;LOKACIJA - AI primjer, ne Igorov rad
+2026-11-08;nedjelja;carousel;Sačuvaj: održavanje video nadzora svakih 6 mjeseci;naslovna + tekst;bez fotke (tekst);spremno;ZA ČUVANJE - checklista; napravljeno u oblaku 1.11. (računar nedostupan, bez Gemini-ja)
 2026-11-09;ponedjeljak;carousel;Kabl do kamere: UTP, PoE i zaštita od vlage;naslovna + foto_traka;AI kabl, kanalica, kutija za spoj;za pripremu;EDUKACIJA
-2026-11-10;utorak;slika;Ormar sa monitorom za radnju i kancelariju;foto_kutija;AI_ormar_monitor;za pripremu;RJEŠENJE
-2026-11-11;srijeda;slika;Oprema koju ugrađujem: Hikvision DS-2CD2047G2-LU;proizvod;oprema/hikvision/kamere/DS-2CD2047G2-LU_naprijed;za pripremu;OPREMA - bez AI napomene
+2026-11-10;utorak;slika;Ormar sa monitorom za radnju i kancelariju;foto_kutija;AI_ormar_monitor;spremno;RJEŠENJE; AI napomena
+2026-11-11;srijeda;slika;Oprema koju ugrađujem: Hikvision DS-2CD2047G2-LU;proizvod;oprema/hikvision/kamere/DS-2CD2047G2-LU_naprijed;spremno;OPREMA - bez AI napomene
 2026-11-12;četvrtak;reel;Kamera za kuću ili za radnju: razlike;reel od fotki;AI kuća + AI radnja;za pripremu;SAVJET - Reel
 2026-11-13;petak;carousel;Izgubio si snimak? Najčešći razlozi;naslovna + foto_traka;AI snimač, disk, nestanak struje;za pripremu;ČESTI PROBLEMI
-2026-11-14;subota;slika;Primjer: mala radnja sa 4 kamere;foto_kutija;AI radnja sa kamerama;za pripremu;LOKACIJA - AI primjer, ne Igorov rad
-2026-11-15;nedjelja;carousel;Sačuvaj: koliko dana snima disk od 1, 2 i 4 TB;naslovna + tekst;jedna AI fotka diska;za pripremu;ZA ČUVANJE - tabela, navedi pretpostavke (broj kamera, MP, H.265)
+2026-11-14;subota;reel;Primjer: mala radnja sa 4 kamere;reel od fotki;AI radnja sa kamerama (3-4 AI fotke);za pripremu;LOKACIJA - AI primjer, ne Igorov rad
+2026-11-15;nedjelja;carousel;Sačuvaj: 8 pitanja za instalatera prije ugradnje;naslovna + tekst;bez fotke (tekst);spremno;ZA ČUVANJE - checklista; zamijenjeno sa 22.11. (tabela diska traži provjeren proračun)
 2026-11-16;ponedjeljak;carousel;Žičane ili WiFi kamere: kad koje;naslovna + foto_traka;AI žičana i WiFi kamera;za pripremu;EDUKACIJA
-2026-11-17;utorak;slika;Uredan rack: snimač, switch i patch panel na jednom mjestu;foto_kutija;AI_rack_ormar;za pripremu;RJEŠENJE
+2026-11-17;utorak;slika;Uredan rack: snimač, switch i patch panel na jednom mjestu;foto_kutija;nova AI fotka uskog 10-inčnog zidnog racka (AI_rack_ormar je odbijen);za pripremu;RJEŠENJE
 2026-11-18;srijeda;slika;Oprema koju ugrađujem: Dahua NVR2108HS-8P-I2;proizvod;oprema/dahua/snimaci/NVR2108HS-8P-I2;za pripremu;OPREMA - bez AI napomene
 2026-11-19;četvrtak;reel;Zaštiti pristup kamerama: šifra i ažuriranje;reel od fotki;AI telefon, snimač, kamera;za pripremu;SAVJET - Reel
 2026-11-20;petak;carousel;Kamera se gasi noću: napajanje i PoE;naslovna + foto_traka;AI kamera, PoE switch, adapter;za pripremu;ČESTI PROBLEMI
-2026-11-21;subota;slika;Primjer: vikendica pod nadzorom;foto_kutija;AI vikendica sa kamerama;za pripremu;LOKACIJA - AI primjer, ne Igorov rad
-2026-11-22;nedjelja;carousel;Sačuvaj: 8 pitanja za instalatera prije ugradnje;naslovna + tekst;jedna AI fotka;za pripremu;ZA ČUVANJE - checklista
+2026-11-21;subota;reel;Primjer: vikendica pod nadzorom;reel od fotki;AI vikendica sa kamerama (3-4 AI fotke);za pripremu;LOKACIJA - AI primjer, ne Igorov rad
+2026-11-22;nedjelja;carousel;Sačuvaj: koliko dana snima disk od 1, 2 i 4 TB;naslovna + tekst;jedna AI fotka diska;za pripremu;ZA ČUVANJE - tabela; brojke samo iz kalkulatora proizvođača (Hikvision/Dahua), navedi pretpostavke: broj kamera, MP, H.265, 24 h snimanje
 2026-11-23;ponedjeljak;carousel;Gdje postaviti kameru na ulazu da se vidi lice;naslovna + foto_traka;AI ulaz u kuću;za pripremu;EDUKACIJA
 2026-11-24;utorak;slika;Kamera daleko od kuće bez kopanja: bežični most;foto_kutija;AI bežični most na stubu;za pripremu;RJEŠENJE
 2026-11-25;srijeda;slika;Oprema koju ugrađujem: Hikvision DS-7608NXI-K2-8P;proizvod;oprema/hikvision/snimaci/DS-7608NXI-K2-8P;za pripremu;OPREMA - bez AI napomene
 2026-11-26;četvrtak;reel;Obavještenja na telefonu: da te ne budi svaka mačka;reel od fotki;AI telefon i dvorište;za pripremu;SAVJET - Reel
 2026-11-27;petak;carousel;Slika kasni ili se zamrzava na telefonu;naslovna + foto_traka;AI telefon, ruter;za pripremu;ČESTI PROBLEMI
-2026-11-28;subota;slika;Primjer: dvorište i garaža;foto_kutija;AI dvorište sa garažom;za pripremu;LOKACIJA - AI primjer, ne Igorov rad
+2026-11-28;subota;reel;Primjer: dvorište i garaža;reel od fotki;AI dvorište sa garažom (3-4 AI fotke);za pripremu;LOKACIJA - AI primjer, ne Igorov rad
 2026-11-29;nedjelja;carousel;Sačuvaj: kuća pod nadzorom prije odlaska na put;naslovna + tekst;AI telefon i kuća;za pripremu;ZA ČUVANJE - checklista
-2026-11-30;nedjelja;carousel;Sačuvaj: kamera bez interneta - kako ipak snima i kako je gledaš (SD kartica, snimač, TV preko HDMI);naslovna + tekst;jedna AI fotka;za pripremu;ZA ČUVANJE - tema iz FB grupa (često pitanje)
-2026-12-01;ponedjeljak;carousel;WiFi ili kablovska (PoE) kamera: šta izabrati za kuću;naslovna + foto_traka;AI fotke kamera na kući;za pripremu;EDUKACIJA - tema iz FB grupa
-2026-12-02;utorak;slika;Kamera za vikendicu bez struje i interneta: solarni panel i 4G;foto_kutija;AI vikendica sa solarnom kamerom (bez vidljivih kablova);za pripremu;RJEŠENJE - najkomentarisanije pitanje u grupama (20 komentara); tvrdnje samo provjerene
-2026-12-04;četvrtak;reel;Imaš stari sistem? Šta možeš zadržati kad mijenjaš kamere (kablovi, napajanje, snimač);reel od fotki;AI stari i novi snimač;za pripremu;SAVJET - Reel - tema iz FB grupa
-2026-12-05;petak;carousel;Kamera ne snima na disk: 4 najčešća razloga;naslovna + foto_traka;AI snimač i disk;za pripremu;ČESTI PROBLEMI
-kasnije;;reel;Kako izgleda pregled na telefonu;snimak ekrana;snimak ekrana aplikacije (DMSS ili Hik-Connect);čeka materijal;bez šifri i imena uređaja
-kasnije;;reel;Montaža kamere za 30 sekundi;video;Igorovi snimci montaže;čeka materijal;
-kasnije;;carousel;Paketi: 2, 4 i 8 kamera;naslovna + foto_traka;fotke kamera;čeka cijene;Igor treba dati cijene "od"
+2026-11-30;ponedjeljak;carousel;Kamera bez interneta: kako ipak snima i kako je gledaš (SD kartica, snimač, TV preko HDMI);naslovna + foto_traka;AI kamera, snimač, TV;za pripremu;EDUKACIJA - tema iz FB grupa (često pitanje)
+2026-12-01;utorak;slika;Kamera za vikendicu bez struje i interneta: solarni panel i 4G;foto_kutija;AI vikendica sa solarnom kamerom (bez vidljivih kablova);za pripremu;RJEŠENJE - najkomentarisanije pitanje u grupama; tvrdnje samo provjerene
+2026-12-02;srijeda;slika;Oprema koju ugrađujem: Dahua IPC-HFW2441S-S;proizvod;oprema/dahua/kamere/IPC-HFW2441S-S;za pripremu;OPREMA - bez AI napomene
+2026-12-03;četvrtak;reel;Imaš stari sistem? Šta možeš zadržati kad mijenjaš kamere (kablovi, napajanje, snimač);reel od fotki;AI stari i novi snimač;za pripremu;SAVJET - Reel - tema iz FB grupa
+2026-12-04;petak;carousel;Promijenio si ruter i kamere ne rade na telefonu: šta provjeriti;naslovna + foto_traka;AI ruter, snimač, telefon;za pripremu;ČESTI PROBLEMI
+2026-12-05;subota;reel;Primjer: mala firma sa parkingom;reel od fotki;AI firma sa parkingom i kamerama (3-4 AI fotke);za pripremu;LOKACIJA - AI primjer, ne Igorov rad
+2026-12-06;nedjelja;carousel;Sačuvaj: šta pripremiti prije dolaska instalatera (struja, ruter, mjesto za snimač);naslovna + tekst;jedna AI fotka;za pripremu;ZA ČUVANJE - checklista

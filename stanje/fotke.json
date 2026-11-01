@@ -33,8 +33,8 @@
     "objava": "2026-11-03_ugradni-ormar"
   },
   "materijal/ulaz/AI_ormar_monitor.jpg": {
-    "status": "slobodna",
-    "napomena": "planirano za 2026-11-10 Rješenje: ormar sa monitorom"
+    "status": "iskoristena",
+    "objava": "2026-11-10_ormar-monitor"
   },
   "materijal/ulaz/AI_kuca_kapija_garaza.jpg": {
     "status": "odbijena",
@@ -55,6 +55,11 @@
   "materijal/oprema/dahua/kamere/IPC-HDW2441T-S": {
     "status": "iskoristena",
     "objava": "2026-11-04_oprema-dahua-turret",
+    "napomena": "zvanične slike opreme smiju se ponovo koristiti tek za 2 mjeseca"
+  },
+  "materijal/oprema/hikvision/kamere/DS-2CD2047G2-LU": {
+    "status": "iskoristena",
+    "objava": "2026-11-11_oprema-hikvision-colorvu",
     "napomena": "zvanične slike opreme smiju se ponovo koristiti tek za 2 mjeseca"
   }
 }

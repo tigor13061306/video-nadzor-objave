@@ -1,0 +1,47 @@
+{
+ "tema": "Sačuvaj: održavanje video nadzora svakih 6 mjeseci",
+ "slajdovi": [
+  {
+   "sablon": "tekst",
+   "oznaka": "SAČUVAJ",
+   "naslov": "Održavanje video nadzora svakih 6 mjeseci",
+   "tekst": "Sistem koji niko ne provjerava izgleda ispravno sve dok ne zatreba snimak. Ovo je lista za 15 minuta.",
+   "poziv": "Prevuci za checklistu",
+   "poziv2": "i sačuvaj objavu kao podsjetnik."
+  },
+  {
+   "sablon": "tekst",
+   "oznaka": "1 · KAMERE",
+   "naslov": "Na kamerama",
+   "stavke": [
+    "Obriši staklo kamere mekom krpom: prašina kvari noćnu sliku.",
+    "Ukloni paučinu i granje ispred kamere.",
+    "Provjeri da nijedna kamera nije pomjerena.",
+    "Pogledaj noćni snimak svake kamere."
+   ]
+  },
+  {
+   "sablon": "tekst",
+   "oznaka": "2 · SNIMAČ",
+   "naslov": "Na snimaču",
+   "stavke": [
+    "Pusti snimak od prije nekoliko dana: snima li svaka kamera?",
+    "Provjeri da su datum i vrijeme tačni.",
+    "Pogledaj status diska u meniju snimača.",
+    "Očisti prašinu sa ventilacionih otvora."
+   ]
+  },
+  {
+   "sablon": "tekst",
+   "oznaka": "3 · PRISTUP",
+   "naslov": "Telefon i šifre",
+   "stavke": [
+    "Provjeri da pregled na telefonu radi i van kućne mreže.",
+    "Promijeni šifru ako je zna više ljudi nego treba.",
+    "Provjeri ima li novi firmware za snimač i kamere.",
+    "Upiši u kalendar sljedeći pregled za 6 mjeseci."
+   ]
+  }
+ ],
+ "opis": "Održavanje video nadzora: šta provjeriti svakih 6 mjeseci da kamere snime kad zatreba?\nSačuvaj objavu i stavi podsjetnik na telefonu za 6 mjeseci.\nČisto staklo kamere, provjeren snimak i tačno vrijeme na snimaču su razlika između snimka koji pomogne i onog koji ne pomogne.\nPošalji je i nekome ko ima kamere kod kuće.\n\nŽeliš da neko pregleda tvoj sistem? Napiši KAMERA u komentar i javiću ti se.\n\n#videonadzor #kamere #doboj #bih #sigurnakuca"
+}
