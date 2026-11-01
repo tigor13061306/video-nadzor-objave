@@ -1,0 +1,17 @@
+{
+  "tema": "3 stvari koje provjeriš prije kupovine kamera",
+  "slajdovi": [
+    {"sablon": "tekst", "oznaka": "SAVJET",
+     "naslov": "Kupuješ kamere za kuću? Prvo provjeri ove 3 stvari.",
+     "tekst": "Najviše grešaka nastane prije ugradnje: kupi se kamera, a tek onda se razmišlja šta treba da vidi i gdje ide snimak.",
+     "poziv": "Prevuci za listu", "poziv2": "3 pitanja prije kupovine."},
+    {"sablon": "tekst", "oznaka": "PRIJE KUPOVINE",
+     "naslov": "Provjeri ovo",
+     "stavke": [
+       "Šta kamera treba da vidi: lice na ulazu, auto na prilazu ili cijelo dvorište. Od toga zavisi objektiv i položaj.",
+       "Kako dolaze struja i mreža: žičana kamera preko jednog UTP kabla (PoE) radi stabilnije od WiFi kamere.",
+       "Gdje se čuva snimak: snimač sa diskom u kući, koliko dana snimka treba i pregled na telefonu.",
+       "Tek onda izaberi model i broj kamera."
+     ]}
+  ]
+}
