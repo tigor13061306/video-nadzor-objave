@@ -1,0 +1,36 @@
+{
+ "kadrovi": [
+  {
+   "foto": "../../02_materijal/odobreno/AI_kuca_4_kamere.jpg",
+   "fokus": [
+    0.78,
+    0.5
+   ],
+   "tekst": "Primjer: kuća sa 4 kamere",
+   "podtekst": "Ulaz, prilaz, garaža i uglovi kuće."
+  },
+  {
+   "foto": "../../02_materijal/odobreno/AI_kuca_ulaz_kamera.jpg",
+   "fokus": [
+    0.6,
+    0.5
+   ],
+   "tekst": "Kamera pored vrata",
+   "podtekst": "Na oko 2,7 m, okrenuta prema mjestu gdje stoji osoba."
+  },
+  {
+   "foto": "../../02_materijal/odobreno/AI_kamera_garaza_vrata.jpg",
+   "fokus": [
+    0.5,
+    0.5
+   ],
+   "tekst": "Garaža i prilaz",
+   "podtekst": "Kamera sa strane vrata vidi auto i ko prilazi."
+  }
+ ],
+ "trajanje_kadra": 3.5,
+ "kraj": {
+  "tekst": "Koliko kamera treba tvojoj kući?",
+  "podtekst": "Piši u DM za besplatnu procjenu"
+ }
+}

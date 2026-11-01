@@ -1,0 +1,36 @@
+{
+ "kadrovi": [
+  {
+   "foto": "../../02_materijal/odobreno/AI_radnja_spolja.jpg",
+   "fokus": [
+    0.55,
+    0.5
+   ],
+   "tekst": "Primjer: mala radnja sa kamerama",
+   "podtekst": "Ulaz, magacin i parking ispred radnje."
+  },
+  {
+   "foto": "../../02_materijal/odobreno/AI_radnja_magacin.jpg",
+   "fokus": [
+    0.5,
+    0.4
+   ],
+   "tekst": "Magacin",
+   "podtekst": "Dome kamera u uglu plafona vidi cijelu prostoriju."
+  },
+  {
+   "foto": "../../02_materijal/odobreno/AI_radnja_parking.jpg",
+   "fokus": [
+    0.4,
+    0.5
+   ],
+   "tekst": "Parking",
+   "podtekst": "Kamera na zidu radnje pokriva auta ispred ulaza."
+  }
+ ],
+ "trajanje_kadra": 3.5,
+ "kraj": {
+  "tekst": "Imaš radnju ili lokal?",
+  "podtekst": "Piši u DM za besplatnu procjenu"
+ }
+}

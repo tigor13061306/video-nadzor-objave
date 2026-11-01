@@ -1,0 +1,70 @@
+{
+ "tema": "Noću slika bijela ili mutna: 4 razloga i rješenja",
+ "slajdovi": [
+  {
+   "sablon": "naslovna",
+   "foto": "../../02_materijal/odobreno/AI_noc_bijela_slika.jpg",
+   "fokus": [
+    0.4,
+    0.5
+   ],
+   "oznaka": "Noću slika bijela?",
+   "naslov": "4 razloga za mutan noćni snimak i kako ih riješiti"
+  },
+  {
+   "sablon": "foto_traka",
+   "foto": "../../02_materijal/odobreno/AI_kamera_paucina.jpg",
+   "fokus": [
+    0.5,
+    0.38
+   ],
+   "broj": "01",
+   "naslov": "Paučina na kameri",
+   "tekst": "Noćno svjetlo kamere osvijetli paučinu i slika pobijeli. Očisti kameru i oko nje."
+  },
+  {
+   "sablon": "foto_traka",
+   "foto": "../../02_materijal/odobreno/AI_kamera_ispod_strehe.jpg",
+   "fokus": [
+    0.5,
+    0.4
+   ],
+   "broj": "02",
+   "naslov": "Streha preblizu",
+   "tekst": "Infracrveno svjetlo se odbija od strehe nazad u objektiv. Kamera ide malo niže."
+  },
+  {
+   "sablon": "foto_traka",
+   "foto": "../../02_materijal/odobreno/AI_kamera_prljavo_staklo.jpg",
+   "fokus": [
+    0.5,
+    0.45
+   ],
+   "broj": "03",
+   "naslov": "Prljavo staklo",
+   "tekst": "Prašina i kapi rasipaju svjetlo. Obriši staklo mekom krpom."
+  },
+  {
+   "sablon": "foto_traka",
+   "foto": "../../02_materijal/odobreno/AI_kamera_iza_prozora.jpg",
+   "fokus": [
+    0.5,
+    0.9
+   ],
+   "broj": "04",
+   "naslov": "Kamera iza prozora",
+   "tekst": "Noću se svjetlo odbije od stakla i vidiš samo odsjaj. Kamera mora biti napolju."
+  },
+  {
+   "sablon": "tekst",
+   "oznaka": "UKRATKO",
+   "naslov": "Čista kamera, napolju, dalje od strehe",
+   "stavke": [
+    "Jednom u 6 mjeseci obriši staklo i ukloni paučinu.",
+    "Ako je slika bijela samo noću, prvo traži odsjaj.",
+    "Ne pomaže? Problem može biti i podešavanje kamere."
+   ]
+  }
+ ],
+ "opis": "Kamera noću snima bijelu ili mutnu sliku? Najčešće nije kvar, nego jedan od ova 4 razloga.\nPaučina, streha preblizu, prljavo staklo ili kamera iza prozora: sve četiri stvari vraćaju noćno svjetlo kamere nazad u objektiv.\nVećinu riješiš krpom ili malim pomjeranjem kamere. Pošalji je i nekome ko ima kamere kod kuće.\n\nNoću i dalje ne vidiš ništa? Pošalji mi u DM broj telefona i mjesto, nazvaću te.\n\n#videonadzor #kamere #doboj #bih #nocnisnimak\n\n[Pri objavi uključi AI info]"
+}

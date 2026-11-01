@@ -10,15 +10,15 @@ datum;dan;format;tema;sablon;materijal;status;napomena
 2026-11-03;utorak;slika;Oprema koja se ne vidi: ugradni ormar u hodniku;foto_kutija;AI_ugradni_ormar;spremno;napravio kontrolor
 2026-11-04;srijeda;slika;Oprema koju ugrađujem: Dahua IPC-HDW2441T-S;proizvod;oprema/dahua/kamere/IPC-HDW2441T-S;spremno;OPREMA - bez AI napomene
 2026-11-05;četvrtak;carousel;3 stvari koje provjeriš prije kupovine kamera;naslovna + tekst;bez fotke;spremno;napravio kontrolor (tekst, bez fotke)
-2026-11-06;petak;carousel;Noću slika bijela ili mutna: 4 razloga i rješenja;naslovna + foto_traka;AI: paučina, IR odsjaj od strehe, prljavo staklo, kamera iza stakla;za pripremu;ČESTI PROBLEMI
-2026-11-07;subota;reel;Primjer: porodična kuća sa 4 kamere;reel od fotki;AI kuća sa vidljivim kamerama (3-4 AI fotke);za pripremu;LOKACIJA - AI primjer, ne Igorov rad
+2026-11-06;petak;carousel;Noću slika bijela ili mutna: 4 razloga i rješenja;naslovna + foto_traka;AI_kamera_ispod_strehe, AI_kamera_iza_prozora, AI_kamera_paucina, AI_kamera_prljavo_staklo, AI_noc_bijela_slika;spremno;ČESTI PROBLEMI; AI napomena
+2026-11-07;subota;reel;Primjer: porodična kuća sa 4 kamere;reel od fotki;AI_kamera_garaza_vrata, AI_kuca_4_kamere, AI_kuca_ulaz_kamera;spremno;LOKACIJA - AI primjer, ne Igorov rad; Reel
 2026-11-08;nedjelja;carousel;Sačuvaj: održavanje video nadzora svakih 6 mjeseci;naslovna + tekst;bez fotke (tekst);spremno;ZA ČUVANJE - checklista; napravljeno u oblaku 1.11. (računar nedostupan, bez Gemini-ja)
-2026-11-09;ponedjeljak;carousel;Kabl do kamere: UTP, PoE i zaštita od vlage;naslovna + foto_traka;AI kabl, kanalica, kutija za spoj;za pripremu;EDUKACIJA
+2026-11-09;ponedjeljak;carousel;Kabl do kamere: UTP, PoE i zaštita od vlage;naslovna + foto_traka;AI_kabl_utp_krimpanje, AI_kanalica_zid, AI_razvodna_kutija_kamera;spremno;EDUKACIJA; AI napomena
 2026-11-10;utorak;slika;Ormar sa monitorom za radnju i kancelariju;foto_kutija;AI_ormar_monitor;spremno;RJEŠENJE; AI napomena
 2026-11-11;srijeda;slika;Oprema koju ugrađujem: Hikvision DS-2CD2047G2-LU;proizvod;oprema/hikvision/kamere/DS-2CD2047G2-LU_naprijed;spremno;OPREMA - bez AI napomene
-2026-11-12;četvrtak;reel;Kamera za kuću ili za radnju: razlike;reel od fotki;AI kuća + AI radnja;za pripremu;SAVJET - Reel
-2026-11-13;petak;carousel;Izgubio si snimak? Najčešći razlozi;naslovna + foto_traka;AI snimač, disk, nestanak struje;za pripremu;ČESTI PROBLEMI
-2026-11-14;subota;reel;Primjer: mala radnja sa 4 kamere;reel od fotki;AI radnja sa kamerama (3-4 AI fotke);za pripremu;LOKACIJA - AI primjer, ne Igorov rad
+2026-11-12;četvrtak;reel;Kamera za kuću ili za radnju: razlike;reel od fotki;AI_kamera_fasada_dan, AI_kamera_ugao_kuce, AI_radnja_kasa_kamera;spremno;SAVJET - Reel
+2026-11-13;petak;carousel;Izgubio si snimak? Najčešći razlozi;naslovna + foto_traka;AI_disk_snimac, AI_snimac_ups, AI_telefon_reprodukcija;spremno;ČESTI PROBLEMI; AI napomena
+2026-11-14;subota;reel;Primjer: mala radnja sa kamerama (ulaz, magacin, parking);reel od fotki;AI_radnja_magacin, AI_radnja_parking, AI_radnja_spolja;spremno;LOKACIJA - AI primjer, ne Igorov rad; Reel
 2026-11-15;nedjelja;carousel;Sačuvaj: 8 pitanja za instalatera prije ugradnje;naslovna + tekst;bez fotke (tekst);spremno;ZA ČUVANJE - checklista; zamijenjeno sa 22.11. (tabela diska traži provjeren proračun)
 2026-11-16;ponedjeljak;carousel;Žičane ili WiFi kamere: kad koje;naslovna + foto_traka;AI žičana i WiFi kamera;za pripremu;EDUKACIJA
 2026-11-17;utorak;slika;Uredan rack: snimač, switch i patch panel na jednom mjestu;foto_kutija;nova AI fotka uskog 10-inčnog zidnog racka (AI_rack_ormar je odbijen);za pripremu;RJEŠENJE

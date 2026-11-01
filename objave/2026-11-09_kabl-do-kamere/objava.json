@@ -1,0 +1,46 @@
+{
+ "tema": "Kabl do kamere: UTP, PoE i zaštita od vlage",
+ "slajdovi": [
+  {
+   "sablon": "naslovna",
+   "foto": "../../02_materijal/odobreno/AI_razvodna_kutija_kamera.jpg",
+   "fokus": [
+    0.5,
+    0.3
+   ],
+   "oznaka": "Kabl do kamere",
+   "naslov": "UTP, PoE i zaštita od vlage: šta treba znati"
+  },
+  {
+   "sablon": "foto_traka",
+   "foto": "../../02_materijal/odobreno/AI_kabl_utp_krimpanje.jpg",
+   "fokus": [
+    0.5,
+    0.5
+   ],
+   "broj": "01",
+   "naslov": "Jedan UTP kabl",
+   "tekst": "Preko PoE-a isti kabl nosi sliku i struju, do 100 metara od snimača."
+  },
+  {
+   "sablon": "foto_traka",
+   "foto": "../../02_materijal/odobreno/AI_kanalica_zid.jpg",
+   "fokus": [
+    0.5,
+    0.35
+   ],
+   "broj": "02",
+   "naslov": "Kroz zid ili kanalicu",
+   "tekst": "Unutra kabl ide kroz zid ili urednu kanalicu, nikad slobodno po zidu."
+  },
+  {
+   "sablon": "tekst",
+   "oznaka": "03 · VLAGA",
+   "naslov": "Spoj mora ostati suh",
+   "tekst": "Spoj kabla i kamere ide u razvodnu kutiju ispod kamere, zaštićen od kiše. Vlaga u konektoru je čest razlog da kamera povremeno nestane sa slike.",
+   "poziv": "Napolju ide kabl za vanjsku upotrebu",
+   "poziv2": "sa zaštitom od sunca i vlage."
+  }
+ ],
+ "opis": "Koji kabl ide do kamere za video nadzor i kako ga zaštititi od vlage?\nJedan UTP kabl preko PoE-a nosi i sliku i struju, unutra ide kroz zid ili kanalicu, a spoj kod kamere ostaje u razvodnoj kutiji, suh.\nKad je kabl dobro položen, kamera godinama radi bez povremenog nestajanja slike.\n\nGradiš ili renoviraš kuću? Pošalji mi u DM broj telefona i mjesto, da na vrijeme isplaniramo kablove. Procjena je besplatna.\n\n#videonadzor #kamere #doboj #bih #ugradnjakamera\n\n[Pri objavi uključi AI info]"
+}

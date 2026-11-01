@@ -1,0 +1,36 @@
+{
+ "kadrovi": [
+  {
+   "foto": "../../02_materijal/odobreno/AI_kamera_fasada_dan.jpg",
+   "fokus": [
+    0.5,
+    0.4
+   ],
+   "tekst": "Kamera za kuću ili za radnju?",
+   "podtekst": "Nije ista kamera ni isti raspored."
+  },
+  {
+   "foto": "../../02_materijal/odobreno/AI_kamera_ugao_kuce.jpg",
+   "fokus": [
+    0.6,
+    0.4
+   ],
+   "tekst": "Kuća: ulaz, prilaz i dvorište",
+   "podtekst": "Bitna je noćna slika i obavještenje na telefon kad neko priđe."
+  },
+  {
+   "foto": "../../02_materijal/odobreno/AI_radnja_kasa_kamera.jpg",
+   "fokus": [
+    0.4,
+    0.4
+   ],
+   "tekst": "Radnja: kasa i vrata",
+   "podtekst": "Kamera iznad kase i jedna prema ulazu, da se vidi ko ulazi."
+  }
+ ],
+ "trajanje_kadra": 3.5,
+ "kraj": {
+  "tekst": "Kuća ili radnja?",
+  "podtekst": "Napiši KAMERA u komentar"
+ }
+}

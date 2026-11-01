@@ -1,0 +1,48 @@
+{
+ "tema": "Izgubio si snimak? Najčešći razlozi",
+ "slajdovi": [
+  {
+   "sablon": "naslovna",
+   "foto": "../../02_materijal/odobreno/AI_telefon_reprodukcija.jpg",
+   "fokus": [
+    0.5,
+    0.45
+   ],
+   "oznaka": "Nema snimka?",
+   "naslov": "Najčešći razlozi zašto snimak fali baš kad treba"
+  },
+  {
+   "sablon": "foto_traka",
+   "foto": "../../02_materijal/odobreno/AI_disk_snimac.jpg",
+   "fokus": [
+    0.5,
+    0.5
+   ],
+   "broj": "01",
+   "naslov": "Disk otkazao",
+   "tekst": "Snimač radi i prikazuje sliku, ali ne snima. Status diska provjeri u meniju."
+  },
+  {
+   "sablon": "foto_traka",
+   "foto": "../../02_materijal/odobreno/AI_snimac_ups.jpg",
+   "fokus": [
+    0.5,
+    0.3
+   ],
+   "broj": "02",
+   "naslov": "Nestala struja",
+   "tekst": "Bez UPS-a snimač se ugasi i ne snima dok struja ne dođe. UPS ga drži upaljenim."
+  },
+  {
+   "sablon": "tekst",
+   "oznaka": "03 · PODEŠAVANJA",
+   "naslov": "Još dva razloga",
+   "stavke": [
+    "Snima se samo na pokret, a detekcija je loše podešena, pa se događaj ne snimi.",
+    "Disk se napunio i snimač je prepisao najstarije snimke. Važan snimak sačuvaj odmah.",
+    "Zato jednom mjesečno pusti snimak od prije nekoliko dana."
+   ]
+  }
+ ],
+ "opis": "Kamera radi, a snimka nema baš kad zatreba? Ovo su najčešći razlozi kod video nadzora.\nDisk koji je otkazao, nestanak struje bez UPS-a, loše podešena detekcija pokreta ili snimak koji je prepisan jer se disk napunio.\nJednom mjesečno pusti snimak od prije nekoliko dana i znaćeš da sistem stvarno snima. Pošalji ovo nekome ko ima kamere.\n\nNe snima ti kako treba? Pošalji mi u DM broj telefona i mjesto, nazvaću te.\n\n#videonadzor #kamere #doboj #bih #sigurnakuca\n\n[Pri objavi uključi AI info]"
+}

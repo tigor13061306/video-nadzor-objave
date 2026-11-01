@@ -61,5 +61,99 @@
     "status": "iskoristena",
     "objava": "2026-11-11_oprema-hikvision-colorvu",
     "napomena": "zvanične slike opreme smiju se ponovo koristiti tek za 2 mjeseca"
+  },
+  "materijal/ulaz/AI_disk_snimac.jpg": {
+    "status": "iskoristena",
+    "objava": "2026-11-13_izgubljen-snimak"
+  },
+  "materijal/ulaz/AI_kabl_utp_krimpanje.jpg": {
+    "status": "iskoristena",
+    "objava": "2026-11-09_kabl-do-kamere"
+  },
+  "materijal/ulaz/AI_kamera_fasada_dan.jpg": {
+    "status": "iskoristena",
+    "objava": "2026-11-12_kuca-ili-radnja"
+  },
+  "materijal/ulaz/AI_kamera_garaza_vrata.jpg": {
+    "status": "iskoristena",
+    "objava": "2026-11-07_primjer-kuca-4-kamere"
+  },
+  "materijal/ulaz/AI_kamera_ispod_strehe.jpg": {
+    "status": "iskoristena",
+    "objava": "2026-11-06_noc-bijela-slika"
+  },
+  "materijal/ulaz/AI_kamera_iza_prozora.jpg": {
+    "status": "iskoristena",
+    "objava": "2026-11-06_noc-bijela-slika"
+  },
+  "materijal/ulaz/AI_kamera_paucina.jpg": {
+    "status": "iskoristena",
+    "objava": "2026-11-06_noc-bijela-slika"
+  },
+  "materijal/ulaz/AI_kamera_prljavo_staklo.jpg": {
+    "status": "iskoristena",
+    "objava": "2026-11-06_noc-bijela-slika"
+  },
+  "materijal/ulaz/AI_kamera_ugao_kuce.jpg": {
+    "status": "iskoristena",
+    "objava": "2026-11-12_kuca-ili-radnja"
+  },
+  "materijal/ulaz/AI_kanalica_zid.jpg": {
+    "status": "iskoristena",
+    "objava": "2026-11-09_kabl-do-kamere"
+  },
+  "materijal/ulaz/AI_kuca_4_kamere.jpg": {
+    "status": "iskoristena",
+    "objava": "2026-11-07_primjer-kuca-4-kamere"
+  },
+  "materijal/ulaz/AI_kuca_dvoriste_kamera.jpg": {
+    "status": "slobodna"
+  },
+  "materijal/ulaz/AI_kuca_kamera_prilaz.jpg": {
+    "status": "odbijena",
+    "razlog": "kamera iznad nadstrešnice ulaza"
+  },
+  "materijal/ulaz/AI_kuca_ulaz_kamera.jpg": {
+    "status": "iskoristena",
+    "objava": "2026-11-07_primjer-kuca-4-kamere"
+  },
+  "materijal/ulaz/AI_noc_bijela_slika.jpg": {
+    "status": "iskoristena",
+    "objava": "2026-11-06_noc-bijela-slika"
+  },
+  "materijal/ulaz/AI_radnja_kasa_kamera.jpg": {
+    "status": "iskoristena",
+    "objava": "2026-11-12_kuca-ili-radnja"
+  },
+  "materijal/ulaz/AI_radnja_magacin.jpg": {
+    "status": "iskoristena",
+    "objava": "2026-11-14_primjer-radnja"
+  },
+  "materijal/ulaz/AI_radnja_parking.jpg": {
+    "status": "iskoristena",
+    "objava": "2026-11-14_primjer-radnja"
+  },
+  "materijal/ulaz/AI_radnja_spolja.jpg": {
+    "status": "iskoristena",
+    "objava": "2026-11-14_primjer-radnja"
+  },
+  "materijal/ulaz/AI_radnja_unutra.jpg": {
+    "status": "odbijena",
+    "razlog": "natpis OTVORENO na vratima"
+  },
+  "materijal/ulaz/AI_razvodna_kutija_kamera.jpg": {
+    "status": "iskoristena",
+    "objava": "2026-11-09_kabl-do-kamere"
+  },
+  "materijal/ulaz/AI_snimac_ups.jpg": {
+    "status": "iskoristena",
+    "objava": "2026-11-13_izgubljen-snimak"
+  },
+  "materijal/ulaz/AI_telefon_obavjestenje.jpg": {
+    "status": "slobodna"
+  },
+  "materijal/ulaz/AI_telefon_reprodukcija.jpg": {
+    "status": "iskoristena",
+    "objava": "2026-11-13_izgubljen-snimak"
   }
 }
