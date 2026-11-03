@@ -34,6 +34,7 @@ Radi se kad je računar upaljen (zakazani zadatak "Instagram – dnevna objava i
   - Prnjavor, Tesanj, Doboj, Modrica OGLASI (8,6 hilj.)
   - Gradnja kuće savjeti i iskustva (9,5 hilj., privatna; tu samo korisni savjeti, bez oglasa)
   - Grupe prodavaca opreme za video nadzor se preskaču (to su konkurenti, ne kupci).
+- Oglasi i objave u grupama: bez "kablovi se ne vide" i sličnog (pravilo "Tekst bez nametanja" u identitet.md). U oglasnim grupama (kupovina/prodaja) ide oglas usluge bez linka, ne savjet sa linkom: savjeti sa linkom su uklonjeni u 4 grupe (31.10. do 3.11.).
 - Prije objave provjeri da je u gornjem desnom uglu Facebooka aktivan profil stranice (logo), ne Igorov.
 - Jedna objava dnevno, u jednoj grupi; ista grupa najviše jednom sedmično. Evidencija: `07_statistika/grupe.csv` (datum;grupa;tema;status).
 - Sadržaj: koristan savjet iz neke od naših objava (3 do 6 redova) + link https://www.instagram.com/video.nadzorkamere/ + "Za ugradnju ili savjet pošalji poruku sa brojem telefona i mjestom, javiću se." Bez cijena, bez "najbolji/najjeftiniji", bez područja rada.

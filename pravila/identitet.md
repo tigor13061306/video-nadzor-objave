@@ -9,6 +9,8 @@ Profil za ugradnju i servis video nadzora (Dahua i Hikvision) za kuće, radnje i
 
 **Realna montaža:** na svakoj fotki kamere kablovi se ne vide (idu kroz zid, kamera na razvodnoj kutiji), a kamera za ulaz nikad nije iznad vrata ni nadstrešnice nego pored vrata na 2,5 do 3 m. Slika koja to ne poštuje ne ide u objavu.
 
+**Tekst bez nametanja (Igor, 3.11.2026):** u opisima, na slajdovima i u oglasima po grupama ne pišemo "kablovi se ne vide", "skriveni kablovi" i slično. Ne insinuiramo nešto što kupci nisu ni pitali. O kablovima pišemo samo kad je tema objave baš kabl ili kad neko pita. Pravilo za fotke (realna montaža) ostaje.
+
 **Cilj svake objave:** da potencijalni kupac kontaktira Igora ili ostavi broj telefona da ga Igor nazove, pa Igor izlazi na teren i pravi ponudu. Zato svaki opis završava pozivom tipa "Pošalji mi u DM broj telefona i mjesto, nazvaću te. Procjena je besplatna." Bez cijena u objavama. Izlazak na teren se ne obećava kao besplatan: o njemu se Igor dogovara u pozivu, zavisno od posla.
 
 
