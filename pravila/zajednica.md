@@ -51,6 +51,7 @@ Radi se kad je računar upaljen (zakazani zadatak "Instagram – dnevna objava i
 - Igoru u poruci dnevnog zadatka: broj novih upita i linkovi (najviše 5), da im se javi sam.
 
 **B) Posmatranje grupa o video nadzoru (za sada samo posmatranje, bez učlanjenja i objava):**
-- Grupe: VIDEO NADZOR - ALARMI PRODAJA (facebook.com/groups/152468741528682), Alarm i Video Nadzor (facebook.com/groups/711311573066881), cctv ip ptz wifi video kamera nadzor security (facebook.com/groups/624700464810744), Alarmi Kamere Gladijator (facebook.com/groups/907082759977732), plus lokalni majstori koji se pojave u pretrazi (npr. AVUR Technik Teslić).
+- Grupe u kojima objavljuje skoro samo administrator, za svoju reklamu (npr. "Alarm i Video Nadzor", admin Edin Kutić), se preskaču: ne posmatraju se, ne upisuju u statistiku i ne koriste za objave ili traženje kupaca (Igor, 3.11.2026).
+- Grupe: VIDEO NADZOR - ALARMI PRODAJA (facebook.com/groups/152468741528682), cctv ip ptz wifi video kamera nadzor security (facebook.com/groups/624700464810744), Alarmi Kamere Gladijator (facebook.com/groups/907082759977732), plus lokalni majstori koji se pojave u pretrazi (npr. AVUR Technik Teslić).
 - Svaki dan pregledaj nove objave (zadnja 24 h) i one sa najviše komentara; upiši u `07_statistika/grupe_teme.csv` (datum;grupa;link;tema;vrsta;komentara;reakcija). Vrsta: završen posao / pitanje / prodaja opreme / traži majstora / ostalo.
 - Prve nedjelje u mjesecu nedjeljna priprema sabere `grupe_teme.csv` i `kupci.csv` u `07_statistika/statistika.csv` (koje teme i vrste objava imaju najviše komentara, koliko upita i odakle) i po tome dopuni plan objava.
