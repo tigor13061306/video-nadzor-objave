@@ -1,0 +1,7 @@
+Kamera se gasi noću, a danju radi normalno? Kod video nadzora razlog je najčešće napajanje.
+Noću se pale IR diode ili bijelo svjetlo i kamera troši više. Slab adapter, preopterećen PoE ili loš spoj tada popuštaju.
+Pošalji ovo nekome kome kamera noću nestaje sa ekrana.
+
+Imaš ovaj problem? Pošalji mi u DM broj telefona i mjesto, nazvaću te.
+
+#videonadzor #kamere #doboj #bih #nocnisnimak

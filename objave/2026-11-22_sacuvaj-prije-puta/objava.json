@@ -1,0 +1,44 @@
+{
+ "tema": "Sačuvaj: kuća pod nadzorom prije odlaska na put",
+ "slajdovi": [
+  {
+   "sablon": "tekst",
+   "oznaka": "SAČUVAJ",
+   "naslov": "Prije puta provjeri kamere",
+   "tekst": "Deset minuta prije polaska, da na putu možeš mirno pogledati kuću na telefonu.",
+   "poziv": "Prevuci za checklistu",
+   "poziv2": "i sačuvaj objavu za put."
+  },
+  {
+   "sablon": "tekst",
+   "oznaka": "1 · SNIMANJE",
+   "naslov": "Da li snima?",
+   "stavke": [
+    "Pusti snimak od juče na svakoj kameri.",
+    "Pogledaj status diska u meniju snimača.",
+    "Provjeri da su datum i vrijeme tačni."
+   ]
+  },
+  {
+   "sablon": "tekst",
+   "oznaka": "2 · TELEFON",
+   "naslov": "Radi li na telefonu?",
+   "stavke": [
+    "Isključi WiFi i otvori kamere preko mobilnih podataka.",
+    "Uključi obavještenja za kamere na ulazu.",
+    "Provjeri da znaš šifru aplikacije."
+   ]
+  },
+  {
+   "sablon": "tekst",
+   "oznaka": "3 · KUĆA",
+   "naslov": "Prije polaska",
+   "stavke": [
+    "Ne gasi ruter ni osigurač snimača.",
+    "Obriši staklo kamere na ulazu.",
+    "Javi komšiji da si na putu, da zna ko smije doći."
+   ]
+  }
+ ],
+ "opis": "Ideš na put? Provjeri video nadzor prije nego zaključaš kuću.\nSačuvaj objavu i prođi listu prije polaska. Treba ti desetak minuta.\nNajvažnije je da snimak postoji i da kamere otvaraš preko mobilnih podataka, ne samo na kućnom WiFi-ju.\nPošalji je i nekome ko uskoro putuje.\n\nNešto ne radi kako treba? Napiši KAMERA u komentar i javiću ti se.\n\n#videonadzor #kamere #doboj #bih #sigurnakuca"
+}

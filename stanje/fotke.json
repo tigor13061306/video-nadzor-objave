@@ -158,5 +158,10 @@
   },
   "materijal/ulaz/AI_snimac_ormaric.jpg": {
     "status": "slobodna"
+  },
+  "materijal/oprema/dahua/snimaci/NVR2108HS-8P-I2": {
+    "status": "iskoristena",
+    "objava": "2026-11-18_oprema-dahua-nvr",
+    "napomena": "zvanične slike opreme smiju se ponovo koristiti tek za 2 mjeseca"
   }
 }

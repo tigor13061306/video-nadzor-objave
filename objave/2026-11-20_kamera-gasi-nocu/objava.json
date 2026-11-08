@@ -1,0 +1,44 @@
+{
+ "tema": "Kamera se gasi noću: napajanje i PoE",
+ "slajdovi": [
+  {
+   "sablon": "tekst",
+   "oznaka": "ČESTI PROBLEMI",
+   "naslov": "Kamera se gasi noću?",
+   "tekst": "Danju radi, a čim padne mrak slika nestane ili se kamera restartuje. Najčešće je razlog napajanje.",
+   "poziv": "Prevuci za rješenja",
+   "poziv2": "i provjeri svoju kameru."
+  },
+  {
+   "sablon": "tekst",
+   "oznaka": "1 · ZAŠTO NOĆU",
+   "naslov": "Noću troši više",
+   "stavke": [
+    "Noću se pale IR diode ili bijelo svjetlo.",
+    "Kamera tada traži više struje nego danju.",
+    "Napajanje koje je danju dovoljno noću može biti preslabo."
+   ]
+  },
+  {
+   "sablon": "tekst",
+   "oznaka": "2 · ADAPTER",
+   "naslov": "Slab adapter",
+   "stavke": [
+    "Na adapteru pročitaj napon i struju.",
+    "Uporedi ih sa podacima kamere.",
+    "Stari adapter zamijeni novim, odgovarajućim."
+   ]
+  },
+  {
+   "sablon": "tekst",
+   "oznaka": "3 · POE",
+   "naslov": "Preopterećen PoE",
+   "stavke": [
+    "Saberi potrošnju svih kamera na switchu ili snimaču.",
+    "Uporedi je sa ukupnom PoE snagom uređaja.",
+    "Provjeri kabl i konektore: loš spoj smeta baš kad potrošnja poraste."
+   ]
+  }
+ ],
+ "opis": "Kamera se gasi noću, a danju radi normalno? Kod video nadzora razlog je najčešće napajanje.\nNoću se pale IR diode ili bijelo svjetlo i kamera troši više. Slab adapter, preopterećen PoE ili loš spoj tada popuštaju.\nPošalji ovo nekome kome kamera noću nestaje sa ekrana.\n\nImaš ovaj problem? Pošalji mi u DM broj telefona i mjesto, nazvaću te.\n\n#videonadzor #kamere #doboj #bih #nocnisnimak"
+}
