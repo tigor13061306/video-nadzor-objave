@@ -115,5 +115,14 @@
     "facebook": "ok 1364094053457507_122109306513520885",
     "vrijeme": "2026-11-08T17:47+01:00",
     "naknadno": false
+  },
+  "2026-11-09_kabl-do-kamere": {
+    "id": "18043799234841709",
+    "link": "https://www.instagram.com/p/DfhyzXAkWPL/",
+    "vrsta": "carousel",
+    "story": "story objava: {'message': 'The requested resource does not exist', 'type': 'OAuthException', 'code': 24, 'error_subcode': 2207006, 'is_transient': False, 'error_user_title': 'Media Not Found', 'error_user_msg': 'The media with 18,157,289,908,505,943 cannot be found.', 'fbtrace_id': 'AG_XqEwDedLANqYX6089-ur'}",
+    "facebook": "ok 1364094053457507_122109637233520885",
+    "vrijeme": "2026-11-09T17:47+01:00",
+    "naknadno": false
   }
 }
