@@ -32,11 +32,18 @@ Radi se kad je računar upaljen (zakazani zadatak "Instagram – dnevna objava i
   - MAJSTORI I MAJSTORSKE USLUGE (12 hilj.)
   - Tesanj, Doboj, Modrica, Prnjavor, B.Luka OGLASI (10 hilj.)
   - Prnjavor, Tesanj, Doboj, Modrica OGLASI (8,6 hilj.)
-  - Gradnja kuće savjeti i iskustva (9,5 hilj., privatna; tu samo korisni savjeti, bez oglasa)
+  - Gradnja kuće savjeti i iskustva (9,5 hilj., privatna) - ne prima stranice (4.11.2026)
+  - Regija Doboj oglasi (12 hilj., privatna, facebook.com/groups/2390646654330477; nađena 4.11.2026, učlanjenje poslano)
+  - Udruženje pčelara LIPA Doboj Jug (258 članova, facebook.com/groups/222300458233221; nađena 4.11.2026, grupa za signale: samo savjeti; primljeno 6.11.2026)
+  - TESLIĆ I OKOLINA- RAZNI OGLASI(nekretnine,namještaj,posao...) (15 hilj., javna, facebook.com/groups/1042755206884573; nađena 6.11.2026, lokalni oglasi)
+  - Oglasi Teslić 🛒 (12 hilj.), TESLIC Kupi Prodaj Mijenja OGLASI (11 hilj.), MALI OGLAS TESLIC (10 hilj.), Prodaj~Kupi Teslić i okolina. (9,7 hilj.), Oglasi Teslic (9,3 hilj.) - nađene 6.11.2026 pretragom, lokalni oglasi
+  - TESLIĆ I OKOLINA- RAZNI OGLASI: primljeno 8.11.2026; MALI OGLAS TESLIC (facebook.com/groups/493781870831791): primljeno 8.11.2026
+  - Oglasi Teslić 🛒 (facebook.com/groups/293437411520518): pravila zabranjuju reklamiranje bez dogovora sa adminom - preskače se (8.11.2026)
+  - Još neprovjerene: TESLIC Kupi Prodaj Mijenja OGLASI (facebook.com/groups/496312810494236), Oglasi Teslic (facebook.com/groups/1595821597368110), Kupi prodaj zamijeni Jelah Tešanj Doboj Teslić Usora (18 hilj., facebook.com/groups/394025061412712)
   - Grupe prodavaca opreme za video nadzor se preskaču (to su konkurenti, ne kupci).
 - Oglasi i objave u grupama: bez "kablovi se ne vide" i sličnog (pravilo "Tekst bez nametanja" u identitet.md). U oglasnim grupama (kupovina/prodaja) ide oglas usluge bez linka, ne savjet sa linkom: savjeti sa linkom su uklonjeni u 4 grupe (31.10. do 3.11.).
 - Prije objave provjeri da je u gornjem desnom uglu Facebooka aktivan profil stranice (logo), ne Igorov.
-- Jedna objava dnevno, u jednoj grupi; ista grupa najviše jednom sedmično. Evidencija: `07_statistika/grupe.csv` (datum;grupa;tema;status).
+- **Od 10.11.2026: jedna objava SEDMIČNO, srijedom**, u jednoj grupi (ista grupa najviše jednom u 3 sedmice). Razlog: od 31.10. do 8.11. admini su uklonili 5 od desetak oglasa, a ostali nisu dobili nijedan komentar. Ostalim danima nema objava u grupama, samo odgovori na komentare, učlanjenje i traženje kupaca. Evidencija: `07_statistika/grupe.csv` (datum;grupa;tema;status).
 - Sadržaj: koristan savjet iz neke od naših objava (3 do 6 redova) + link https://www.instagram.com/video.nadzorkamere/ + "Za ugradnju ili savjet pošalji poruku sa brojem telefona i mjestom, javiću se." Bez cijena, bez "najbolji/najjeftiniji", bez područja rada.
 - Pretraga grupa: ako neko traži majstora za kamere ili pita o video nadzoru, odgovori kratkim stručnim komentarom kao stranica i ponudi "Piši u poruke". Najviše 3 takva odgovora dnevno. Ne komentariši ništa drugo.
 - Dan poslije svake objave u grupi pogledaj komentare na njoj i odgovori kratko i stručno kao stranica; objava ne smije ostati bez odgovora. Prvo korisno, pa tek onda poziv na kontakt.
@@ -47,6 +54,7 @@ Radi se kad je računar upaljen (zakazani zadatak "Instagram – dnevna objava i
 **A) Traženje potencijalnih kupaca (svaki dan, kao stranica, samo čitanje):**
 - U svakoj grupi u kojoj je stranica članica, i u Facebook pretrazi objava (https://www.facebook.com/search/posts/?q=..., filter "Nedavne objave"), traži objave iz zadnjih 7 dana sa riječima: kamere, video nadzor, kamera, snimač, alarm, majstor za kamere, ugradnja kamera, "treba mi kamera", "preporučite majstora". Upiti iz Doboja i okoline (Teslić, Tešanj, Maglaj, Modriča, Derventa, Gračanica, Stanari, Prnjavor) imaju prednost.
 - Svaki pravi upit (neko traži ugradnju, popravku, savjet za kupovinu) upiši u `07_statistika/kupci.csv` (datum;grupa;link objave;šta traži;mjesto;status). Isti link se ne upisuje dvaput.
+- Svaki dan kad je pretraga urađena, u repozitorij `video-nadzor-poslovi` pošalji `02_nalazi/GGGG-MM-DD_fb_grupe.json`, i kad nema nalaza (tada sadržaj `[]`), da zadatak "Poslovi – pretraga" vidi da je pretraga urađena.
 - U grupama gdje je stranica članica može kratko i stručno odgovoriti kao stranica (najviše 3 dnevno, "Piši u poruke"), status "odgovoreno". Gdje stranica nije članica: ništa ne piše, status "za Igora".
 - Igoru u poruci dnevnog zadatka: broj novih upita i linkovi (najviše 5), da im se javi sam.
 

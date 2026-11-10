@@ -151,13 +151,24 @@ def story(api, ime, prva):
     url = RAW + "objave/" + ime + "/story.jpg"
     if not cekaj_javno(url):
         return "story.jpg nije javno dostupan"
-    c = api.post(IG + "/media", image_url=url, media_type="STORIES")
-    if "id" not in c:
-        return "story kontejner: %s" % c.get("error", c)
-    if api.cekaj(c["id"], 120) != "FINISHED":
-        return "story obrada nije završena"
-    p = api.post(IG + "/media_publish", creation_id=c["id"])
-    return "ok" if "id" in p else "story objava: %s" % p.get("error", p)
+    # Dva pokušaja: 9.11.2026 Story je pao sa "Media Not Found" (kontejner još nije bio spreman za objavu).
+    greska = ""
+    for pokusaj in range(2):
+        if pokusaj:
+            time.sleep(20)
+        c = api.post(IG + "/media", image_url=url, media_type="STORIES")
+        if "id" not in c:
+            greska = "story kontejner: %s" % c.get("error", c)
+            continue
+        if api.cekaj(c["id"], 120) != "FINISHED":
+            greska = "story obrada nije završena"
+            continue
+        time.sleep(5)
+        p = api.post(IG + "/media_publish", creation_id=c["id"])
+        if "id" in p:
+            return "ok" if not pokusaj else "ok (drugi pokušaj)"
+        greska = "story objava: %s" % p.get("error", p)
+    return greska
 
 
 FB_V = "https://graph.facebook.com/v23.0/"

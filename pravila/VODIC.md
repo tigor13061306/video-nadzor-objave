@@ -19,23 +19,22 @@ Ovaj folder je centar profila. Sve objave, materijal, plan i statistika su ovdje
 
 Svaka objava ima svoj folder, nazvan `GGGG-MM-DD_tema` (npr. `2026-10-27_5-gresaka`). Unutra su slike po redu (`01.png`, `02.png`…), `opis.txt` sa tekstom za ispod objave i `objava.json` iz kojeg alat pravi slike.
 
-## Sedmični ciklus
+## Sedmični ciklus (stanje od 10.11.2026)
 
-Sve radi samo, preko dva zakazana zadatka. Računar mora biti upaljen, a Claude desktop aplikacija otvorena u tim terminima.
+Objavljivanje ne zavisi od računara. Računar treba samo za nove fotke (Gemini) i za Facebook grupe.
 
-**Nedjelja uveče (zakazani zadatak "Instagram – nedjeljna priprema"):**
-1. Pogleda `03_plan/plan_objava.csv` i novi materijal u `02_materijal/ulaz`.
-2. Napravi 7 objava za narednu sedmicu (ponedjeljak do nedjelje) u `05_spremno`, po sedmičnom rasporedu tema ispod, i postavi njihove slike na GitHub. Četvrtkom je Reel (`alati/napravi_reel.py`, uputstvo u `alati/objavljivanje_api.md`).
-3. Obnovi Instagram ključ i, prve nedjelje u mjesecu, upiše statistiku.
-4. Pošalje ti kratak izvještaj: šta ide te sedmice i šta fali.
+| Kad | Ko | Šta radi |
+| --- | --- | --- |
+| Svaki dan od 17:43 | GitHub Actions (`objava.yml`) | Objavi današnju objavu na Instagram (sa Storyjem) i na Facebook stranicu; propuštene nadoknadi do 7 dana unazad. Više pokušaja do 21:30. |
+| Svaki dan 17:45 | Zakazani zadatak "Instagram – kontrolor" (oblak) | Provjeri da je objava izašla i pokrene je ako nije; provjeri spremne objave za 7 dana; ako zaliha pokriva manje od 4 dana, napravi objave od slobodnih fotki ili tekstualne. |
+| Svaki dan 18:21 | "Instagram – dnevna objava i zajednica" (računar) | Rezerva za objavu, sinhronizacija foldera sa GitHubom, komentari, Facebook grupe (vidi `alati/zajednica.md`). Kad je računar ugašen, preskače se. |
+| Nedjelja 18:32 | "Instagram – nedjeljna priprema" (računar) | Nove fotke preko Gemini-ja i objave za naredne dvije sedmice, postavljene na GitHub; obnova ključa; prve nedjelje u mjesecu statistika. |
+| Ponedjeljak 9:05 | GitHub (`provjera.yml`) | Provjera ključeva; ako nešto ne valja, mail. |
+| 1. i 15. u mjesecu | GitHub (`kljuc.yml`) | Obnova Instagram ključa u GitHub Secrets. |
 
-**Svaki dan u 17:43 (zakazani zadatak "Instagram – dnevna objava"):**
-1. Objavi objavu za taj dan preko Instagram API-ja (`alati/objavljivanje_api.md`), a odmah zatim i Story "Nova objava" (`alati/napravi_story.py`).
-2. Folder objave premjesti u `06_objavljeno` i upiše link u plan.
+Ako želiš izmijeniti objavu prije nego izađe, napiši šta u `napomene.txt` u njenom folderu u `05_spremno` ili javi Claudeu u razgovoru. Ako objavu želiš zaustaviti, javi Claudeu (mora se skloniti i sa GitHuba, iz `objave/`).
 
-Ako želiš izmijeniti objavu prije nego izađe, napiši šta u `napomene.txt` u njenom folderu u `05_spremno` ili javi Claudeu u razgovoru. Ako objavu želiš zaustaviti, premjesti njen folder u `04_u_pripremi`.
-
-**Svaki dan (Igor, 5 minuta):** odgovori na poruke i komentare. Gotovi odgovori su u `01_identitet/odgovori.md`.
+**Svaki dan (Igor, 5 minuta):** odgovori na poruke. Gotovi odgovori su u `01_identitet/odgovori.md`.
 
 **Prva nedjelja u mjesecu (Claude):** upiše brojke prošlog mjeseca u `07_statistika/statistika.csv`, uporedi šta je radilo, i predloži plan za naredni mjesec.
 
@@ -43,11 +42,11 @@ Ako želiš izmijeniti objavu prije nego izađe, napiši šta u `napomene.txt` u
 
 | Dan | Tema |
 | --- | --- |
-| Ponedjeljak | Edukacija: kako se pravilno postavlja video nadzor (carousel) |
+| Ponedjeljak | Edukacija: kako se pravilno postavlja video nadzor, kao Reel (3 fotke, sa muzikom) |
 | Utorak | Rješenja: kako se nešto uradi uredno ili pametno (ormar, rack, bežični most…) |
 | Srijeda | Oprema koju ugrađujem: jedan model, Hikvision i Dahua naizmjenično (šablon proizvod, bez AI napomene) |
 | Četvrtak | Savjet, kao Reel |
-| Petak | Česti problemi i kako se rješavaju |
+| Petak | Česti problemi i kako se rješavaju, kao Reel (3 fotke, sa muzikom) |
 | Subota | Lokacije sa kamerama, kao Reel (3 do 4 fotke, sa muzikom). Dok Igor ne počne snimati prave lokacije, ide AI fotografija sa naslovom "Primjer: …" i AI napomenom, nikad kao Igorov urađeni posao |
 | Nedjelja | Objave za čuvanje: checkliste, tabele i podsjetnici koje ljudi sačuvaju ("Sačuvaj: …"), tekst na tamnoj pozadini + jedna fotka; poziv "Sačuvaj objavu" u opisu |
 
@@ -62,7 +61,7 @@ Instagram danas nove ljude dovodi preko pretrage po ključnim riječima, Reelsa 
 - **Prvi red opisa** (do ~125 znakova, prije "više"): pitanje ili tvrdnja koja zaintrigira, sa riječima koje ljudi stvarno ukucaju u pretragu: "video nadzor", "kamere za kuću", "kamera za ulaz", "ugradnja kamera", "snimač", "kamera ne radi". Primjer: "Koliko megapiksela treba kameri za video nadzor?" Bez nabrajanja ključnih riječi jedne za drugom.
 - **alt.txt** u svakom folderu objave sa slikama: jedna rečenica šta je stvarno na slici, sa ključnom riječi (npr. "Ugradni ormar u hodniku sa snimačem za video nadzor i UPS uređajem."). Mora odgovarati slici. GitHub ga šalje Instagramu kao alternativni tekst.
 - **Dijeljenje:** prije svake objave odgovori sebi "ko će ovo poslati kome i zašto". Kod korisnih objava (checkliste, savjeti, česti problemi) prije poziva na kontakt ide jedan red tipa "Pošalji ovo nekome ko gradi kuću." ili "Pošalji je i nekome ko ima kamere kod kuće." Ne na svakoj objavi, samo kad sadržaj to zaslužuje.
-- **Reels su glavni put do novih ljudi:** četvrtak i subota idu kao Reel sa muzikom (`alati/napravi_reel.py`). Prve 1 do 3 sekunde: tekst na ekranu koji odmah kaže o čemu je riječ, sa ključnom riječi; mora se razumjeti bez zvuka. Bez tuđih vodenih žigova.
+- **Reels su glavni put do novih ljudi:** u oktobru je jedan Reel imao doseg 131, a slike i carouseli 1 do 3. Zato od 10.11.2026 ponedjeljak, četvrtak, petak i subota idu kao Reel sa muzikom (`alati/napravi_reel.py`), 3 fotke po Reelu. Slika ostaje utorkom, oprema srijedom (zvanične slike), a carousel samo nedjeljom ("Sačuvaj"). Gemini tako treba oko 13 do 15 fotki sedmično, u okviru limita od 20. Prve 1 do 3 sekunde: tekst na ekranu koji odmah kaže o čemu je riječ, sa ključnom riječi; mora se razumjeti bez zvuka. Bez tuđih vodenih žigova.
 - **Carousel:** naslovni slajd obećava šta se dobije prevlačenjem ("Prevuci →"), jedan slajd jedna misao, zadnji slajd sažetak i poziv.
 - **Poziv "Napiši KAMERA u komentar i javiću ti se."** na jednoj do dvije objave sedmično umjesto poziva na DM (pravila u `alati/zajednica.md`). Komentari podižu doseg, a Igor odmah dobija mail.
 - **Story** "Nova objava" na dnu ima poziv "Imaš pitanje o kamerama? Odgovori na ovu priču." Odgovori stižu Igoru u DM.
@@ -80,16 +79,10 @@ Objave na Instagram ne zavise od računara: GitHub Actions u repozitoriju `video
 
 ## Propuštena objava
 
-Ako u 17:43 računar nije bio upaljen ili Claude aplikacija nije bila otvorena, objava tog dana ne izlazi i ostaje u `05_spremno` sa svojim datumom. Sistem tada zadatak "Instagram – dnevna objava" sam pauzira.
+GitHub sam nadoknadi propuštene objave do 7 dana unazad, a kontrolor u 17:45 provjeri i pokrene ga ako treba. Igor ne mora ništa raditi.
 
-- Dnevni zadatak propuštene objave ne objavljuje sam. Samo ih navede u poruci Igoru.
-- Kad Igor upali računar i napiše Claudeu **"objavi propuštenu objavu"**, Claude:
-  1. nađe sve foldere u `05_spremno` sa datumom prije današnjeg (i koji nisu "objavljeno" u planu),
-  2. objavi ih redom od najstarije, svaku sa Storyjem, tačno po `alati/objavljivanje_api.md`,
-  3. premjesti ih u `06_objavljeno`, fotke u `02_materijal/iskoristeno`, upiše link u plan uz napomenu "objavljeno naknadno",
-  4. provjeri da su zakazani zadaci "Instagram – dnevna objava" i "Instagram – nedjeljna priprema" uključeni i uključi ih ako su pauzirani,
-  5. javi Igoru šta je objavljeno i linkove.
-- Ako je današnja objava još u `05_spremno`, a 17:43 još nije prošlo, nju ne dira: izaći će redovno.
+- Ako objava ni tada ne izađe, kontrolor javi grešku. Tada Igor može napisati Claudeu **"objavi propuštenu objavu"**: Claude provjeri `stanje/objavljeno.json` na GitHubu, pokrene objavljivanje promjenom `stanje/pokreni.txt`, a tek ako ni to ne prođe, objavi sam po `alati/objavljivanje_api.md` (prije toga provjeri zadnjih 10 objava da ista nije već izašla).
+- Zakazani zadaci na računaru se sami pauziraju kad je računar ugašen u terminu; kontrolor ih svaki dan ponovo uključi.
 
 ## Pravila prije svake objave
 

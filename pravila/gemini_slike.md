@@ -54,3 +54,12 @@ window.LOG = [];
   window.LOG.push(await window.push('materijal/ulaz/AI_<ime>.jpg', await window.shrink(d.b64, d.mime)));
 } catch (e) { window.LOG.push('ERR ' + e.message); } })();
 ```
+
+## Kad Gemini ne radi (dodano 10.11.2026)
+
+8.11.2026 Gemini u nedjeljnoj pripremi nije radio, a razlog nije zapisan. Od sada:
+
+1. Prije Gemini-ja pogledaj `02_materijal/ulaz`: Igorove fotke iz `prompti/serija_3_novembar.md` imaju prednost (pregledaj ih po pravilima gore pa premjesti u `odobreno`).
+2. Ugrađeni preglednik: ako stranica nije otvorena, otvori je (`preview_start` na https://generativelanguage.googleapis.com/). Prvo kratka provjera bez troška: `GET https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-image` sa zaglavljem `x-goog-api-key`. Ako model ne postoji (404), probaj `gemini-2.5-flash-image`.
+3. Ako ne radi, tačnu grešku (status i poruku, BEZ ključa) upiši u `03_plan/greske.log` sa datumom i navedi je Igoru u izvještaju: preglednik nedostupan, ključ odbijen (400/403), budžet ili kvota (429), ili nešto drugo.
+4. Objave bez fotke onda napravi od slobodnih fotki iz `odobreno` ili kao objavu istog tipa šablonom `tekst`, ali nikad dvije tekstualne zaredom. U poruci Igoru napiši koje fotke iz `serija_3_novembar.md` fale.
