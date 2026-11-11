@@ -39,7 +39,8 @@ Radi se kad je računar upaljen (zakazani zadatak "Instagram – dnevna objava i
   - Oglasi Teslić 🛒 (12 hilj.), TESLIC Kupi Prodaj Mijenja OGLASI (11 hilj.), MALI OGLAS TESLIC (10 hilj.), Prodaj~Kupi Teslić i okolina. (9,7 hilj.), Oglasi Teslic (9,3 hilj.) - nađene 6.11.2026 pretragom, lokalni oglasi
   - TESLIĆ I OKOLINA- RAZNI OGLASI: primljeno 8.11.2026; MALI OGLAS TESLIC (facebook.com/groups/493781870831791): primljeno 8.11.2026
   - Oglasi Teslić 🛒 (facebook.com/groups/293437411520518): pravila zabranjuju reklamiranje bez dogovora sa adminom - preskače se (8.11.2026)
-  - Još neprovjerene: TESLIC Kupi Prodaj Mijenja OGLASI (facebook.com/groups/496312810494236), Oglasi Teslic (facebook.com/groups/1595821597368110), Kupi prodaj zamijeni Jelah Tešanj Doboj Teslić Usora (18 hilj., facebook.com/groups/394025061412712)
+  - TESLIC Kupi Prodaj Mijenja OGLASI (facebook.com/groups/496312810494236) i Kupi prodaj zamijeni Jelah Tešanj Doboj Teslić Usora (19 hilj., facebook.com/groups/394025061412712): primljeno 11.11.2026; Regija Doboj oglasi: primljeno 10.11.2026
+  - Još neprovjerene: Oglasi Teslic (facebook.com/groups/1595821597368110), Tražim / nudim posao - uslugu: DOBOJ - MODRIČA - ŠAMAC (nađena 11.11.2026 u pretrazi, lokalne usluge)
   - Grupe prodavaca opreme za video nadzor se preskaču (to su konkurenti, ne kupci).
 - Oglasi i objave u grupama: bez "kablovi se ne vide" i sličnog (pravilo "Tekst bez nametanja" u identitet.md). U oglasnim grupama (kupovina/prodaja) ide oglas usluge bez linka, ne savjet sa linkom: savjeti sa linkom su uklonjeni u 4 grupe (31.10. do 3.11.).
 - Prije objave provjeri da je u gornjem desnom uglu Facebooka aktivan profil stranice (logo), ne Igorov.
