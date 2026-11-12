@@ -107,7 +107,8 @@
     "objava": "2026-11-07_primjer-kuca-4-kamere"
   },
   "materijal/ulaz/AI_kuca_dvoriste_kamera.jpg": {
-    "status": "slobodna"
+    "status": "iskoristena",
+    "objava": "2026-11-16_zicane-ili-wifi"
   },
   "materijal/ulaz/AI_kuca_kamera_prilaz.jpg": {
     "status": "odbijena",
@@ -150,14 +151,16 @@
     "objava": "2026-11-13_izgubljen-snimak"
   },
   "materijal/ulaz/AI_telefon_obavjestenje.jpg": {
-    "status": "slobodna"
+    "status": "iskoristena",
+    "objava": "2026-11-16_zicane-ili-wifi"
   },
   "materijal/ulaz/AI_telefon_reprodukcija.jpg": {
     "status": "iskoristena",
     "objava": "2026-11-13_izgubljen-snimak"
   },
   "materijal/ulaz/AI_snimac_ormaric.jpg": {
-    "status": "slobodna"
+    "status": "iskoristena",
+    "objava": "2026-11-16_zicane-ili-wifi"
   },
   "materijal/oprema/dahua/snimaci/NVR2108HS-8P-I2": {
     "status": "iskoristena",

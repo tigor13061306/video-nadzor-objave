@@ -1,0 +1,9 @@
+{
+  "kadrovi": [
+    {"foto": "../../materijal/ulaz/AI_kuca_dvoriste_kamera.jpg", "fokus": [0.75, 0.45], "tekst": "Žičane ili WiFi kamere?", "podtekst": "Za fasadu i dvorište, kabl je sigurniji izbor."},
+    {"foto": "../../materijal/ulaz/AI_snimac_ormaric.jpg", "fokus": [0.4, 0.5], "tekst": "Žičana: kabl do snimača", "podtekst": "Jedan kabl nosi i sliku i napajanje (PoE), bez ispadanja signala."},
+    {"foto": "../../materijal/ulaz/AI_telefon_obavjestenje.jpg", "fokus": [0.5, 0.45], "tekst": "WiFi: za unutra i lakše slučajeve", "podtekst": "Zavisi od rutera i jačine signala, a i dalje joj treba struja."}
+  ],
+  "trajanje_kadra": 3.5,
+  "kraj": {"tekst": "Ne znaš koje ti trebaju?", "podtekst": "Napiši KAMERA u komentar"}
+}

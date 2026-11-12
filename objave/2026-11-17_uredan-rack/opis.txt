@@ -1,0 +1,7 @@
+Gdje ide snimač za video nadzor da sve bude uredno i sigurno?
+Mali zidni rack od 10 inča drži snimač, switch i kablove na jednom mjestu, pod ključem.
+Na patch panelu je svaki kabl označen, pa se kod kvara odmah zna koja je kamera. Switch sa PoE napaja kamere preko istog mrežnog kabla, a UPS drži sistem kad nestane struje.
+
+Želiš ovako uredan sistem? Pošalji mi u DM broj telefona i mjesto, nazvaću te.
+
+#videonadzor #kamere #doboj #bih #ugradnjakamera

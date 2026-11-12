@@ -1,3 +1,5 @@
 2026-10-29;2026-11-02_megapikseli;Edukacija: 2, 4 ili 8 MP (tekst, bez fotke)
 2026-10-29;2026-11-03_ugradni-ormar;Rješenje: ugradni ormar u hodniku
 2026-11-01;2026-11-05_savjet-prije-kupovine;Savjet: 3 stvari prije kupovine kamera (tekst, bez fotke, nema slobodnih fotki za Reel)
+2026-11-12;2026-11-16_zicane-ili-wifi;Edukacija: žičane ili WiFi kamere (Reel, 3 AI fotke)
+2026-11-12;2026-11-17_uredan-rack;Rješenje: uredan rack za snimač i switch (tekst, bez fotke, nema slobodnih fotki)
