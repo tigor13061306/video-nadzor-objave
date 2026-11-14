@@ -16,12 +16,12 @@ datum;dan;format;tema;sablon;materijal;status;napomena
 2026-11-09;ponedjeljak;carousel;Kabl do kamere: UTP, PoE i zaštita od vlage;naslovna + foto_traka;AI_kabl_utp_krimpanje, AI_kanalica_zid, AI_razvodna_kutija_kamera;objavljeno;https://www.instagram.com/p/DfhyzXAkWPL/ (EDUKACIJA; AI napomena)
 2026-11-10;utorak;slika;Ormar sa monitorom za radnju i kancelariju;foto_kutija;AI_ormar_monitor;objavljeno;https://www.instagram.com/p/DfkXkCbG3Pa/ (RJEŠENJE; AI napomena)
 2026-11-11;srijeda;slika;Oprema koju ugrađujem: Hikvision DS-2CD2047G2-LU;proizvod;oprema/hikvision/kamere/DS-2CD2047G2-LU_naprijed;objavljeno;https://www.instagram.com/p/Dfm8YJQlV8m/ (OPREMA - bez AI napomene)
-2026-11-12;četvrtak;reel;Kamera za kuću ili za radnju: razlike;reel od fotki;AI_kamera_fasada_dan, AI_kamera_ugao_kuce, AI_radnja_kasa_kamera;spremno;SAVJET - Reel
-2026-11-13;petak;carousel;Izgubio si snimak? Najčešći razlozi;naslovna + foto_traka;AI_disk_snimac, AI_snimac_ups, AI_telefon_reprodukcija;spremno;ČESTI PROBLEMI; AI napomena
-2026-11-14;subota;reel;Primjer: mala radnja sa kamerama (ulaz, magacin, parking);reel od fotki;AI_radnja_magacin, AI_radnja_parking, AI_radnja_spolja;spremno;LOKACIJA - AI primjer, ne Igorov rad; Reel
+2026-11-12;četvrtak;reel;Kamera za kuću ili za radnju: razlike;reel od fotki;AI_kamera_fasada_dan, AI_kamera_ugao_kuce, AI_radnja_kasa_kamera;objavljeno;https://www.instagram.com/reel/DfphK2Djtp3/ (SAVJET - Reel)
+2026-11-13;petak;carousel;Izgubio si snimak? Najčešći razlozi;naslovna + foto_traka;AI_disk_snimac, AI_snimac_ups, AI_telefon_reprodukcija;objavljeno;https://www.instagram.com/p/DfsGd3-GCjp/ (ČESTI PROBLEMI); AI napomena
+2026-11-14;subota;reel;Primjer: mala radnja sa kamerama (ulaz, magacin, parking);reel od fotki;AI_radnja_magacin, AI_radnja_parking, AI_radnja_spolja;objavljeno;https://www.instagram.com/reel/Dfuqx2TD-Nz/ (LOKACIJA - AI primjer, ne Igorov rad); Reel
 2026-11-15;nedjelja;carousel;Sačuvaj: 8 pitanja za instalatera prije ugradnje;naslovna + tekst;bez fotke (tekst);spremno;ZA ČUVANJE - checklista; zamijenjeno sa 22.11. (tabela diska traži provjeren proračun)
-2026-11-16;ponedjeljak;reel;Žičane ili WiFi kamere: kad koje;reel od fotki;AI žičana kamera na fasadi, AI WiFi kamera u kući, AI ruter i snimač (3 fotke);za pripremu;EDUKACIJA - Reel (od 10.11. ponedjeljak je Reel) | čeka fotke: Gemini nije bio dostupan u pripremi 8.11.
-2026-11-17;utorak;slika;Uredan rack: snimač, switch i patch panel na jednom mjestu;foto_kutija;nova AI fotka uskog 10-inčnog zidnog racka (AI_rack_ormar je odbijen);za pripremu;RJEŠENJE | čeka fotke: Gemini nije bio dostupan u pripremi 8.11.
+2026-11-16;ponedjeljak;reel;Žičane ili WiFi kamere: kad koje;reel od fotki;AI_kuca_dvoriste_kamera, AI_snimac_ormaric, AI_telefon_obavjestenje;spremno;EDUKACIJA - Reel; napravio kontrolor
+2026-11-17;utorak;slika;Uredan rack: snimač, switch i patch panel na jednom mjestu;tekst;bez fotke (tekst);spremno;RJEŠENJE; napravio kontrolor (tekst, nema slobodnih fotki)
 2026-11-18;srijeda;slika;Oprema koju ugrađujem: Dahua NVR2108HS-8P-I2;proizvod;oprema/dahua/snimaci/NVR2108HS-8P-I2;spremno;OPREMA - bez AI napomene
 2026-11-19;četvrtak;reel;Zaštiti pristup kamerama: šifra i ažuriranje;reel od fotki;AI telefon, snimač, kamera;za pripremu;SAVJET - Reel | čeka fotke: Gemini nije bio dostupan u pripremi 8.11.
 2026-11-20;petak;carousel;Kamera se gasi noću: napajanje i PoE;tekst;bez fotke (tekst);spremno;ČESTI PROBLEMI; bez AI napomene

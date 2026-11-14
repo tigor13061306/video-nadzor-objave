@@ -47,7 +47,7 @@ Ako želiš izmijeniti objavu prije nego izađe, napiši šta u `napomene.txt` u
 | Srijeda | Oprema koju ugrađujem: jedan model, Hikvision i Dahua naizmjenično (šablon proizvod, bez AI napomene) |
 | Četvrtak | Savjet, kao Reel |
 | Petak | Česti problemi i kako se rješavaju, kao Reel (3 fotke, sa muzikom) |
-| Subota | Lokacije sa kamerama, kao Reel (3 do 4 fotke, sa muzikom). Dok Igor ne počne snimati prave lokacije, ide AI fotografija sa naslovom "Primjer: …" i AI napomenom, nikad kao Igorov urađeni posao |
+| Subota | Završen objekat, kao Reel po pravilu "Format završen objekat" ispod: više kamera na različitim pozicijama iste kuće (fotke) pa kratak video. Dok Igor ne snimi pravi posao, AI materijal sa naslovom "Primjer" i AI napomenom, nikad kao Igorov urađeni posao |
 | Nedjelja | Objave za čuvanje: checkliste, tabele i podsjetnici koje ljudi sačuvaju ("Sačuvaj: …"), tekst na tamnoj pozadini + jedna fotka; poziv "Sačuvaj objavu" u opisu |
 
 - Uz svaku objavu ide Story "Nova objava".
@@ -66,6 +66,36 @@ Instagram danas nove ljude dovodi preko pretrage po ključnim riječima, Reelsa 
 - **Poziv "Napiši KAMERA u komentar i javiću ti se."** na jednoj do dvije objave sedmično umjesto poziva na DM (pravila u `alati/zajednica.md`). Komentari podižu doseg, a Igor odmah dobija mail.
 - **Story** "Nova objava" na dnu ima poziv "Imaš pitanje o kamerama? Odgovori na ovu priču." Odgovori stižu Igoru u DM.
 - **Mjerenje** (prva nedjelja u mjesecu): za svaku objavu upiši doseg, dijeljenja (shares), čuvanja (saved) i preglede; najbolji pokazatelj su dijeljenja i čuvanja u odnosu na doseg, ne lajkovi ni broj pratilaca. Teme koje se najviše dijele i čuvaju ponavljaj u novom obliku.
+
+## Format "Završen objekat" (od 14.11.2026)
+
+Igorovo pravilo: video sadržaj se usmjerava na snimke završenog objekta. Ne jedna kamera i ne "prije/poslije", nego VIŠE kamera postavljenih na različitim pozicijama iste kuće, pa malo videa.
+
+**Sastav Reela** (oko 15 do 20 sekundi, `alati/napravi_reel.py`, primjer `alati/primjer_zavrsen_objekat.json`, muzika obavezna):
+
+1. **Prve 2 sekunde:** šira fotka kuće na kojoj se vide bar dvije kamere, sa tekstom koji odmah kaže o čemu je riječ (npr. "Video nadzor na kući: 4 kamere"). Dok je materijal AI, podtekst je "Primjer, AI prikaz".
+2. **3 do 5 fotki iste kuće**, svaka druga pozicija kamere: ulaz (na zidu pored vrata), ugao prema dvorištu i parkingu, kapija i ulica, zadnja strana ili garaža. Oko 1,8 s po fotki, mala oznaka pozicije gore lijevo (`"oznaka": "Ulaz"`, `"Parking"`, `"Kapija"`, `"Zadnja strana"`).
+3. **1 do 2 kratka video kadra** (4 do 6 s): telefon u ruci prolazi oko kuće i u kadru se vidi više kamera (`"video": "obilazak.mp4"`).
+4. **Kraj:** poziv, npr. "Napiši KAMERA u komentar i javiću ti se."
+
+**AI materijal (dok nema pravih snimaka):**
+
+- Kamere na AI fotkama: bijele turret (eyeball) kamere "mounted flush directly on the facade wall … no arm, no bracket, no separate box, no pipe, away from downpipes". Sa bullet kamerom i razvodnom kutijom Gemini skoro uvijek docrta krak ili cijev do kutije (provjereno 14.11.2026).
+- Fotke: Gemini slike 9:16, SVE u istom razgovoru (prethodni odgovori idu kao historija), da kuća ostane ista: prvo šira fotka kuće sa kamerama, pa "same house, now a closer view of the camera at …" za svaku poziciju.
+- Video kadar: model `gemini-omni-1.2-flash` preko `POST https://generativelanguage.googleapis.com/v1beta/interactions` (Veo nije dostupan na ovom ključu), tijelo `{"model":"gemini-omni-1.2-flash","input":"<opis>","response_format":{"type":"video","duration":"6s","resolution":"720p","aspect_ratio":"9:16"}}`; video je base64 u koraku `model_output`. Traje oko 1 do 1,5 minut, pa ga pokreni u pozadini i provjeravaj. Cijena oko 0,07 $ po sekundi. Da kuća bude ista kao na fotkama, pošalji široku fotku kao referencu: `"input": [{"type":"image","mime_type":"image/jpeg","data":"<base64>"}, {"type":"text","text":"Use the attached photo as the reference … <opis>"}]` (radi, provjereno 14.11.2026).
+- Prenos na računar: preko GitHuba u `materijal/video_test/`, pa sa raw adrese u `02_materijal`. Raw adresa sa `main` zna dati staru verziju istog fajla (keš), zato skidaj preko SHA commita: `raw.githubusercontent.com/<vlasnik>/<repo>/<sha>/<putanja>`. Video od 10 MB se šalje oko minut.
+- Opis za video uvijek: handheld smartphone video, amateur real-life footage, not cinematic; several security cameras visible at different positions; no tools, no drill, no hands, no faces, no text, no logos, no license plates; real ambient sound only, no music.
+- Trošak jednog Reela oko 0,5 do 1 $. Pazi na budžet od 5 $ mjesečno.
+
+**Pravila montaže** (važe za svaki kadar):
+
+- Kabl se ne vidi, ili samo kratko odozgo, iz strehe pravo u razvodnu kutiju. Nikad kanalica ili kabl preko fasade.
+- Kamera nikad iznad vrata ni na/iznad nadstrešnice.
+- Bez bušilice, odvijača i ruku na snimku: zavrtanje izgleda nerealno.
+- Bez lica, tablica i kućnih brojeva.
+- Svaki kadar pregledaj prije upotrebe; ako pravilo nije ispoštovano, kadar ne ide.
+
+**Kad Igor radi pravi posao:** telefonom snimi gotov objekat: svaku kameru posebno, jednu širu fotku na kojoj se vidi više kamera, i kratak obilazak (10 do 20 s). Ubaci u `02_materijal/ulaz`; takvi snimci imaju prednost pred AI i tada objava smije reći da je njegov posao.
 
 ## Objavljivanje preko GitHuba (od 28.10.2026)
 
