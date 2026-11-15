@@ -1,0 +1,48 @@
+{
+ "tema": "Zaštiti pristup kamerama: šifra i ažuriranje",
+ "slajdovi": [
+  {
+   "sablon": "proizvod",
+   "foto": "kamera.png",
+   "oznaka": "Savjet",
+   "naslov": "Ko još može gledati tvoje kamere?",
+   "stavke": [
+    "Fabrička šifra je otvorena vrata.",
+    "Stari softver ima poznate rupe.",
+    "Prevuci za 3 koraka →"
+   ]
+  },
+  {
+   "sablon": "tekst",
+   "oznaka": "1 · ŠIFRA",
+   "naslov": "Svoja, jaka šifra",
+   "stavke": [
+    "Promijeni fabričku šifru snimača i kamera.",
+    "Duga šifra: slova, brojevi i znakovi.",
+    "Ne koristi istu šifru kao za mail ili Facebook."
+   ]
+  },
+  {
+   "sablon": "tekst",
+   "oznaka": "2 · AŽURIRANJE",
+   "naslov": "Ažuriraj softver",
+   "stavke": [
+    "Proizvođači novim verzijama zatvaraju sigurnosne rupe.",
+    "Provjeri verziju softvera u meniju snimača par puta godišnje.",
+    "Ažuriraj i aplikaciju na telefonu."
+   ]
+  },
+  {
+   "sablon": "tekst",
+   "oznaka": "3 · KORISNICI",
+   "naslov": "Svako svoj nalog",
+   "stavke": [
+    "Ukućanima napravi poseban nalog, samo za gledanje.",
+    "Glavnu (admin) šifru ne šalji porukom.",
+    "Ukini pristup onome ko više ne treba da gleda."
+   ],
+   "poziv": "Pošalji ovo nekome",
+   "poziv2": "ko ima kamere kod kuće."
+  }
+ ]
+}

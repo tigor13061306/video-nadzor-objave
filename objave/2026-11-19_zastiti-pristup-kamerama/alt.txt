@@ -1,0 +1,1 @@
+Tekstualni vodič sa slikom mrežne turret kamere za video nadzor: kako zaštititi pristup kamerama šifrom, ažuriranjem softvera i posebnim nalozima.

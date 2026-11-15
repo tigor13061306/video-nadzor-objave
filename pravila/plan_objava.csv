@@ -23,7 +23,7 @@ datum;dan;format;tema;sablon;materijal;status;napomena
 2026-11-16;ponedjeljak;reel;Žičane ili WiFi kamere: kad koje;reel od fotki;AI_kuca_dvoriste_kamera, AI_snimac_ormaric, AI_telefon_obavjestenje;spremno;EDUKACIJA - Reel; napravio kontrolor
 2026-11-17;utorak;slika;Uredan rack: snimač, switch i patch panel na jednom mjestu;tekst;bez fotke (tekst);spremno;RJEŠENJE; napravio kontrolor (tekst, nema slobodnih fotki)
 2026-11-18;srijeda;slika;Oprema koju ugrađujem: Dahua NVR2108HS-8P-I2;proizvod;oprema/dahua/snimaci/NVR2108HS-8P-I2;spremno;OPREMA - bez AI napomene
-2026-11-19;četvrtak;reel;Zaštiti pristup kamerama: šifra i ažuriranje;reel od fotki;AI telefon, snimač, kamera;za pripremu;SAVJET - Reel | čeka fotke: Gemini nije bio dostupan u pripremi 8.11.
+2026-11-19;četvrtak;carousel;Zaštiti pristup kamerama: šifra i ažuriranje;proizvod + tekst;oprema/hikvision/kamere/DS-2CD2346G2-IU (zvanična slika, ilustracija);spremno;SAVJET; napravio kontrolor (nema slobodnih AI fotki za Reel; zvanična slika da ne budu dvije tekstualne zaredom, bez AI napomene)
 2026-11-20;petak;carousel;Kamera se gasi noću: napajanje i PoE;tekst;bez fotke (tekst);spremno;ČESTI PROBLEMI; bez AI napomene
 2026-11-21;subota;reel;Primjer: vikendica pod nadzorom;reel od fotki;AI vikendica sa kamerama (3-4 AI fotke);za pripremu;LOKACIJA - AI primjer, ne Igorov rad | čeka fotke: Gemini nije bio dostupan u pripremi 8.11.
 2026-11-22;nedjelja;carousel;Sačuvaj: kuća pod nadzorom prije odlaska na put;tekst;bez fotke (tekst);spremno;ZA ČUVANJE - checklista; zamijenjeno sa 29.11. (tabela diska traži provjeren proračun)
