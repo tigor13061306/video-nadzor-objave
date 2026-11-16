@@ -28,16 +28,23 @@ datum;dan;format;tema;sablon;materijal;status;napomena
 2026-11-21;subota;carousel;Kuća pod nadzorom: 4 mjesta za kamere (ulaz, dvorište, kapija, zadnja strana);proizvod + tekst;zvanična slika Dahua IPC-HDBW2441E-S + tekst;spremno;LOKACIJA; napravio kontrolor (nema slobodnih AI fotki za Reel "Primjer: vikendica" - tema ostaje za kasnije)
 2026-11-22;nedjelja;carousel;Sačuvaj: kuća pod nadzorom prije odlaska na put;tekst;bez fotke (tekst);spremno;ZA ČUVANJE - checklista; zamijenjeno sa 29.11. (tabela diska traži provjeren proračun)
 2026-11-23;ponedjeljak;carousel;Kamera na ulazu: kako da se vidi lice;proizvod + tekst;zvanična slika Dahua IPC-HDW2441T-S + tekst;spremno;EDUKACIJA; napravio kontrolor (nema slobodnih AI fotki za Reel)
-2026-11-24;utorak;slika;Kamera daleko od kuće bez kopanja: bežični most;foto_kutija;AI bežični most na stubu;za pripremu;RJEŠENJE
-2026-11-25;srijeda;slika;Oprema koju ugrađujem: Hikvision DS-7608NXI-K2-8P;proizvod;oprema/hikvision/snimaci/DS-7608NXI-K2-8P;za pripremu;OPREMA - bez AI napomene
-2026-11-26;četvrtak;reel;Obavještenja na telefonu: da te ne budi svaka mačka;reel od fotki;AI telefon i dvorište;za pripremu;SAVJET - Reel
-2026-11-27;petak;reel;Slika kasni ili se zamrzava na telefonu;reel od fotki;AI telefon sa aplikacijom, AI ruter, AI snimač (3 fotke);za pripremu;ČESTI PROBLEMI - Reel (od 10.11. petak je Reel)
-2026-11-28;subota;reel;Primjer: dvorište i garaža;reel od fotki;AI dvorište sa garažom (3-4 AI fotke);za pripremu;LOKACIJA - AI primjer, ne Igorov rad
-2026-11-29;nedjelja;carousel;Sačuvaj: koliko dana snima disk od 1, 2 i 4 TB;naslovna + tekst;jedna AI fotka diska;za pripremu;ZA ČUVANJE - tabela; brojke samo iz kalkulatora proizvođača (Hikvision/Dahua), navedi pretpostavke: broj kamera, MP, H.265, 24 h snimanje
-2026-11-30;ponedjeljak;reel;Kamera bez interneta: kako ipak snima i kako je gledaš (SD kartica, snimač, TV preko HDMI);reel od fotki;AI kamera, snimač, TV;za pripremu;EDUKACIJA - tema iz FB grupa (često pitanje); Reel umjesto carousela (statistika oktobar: Reel doseg 131, fotke 1-3)
+2026-11-24;utorak;slika;Kamera daleko od kuće bez kopanja: bežični most;tekst;bez fotke (tekst);spremno;RJEŠENJE; nedjeljna priprema 16.11. iz oblaka, bez računara i Gemini-ja
+2026-11-25;srijeda;slika;Oprema koju ugrađujem: Hikvision DS-7608NXI-K2/8P;proizvod;oprema/hikvision/snimaci/DS-7608NXI-K2-8P;spremno;OPREMA - bez AI napomene; nedjeljna priprema 16.11. iz oblaka, bez računara i Gemini-ja
+2026-11-26;četvrtak;carousel;Obavještenja na telefonu: da te ne budi svaka mačka;proizvod + tekst;zvanična slika Hikvision DS-2CD2346G2-IU + tekst;spremno;SAVJET; nedjeljna priprema 16.11. iz oblaka, bez računara i Gemini-ja (nema slobodnih fotki za Reel)
+2026-11-27;petak;carousel;Slika kasni ili se zamrzava na telefonu;tekst;bez fotke (tekst);spremno;ČESTI PROBLEMI; nedjeljna priprema 16.11. iz oblaka, bez računara i Gemini-ja (nema slobodnih fotki za Reel)
+2026-11-28;subota;carousel;Dvorište i garaža: šta kamera treba da vidi;proizvod + tekst;zvanična slika Hikvision DS-2CD2047G2-LU + tekst;spremno;LOKACIJA; nedjeljna priprema 16.11. iz oblaka, bez računara i Gemini-ja; Reel 'Primjer: dvorište i garaža' ostaje za kad budu AI fotke
+2026-11-29;nedjelja;carousel;Sačuvaj: šta pripremiti prije dolaska instalatera;tekst;bez fotke (tekst);spremno;ZA ČUVANJE - checklista; zamijenjeno sa 06.12. (tabela diska traži provjeren proračun); nedjeljna priprema 16.11. iz oblaka, bez računara i Gemini-ja
+2026-11-30;ponedjeljak;carousel;Kamera bez interneta: kako ipak snima i kako je gledaš;proizvod + tekst;zvanična slika Dahua NVR2108HS-8P-I2 + tekst;spremno;EDUKACIJA; nedjeljna priprema 16.11. iz oblaka, bez računara i Gemini-ja (nema slobodnih fotki za Reel)
 2026-12-01;utorak;slika;Kamera za vikendicu bez struje i interneta: solarni panel i 4G;foto_kutija;AI vikendica sa solarnom kamerom (bez vidljivih kablova);za pripremu;RJEŠENJE - najkomentarisanije pitanje u grupama; tvrdnje samo provjerene
 2026-12-02;srijeda;slika;Oprema koju ugrađujem: Dahua IPC-HFW2441S-S;proizvod;oprema/dahua/kamere/IPC-HFW2441S-S;za pripremu;OPREMA - bez AI napomene
 2026-12-03;četvrtak;reel;Imaš stari sistem? Šta možeš zadržati kad mijenjaš kamere (kablovi, napajanje, snimač);reel od fotki;AI stari i novi snimač;za pripremu;SAVJET - Reel - tema iz FB grupa
 2026-12-04;petak;reel;Promijenio si ruter i kamere ne rade na telefonu: šta provjeriti;reel od fotki;AI ruter, snimač, telefon (3 fotke);za pripremu;ČESTI PROBLEMI - Reel
 2026-12-05;subota;reel;Primjer: mala firma sa parkingom;reel od fotki;AI firma sa parkingom i kamerama (3-4 AI fotke);za pripremu;LOKACIJA - AI primjer, ne Igorov rad
-2026-12-06;nedjelja;carousel;Sačuvaj: šta pripremiti prije dolaska instalatera (struja, ruter, mjesto za snimač);naslovna + tekst;jedna AI fotka;za pripremu;ZA ČUVANJE - checklista
+2026-12-06;nedjelja;carousel;Sačuvaj: koliko dana snima disk od 1, 2 i 4 TB;naslovna + tekst;jedna AI fotka diska;za pripremu;ZA ČUVANJE - tabela; brojke samo iz kalkulatora proizvođača (Hikvision/Dahua), navedi pretpostavke: broj kamera, MP, H.265, 24 h snimanje; zamijenjeno sa 29.11.
+2026-12-07;ponedjeljak;reel;Koliko kamera treba za kuću: od 2 do 6;reel od fotki;AI kuća sa kamerama (3 fotke);za pripremu;EDUKACIJA - Reel
+2026-12-08;utorak;slika;Uredno vođenje kabla kroz strehu do kamere;foto_kutija;AI streha sa kamerom (bez vidljivih kablova);za pripremu;RJEŠENJE
+2026-12-09;srijeda;slika;Oprema koju ugrađujem: Hikvision DS-2CD2146G2-ISU;proizvod;oprema/hikvision/kamere/DS-2CD2146G2-ISU_kuciste;za pripremu;OPREMA - bez AI napomene
+2026-12-10;četvrtak;reel;Zima i kamere: snijeg, mraz i kondenz;reel od fotki;AI kamera zimi (3 fotke);za pripremu;SAVJET - Reel
+2026-12-11;petak;reel;Snimač pišti ili javlja grešku diska: šta znači;reel od fotki;AI snimač, disk, monitor (3 fotke);za pripremu;ČESTI PROBLEMI - Reel
+2026-12-12;subota;reel;Primjer: vikendica pod nadzorom;reel od fotki;AI vikendica (3-4 AI fotke);za pripremu;LOKACIJA - AI primjer, ne Igorov rad
+2026-12-13;nedjelja;carousel;Sačuvaj: podešavanja aplikacije za kamere na telefonu;naslovna + tekst;jedna AI fotka telefona;za pripremu;ZA ČUVANJE - podsjetnik

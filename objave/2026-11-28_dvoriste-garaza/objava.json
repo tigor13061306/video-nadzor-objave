@@ -1,0 +1,48 @@
+{
+ "tema": "Dvorište i garaža: šta kamera treba da vidi",
+ "slajdovi": [
+  {
+   "sablon": "proizvod",
+   "foto": "kamera.png",
+   "oznaka": "Dvorište i garaža",
+   "naslov": "Kamera za garažu i dvorište: gdje i kako?",
+   "stavke": [
+    "Tri stvari koje se najčešće previde.",
+    "Prevuci →"
+   ]
+  },
+  {
+   "sablon": "tekst",
+   "oznaka": "1 · VRATA GARAŽE",
+   "naslov": "Pogled na vrata i auto",
+   "stavke": [
+    "Kamera sa strane garaže, ne iznad vrata.",
+    "Vide se vrata, auto i ko prilazi.",
+    "Na zidu, dovoljno visoko da je niko ne dohvati."
+   ]
+  },
+  {
+   "sablon": "tekst",
+   "oznaka": "2 · NOĆ",
+   "naslov": "Dvorište je noću mračno",
+   "stavke": [
+    "ColorVu kamera daje sliku u boji uz bijelo svjetlo.",
+    "Obična IR kamera noću snima crno-bijelo.",
+    "Za boju odjeće i auta noću bolja je ColorVu."
+   ]
+  },
+  {
+   "sablon": "tekst",
+   "oznaka": "3 · BEZ TUĐEG",
+   "naslov": "Samo svoj plac",
+   "stavke": [
+    "Usmjeri kameru na svoje dvorište.",
+    "Tuđe dvorište i ulicu ne snimaj.",
+    "Ako treba, zamaskiraj dio slike u snimaču."
+   ],
+   "poziv": "Pošalji ovo nekome",
+   "poziv2": "ko ima garažu u dvorištu."
+  }
+ ],
+ "opis": "Kamera za garažu i dvorište: gdje je postaviti da se vidi auto i ko prilazi?\nNajbolje sa strane garaže, na zidu, a ne iznad vrata. Noću je dvorište mračno: ColorVu kamera uz bijelo svjetlo daje sliku u boji, a obična IR kamera crno-bijelu. Snimaj samo svoj plac.\nPošalji ovo nekome ko ima garažu u dvorištu.\n\nŽeliš kamere za dvorište i garažu? Pošalji mi u DM broj telefona i mjesto, nazvaću te.\n\n#videonadzor #kamere #doboj #bih #kamerezakucu"
+}

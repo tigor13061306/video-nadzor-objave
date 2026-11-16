@@ -1,0 +1,45 @@
+{
+ "tema": "Slika kasni ili se zamrzava na telefonu",
+ "slajdovi": [
+  {
+   "sablon": "tekst",
+   "oznaka": "ČESTI PROBLEMI",
+   "naslov": "Slika sa kamera kasni ili se zamrzava na telefonu?",
+   "tekst": "Snimač najčešće radi dobro. Problem je obično na putu od kuće do telefona.",
+   "poziv": "Prevuci →"
+  },
+  {
+   "sablon": "tekst",
+   "oznaka": "1 · INTERNET KOD KUĆE",
+   "naslov": "Upload je presudan",
+   "stavke": [
+    "Za gledanje van kuće bitna je brzina slanja (upload).",
+    "Ako je slaba, slika kasni i staje.",
+    "Provjeri je testom brzine na kućnoj mreži."
+   ]
+  },
+  {
+   "sablon": "tekst",
+   "oznaka": "2 · KVALITET PRENOSA",
+   "naslov": "Pomoćni stream",
+   "stavke": [
+    "Na telefonu gledaj u nižoj kvaliteti (SD, pomoćni stream).",
+    "Snimak na disku ostaje u punoj kvaliteti.",
+    "Puna kvaliteta samo kad treba detalj."
+   ]
+  },
+  {
+   "sablon": "tekst",
+   "oznaka": "3 · TELEFON I RUTER",
+   "naslov": "Sitnice koje pomognu",
+   "stavke": [
+    "Ažuriraj aplikaciju na telefonu.",
+    "Restartuj ruter ako dugo radi bez prekida.",
+    "Gledaj jednu kameru, ne sve odjednom."
+   ],
+   "poziv": "Pošalji ovo nekome",
+   "poziv2": "kome kamere kasne na telefonu."
+  }
+ ],
+ "opis": "Video nadzor na telefonu kasni ili se slika zamrzava? Problem je obično internet, a ne kamera.\nZa gledanje van kuće bitna je brzina slanja (upload) kućnog interneta. Na telefonu gledaj u nižoj kvaliteti (pomoćni stream), a snimak na disku ostaje u punoj kvaliteti.\nPošalji ovo nekome kome kamere kasne na telefonu.\n\nImaš ovaj problem? Pošalji mi u DM broj telefona i mjesto, nazvaću te.\n\n#videonadzor #kamere #doboj #bih #kameraneradi"
+}

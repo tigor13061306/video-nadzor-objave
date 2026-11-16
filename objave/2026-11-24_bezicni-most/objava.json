@@ -1,0 +1,45 @@
+{
+ "tema": "Kamera daleko od kuće bez kopanja: bežični most",
+ "slajdovi": [
+  {
+   "sablon": "tekst",
+   "oznaka": "RJEŠENJE",
+   "naslov": "Kamera daleko od kuće, a kopanje ne dolazi u obzir?",
+   "tekst": "Za štalu, kapiju na kraju placa ili pomoćni objekat postoji uredno rješenje: bežični most.",
+   "poziv": "Prevuci →"
+  },
+  {
+   "sablon": "tekst",
+   "oznaka": "1 · KAKO RADI",
+   "naslov": "Dva uređaja, jedna veza",
+   "stavke": [
+    "Jedan uređaj kod kuće, spojen na mrežu snimača.",
+    "Drugi kod udaljene kamere.",
+    "Između njih slika ide zrakom, bez kabla preko placa."
+   ]
+  },
+  {
+   "sablon": "tekst",
+   "oznaka": "2 · USLOV",
+   "naslov": "Moraju se vidjeti",
+   "stavke": [
+    "Između dva uređaja ne smije biti zgrada ni gusto drveće.",
+    "Montiraju se visoko i usmjere jedan prema drugom.",
+    "Bez čiste linije veza je slaba ili puca."
+   ]
+  },
+  {
+   "sablon": "tekst",
+   "oznaka": "3 · STRUJA",
+   "naslov": "Napajanje ostaje",
+   "stavke": [
+    "Kod udaljene kamere i dalje treba struja.",
+    "Bežični most nosi sliku, ne napajanje.",
+    "Zato se prvo provjeri ima li struje na tom mjestu."
+   ],
+   "poziv": "Pošalji ovo nekome",
+   "poziv2": "ko ima objekat daleko od kuće."
+  }
+ ],
+ "opis": "Kako dovesti kameru za video nadzor do štale ili kapije, bez kopanja kanala preko dvorišta?\nRješenje je bežični most: jedan uređaj kod kuće, drugi kod kamere, a slika ide zrakom. Uslov je da se dva uređaja vide, bez zgrada i gustog drveća između, a kod kamere i dalje treba struja.\nPošalji ovo nekome ko ima objekat daleko od kuće.\n\nImaš udaljen objekat koji želiš pokriti? Pošalji mi u DM broj telefona i mjesto, nazvaću te.\n\n#videonadzor #kamere #doboj #bih #kamerezakucu"
+}

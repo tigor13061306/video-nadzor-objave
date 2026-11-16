@@ -1,0 +1,1 @@
+Tekstualni prikaz rješenja za video nadzor udaljenog objekta preko bežičnog mosta.

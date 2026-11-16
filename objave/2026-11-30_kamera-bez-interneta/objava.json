@@ -1,0 +1,49 @@
+{
+ "tema": "Kamera bez interneta: kako ipak snima i kako je gledaš",
+ "slajdovi": [
+  {
+   "sablon": "proizvod",
+   "foto": "snimac.png",
+   "oznaka": "Edukacija",
+   "naslov": "Video nadzor bez interneta? Može.",
+   "stavke": [
+    "Snimanje ne zavisi od interneta.",
+    "Internet treba samo za telefon van kuće.",
+    "Prevuci →"
+   ]
+  },
+  {
+   "sablon": "tekst",
+   "oznaka": "1 · SNIMANJE",
+   "naslov": "Snima na disk",
+   "stavke": [
+    "Kamere su kablom spojene na snimač.",
+    "Snimač snima na svoj disk.",
+    "Bez interneta snimanje radi normalno."
+   ]
+  },
+  {
+   "sablon": "tekst",
+   "oznaka": "2 · GLEDANJE",
+   "naslov": "Monitor ili TV",
+   "stavke": [
+    "Snimač se spoji na monitor ili TV preko HDMI kabla.",
+    "Uživo slika i pregled snimka na licu mjesta.",
+    "Mišem se bira kamera i vrijeme snimka."
+   ]
+  },
+  {
+   "sablon": "tekst",
+   "oznaka": "3 · KASNIJE",
+   "naslov": "Internet se doda kad hoćeš",
+   "stavke": [
+    "Kad uvedeš internet, snimač se spoji na ruter.",
+    "Tada kamere gledaš i na telefonu.",
+    "Ništa se ne mijenja na kamerama."
+   ],
+   "poziv": "Pošalji ovo nekome",
+   "poziv2": "ko gradi vikendicu ili kuću."
+  }
+ ],
+ "opis": "Može li video nadzor bez interneta? Može: kamere snimaju na snimač, a internet treba samo za gledanje na telefonu van kuće.\nSnimač se spoji na monitor ili TV preko HDMI kabla i tu gledaš uživo i pregledaš snimak. Kad kasnije uvedeš internet, snimač spojiš na ruter i kamere su i na telefonu.\nPošalji ovo nekome ko gradi vikendicu ili kuću.\n\nImaš pitanje za svoj objekat? Napiši KAMERA u komentar i javiću ti se.\n\n#videonadzor #kamere #doboj #bih #snimac"
+}

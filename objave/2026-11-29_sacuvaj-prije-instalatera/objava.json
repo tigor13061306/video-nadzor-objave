@@ -1,0 +1,44 @@
+{
+ "tema": "Sačuvaj: šta pripremiti prije dolaska instalatera",
+ "slajdovi": [
+  {
+   "sablon": "tekst",
+   "oznaka": "SAČUVAJ",
+   "naslov": "Prije dolaska instalatera",
+   "tekst": "Kad ovo pripremiš, ugradnja ide brže i bez iznenađenja.",
+   "poziv": "Prevuci za checklistu",
+   "poziv2": "i sačuvaj objavu."
+  },
+  {
+   "sablon": "tekst",
+   "oznaka": "1 · MJESTO ZA SNIMAČ",
+   "naslov": "Gdje stoji snimač",
+   "stavke": [
+    "Suho mjesto, ne na direktnom suncu.",
+    "Utičnica u blizini.",
+    "Blizu rutera ili sa mogućnošću kabla do njega."
+   ]
+  },
+  {
+   "sablon": "tekst",
+   "oznaka": "2 · INTERNET",
+   "naslov": "Ruter i pristup",
+   "stavke": [
+    "Znaj šifru WiFi mreže i rutera.",
+    "Provjeri da internet radi na tom mjestu.",
+    "Telefon sa kojeg ćeš gledati kamere neka bude tu."
+   ]
+  },
+  {
+   "sablon": "tekst",
+   "oznaka": "3 · ŠTA ŽELIŠ VIDJETI",
+   "naslov": "Spisak mjesta",
+   "stavke": [
+    "Zapiši: ulaz, kapija, parking, zadnja strana.",
+    "Razmisli ko još treba pristup kamerama.",
+    "Pristup tavanu ili strehi olakšava provlačenje kabla."
+   ]
+  }
+ ],
+ "opis": "Prije ugradnje video nadzora pripremi ove tri stvari i posao ide brže.\nSačuvaj objavu: mjesto za snimač sa utičnicom i blizu rutera, šifra WiFi mreže, i spisak mjesta koja želiš vidjeti na kamerama.\nPošalji je i nekome ko uskoro postavlja kamere.\n\nPlaniraš kamere? Pošalji mi u DM broj telefona i mjesto, nazvaću te.\n\n#videonadzor #kamere #doboj #bih #ugradnjakamera"
+}

@@ -1,0 +1,49 @@
+{
+ "tema": "Obavještenja na telefonu: da te ne budi svaka mačka",
+ "slajdovi": [
+  {
+   "sablon": "proizvod",
+   "foto": "kamera.png",
+   "oznaka": "Savjet",
+   "naslov": "Telefon zvoni zbog svake mačke i grane?",
+   "stavke": [
+    "Obavještenja se mogu podesiti.",
+    "Tri podešavanja koja pomažu.",
+    "Prevuci →"
+   ]
+  },
+  {
+   "sablon": "tekst",
+   "oznaka": "1 · LJUDI I VOZILA",
+   "naslov": "Filter po vrsti",
+   "stavke": [
+    "Kamere sa AcuSense ili WizSense razlikuju ljude i vozila.",
+    "Uključi obavještenja samo za njih.",
+    "Životinje i lišće više ne bude telefon."
+   ]
+  },
+  {
+   "sablon": "tekst",
+   "oznaka": "2 · ZONA",
+   "naslov": "Samo bitan dio slike",
+   "stavke": [
+    "Označi zonu: staza, kapija, ulaz.",
+    "Ulicu i krošnje drveta izostavi.",
+    "Manje zone, manje lažnih poruka."
+   ]
+  },
+  {
+   "sablon": "tekst",
+   "oznaka": "3 · SAMO BITNE KAMERE",
+   "naslov": "Ne sve kamere",
+   "stavke": [
+    "Obavještenja uključi na ulazu i kapiji.",
+    "Ostale kamere neka samo snimaju.",
+    "Noću možeš ostaviti samo ulaz."
+   ],
+   "poziv": "Pošalji ovo nekome",
+   "poziv2": "koga kamere bude noću."
+  }
+ ],
+ "opis": "Kamere za kuću šalju obavještenje za svaku mačku, granu i sjenu? To se može podesiti.\nKamere sa AcuSense ili WizSense funkcijom razlikuju ljude i vozila. Uključi obavještenja samo za njih, označi zonu (staza, kapija, ulaz) i ostavi ih samo na kamerama koje su bitne.\nPošalji ovo nekome koga kamere bude noću.\n\nNe znaš kako to podesiti kod sebe? Napiši KAMERA u komentar i javiću ti se.\n\n#videonadzor #kamere #doboj #bih #hikvision"
+}

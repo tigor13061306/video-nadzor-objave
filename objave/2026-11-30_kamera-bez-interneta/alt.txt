@@ -1,0 +1,1 @@
+Dahua snimač za video nadzor koji snima i bez interneta.
