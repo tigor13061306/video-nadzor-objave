@@ -2,11 +2,14 @@
  "tema": "Kamera daleko od kuće bez kopanja: bežični most",
  "slajdovi": [
   {
-   "sablon": "tekst",
-   "oznaka": "RJEŠENJE",
-   "naslov": "Kamera daleko od kuće, a kopanje ne dolazi u obzir?",
-   "tekst": "Za štalu, kapiju na kraju placa ili pomoćni objekat postoji uredno rješenje: bežični most.",
-   "poziv": "Prevuci →"
+   "sablon": "naslovna",
+   "foto": "../../materijal/ulaz/AI_bezicni_most_stub.jpg",
+   "fokus": [
+    0.6,
+    0.4
+   ],
+   "oznaka": "Rješenje: bežični most",
+   "naslov": "Kamera daleko od kuće, a kopanje ne dolazi u obzir?"
   },
   {
    "sablon": "tekst",
@@ -41,5 +44,5 @@
    "poziv2": "ko ima objekat daleko od kuće."
   }
  ],
- "opis": "Kako dovesti kameru za video nadzor do štale ili kapije, bez kopanja kanala preko dvorišta?\nRješenje je bežični most: jedan uređaj kod kuće, drugi kod kamere, a slika ide zrakom. Uslov je da se dva uređaja vide, bez zgrada i gustog drveća između, a kod kamere i dalje treba struja.\nPošalji ovo nekome ko ima objekat daleko od kuće.\n\nImaš udaljen objekat koji želiš pokriti? Pošalji mi u DM broj telefona i mjesto, nazvaću te.\n\n#videonadzor #kamere #doboj #bih #kamerezakucu"
+ "opis": "Kako dovesti kameru za video nadzor do štale ili kapije, bez kopanja kanala preko dvorišta?\nRješenje je bežični most: jedan uređaj kod kuće, drugi kod kamere, a slika ide zrakom. Uslov je da se dva uređaja vide, bez zgrada i gustog drveća između, a kod kamere i dalje treba struja.\nPošalji ovo nekome ko ima objekat daleko od kuće.\n\nImaš udaljen objekat koji želiš pokriti? Pošalji mi u DM broj telefona i mjesto, nazvaću te.\n\nFotografija je ilustrativna, napravljena AI alatom.\n\n#videonadzor #kamere #doboj #bih #kamerezakucu\n\n[Pri objavi uključi AI info]\n"
 }

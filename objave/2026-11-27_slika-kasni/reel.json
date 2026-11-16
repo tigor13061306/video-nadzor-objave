@@ -1,0 +1,36 @@
+{
+ "kadrovi": [
+  {
+   "foto": "../../materijal/ulaz/AI_telefon_zamrznuta_slika.jpg",
+   "fokus": [
+    0.75,
+    0.5
+   ],
+   "tekst": "Slika sa kamera kasni na telefonu?",
+   "podtekst": "Najčešće nije kriva kamera, nego internet kod kuće."
+  },
+  {
+   "foto": "../../materijal/ulaz/AI_ruter_hodnik.jpg",
+   "fokus": [
+    0.5,
+    0.55
+   ],
+   "tekst": "Brzina slanja (upload)",
+   "podtekst": "Za gledanje van kuće bitan je upload. Provjeri ga testom brzine."
+  },
+  {
+   "foto": "../../materijal/ulaz/AI_snimac_led.jpg",
+   "fokus": [
+    0.5,
+    0.5
+   ],
+   "tekst": "Gledaj u nižoj kvaliteti",
+   "podtekst": "Na telefonu SD (pomoćni stream), a snimak na disku ostaje u punoj kvaliteti."
+  }
+ ],
+ "trajanje_kadra": 3.5,
+ "kraj": {
+  "tekst": "Imaš ovaj problem?",
+  "podtekst": "Pošalji mi u DM broj telefona i mjesto"
+ }
+}

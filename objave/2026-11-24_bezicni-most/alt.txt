@@ -1,1 +1,1 @@
-Tekstualni prikaz rješenja za video nadzor udaljenog objekta preko bežičnog mosta.
+Bežični most za video nadzor: antena na kući i antena na stubu kod udaljene štale.
