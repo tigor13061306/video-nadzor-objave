@@ -41,6 +41,9 @@ Radi se kad je računar upaljen (zakazani zadatak "Instagram – dnevna objava i
   - Oglasi Teslić 🛒 (facebook.com/groups/293437411520518): pravila zabranjuju reklamiranje bez dogovora sa adminom - preskače se (8.11.2026)
   - TESLIC Kupi Prodaj Mijenja OGLASI (facebook.com/groups/496312810494236) i Kupi prodaj zamijeni Jelah Tešanj Doboj Teslić Usora (19 hilj., facebook.com/groups/394025061412712): primljeno 11.11.2026; Regija Doboj oglasi: primljeno 10.11.2026
   - Još neprovjerene: Oglasi Teslic (facebook.com/groups/1595821597368110), Tražim / nudim posao - uslugu: DOBOJ - MODRIČA - ŠAMAC (nađena 11.11.2026 u pretrazi, lokalne usluge)
+  - 16.11.2026: Oglasi Teslic (1595821597368110) i Grad Teslić - Info: primljeno 15.11.; Tražim / nudim posao - uslugu: DOBOJ - MODRIČA - ŠAMAC (facebook.com/groups/170670570399424): primljeno 16.11.
+  - Nekretnine Doboj i okolina | Prodaja • Iznajmljivanje • Potražnja (390 članova, facebook.com/groups/1317395617006224; nađena 16.11.2026, grupa za signale: gradnja/vikendice, samo savjeti; primljeno 16.11.)
+  - Spisak je potrošen (16.11.2026): dalje nove grupe preko pretrage (pčelari iz regije, vikendice, gradnja). Pretraga "pčelari Tešanj" daje samo grupe iz Srbije i cijele BiH.
   - Grupe prodavaca opreme za video nadzor se preskaču (to su konkurenti, ne kupci).
 - Oglasi i objave u grupama: bez "kablovi se ne vide" i sličnog (pravilo "Tekst bez nametanja" u identitet.md). U oglasnim grupama (kupovina/prodaja) ide oglas usluge bez linka, ne savjet sa linkom: savjeti sa linkom su uklonjeni u 4 grupe (31.10. do 3.11.).
 - Prije objave provjeri da je u gornjem desnom uglu Facebooka aktivan profil stranice (logo), ne Igorov.
