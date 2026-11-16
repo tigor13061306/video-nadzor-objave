@@ -1,0 +1,59 @@
+{
+ "tema": "Kuća pod nadzorom: 4 mjesta za kamere",
+ "slajdovi": [
+  {
+   "sablon": "proizvod",
+   "foto": "kamera.png",
+   "oznaka": "Kuća pod nadzorom",
+   "naslov": "Gdje idu kamere na kući?",
+   "stavke": [
+    "Četiri mjesta koja se najčešće pokrivaju.",
+    "Svaka kamera ima svoj zadatak.",
+    "Prevuci →"
+   ]
+  },
+  {
+   "sablon": "tekst",
+   "oznaka": "1 · ULAZ",
+   "naslov": "Lice na ulazu",
+   "stavke": [
+    "Na zidu pored vrata, ne iznad njih.",
+    "Visina oko 2,5 do 3 metra.",
+    "Zadatak: prepoznati ko dolazi."
+   ]
+  },
+  {
+   "sablon": "tekst",
+   "oznaka": "2 · DVORIŠTE I PARKING",
+   "naslov": "Šira slika",
+   "stavke": [
+    "Kamera na uglu kuće pokriva dvije strane.",
+    "Vidi se ko se kreće i gdje je auto.",
+    "Ne mora prepoznati lice, bitan je pokret."
+   ]
+  },
+  {
+   "sablon": "tekst",
+   "oznaka": "3 · KAPIJA",
+   "naslov": "Ko ulazi na plac",
+   "stavke": [
+    "Kamera usmjerena na kapiju i prilaz.",
+    "Treba da hvata ljude, ne cijelu ulicu.",
+    "Tuđe dvorište i ulicu ne snimaj."
+   ]
+  },
+  {
+   "sablon": "tekst",
+   "oznaka": "4 · ZADNJA STRANA",
+   "naslov": "Mjesto koje se zaboravi",
+   "stavke": [
+    "Zadnja vrata, garaža ili šupa.",
+    "Tu se najmanje gleda, a lako se priđe.",
+    "Često je dovoljna jedna kamera."
+   ],
+   "poziv": "Pošalji ovo nekome",
+   "poziv2": "ko gradi ili sređuje kuću."
+  }
+ ],
+ "opis": "Gdje postaviti kamere na kuću? Četiri mjesta koja se najčešće pokrivaju.\nUlaz, dvorište sa parkingom, kapija i zadnja strana. Svaka kamera ima svoj zadatak: jedna prepoznaje lice, druga prati kretanje, treća vidi ko ulazi na plac.\nPošalji ovo nekome ko gradi ili sređuje kuću.\n\nŽeliš raspored kamera za svoju kuću? Pošalji mi u DM broj telefona i mjesto, nazvaću te.\n\n#videonadzor #kamere #doboj #bih #kamerezakucu"
+}

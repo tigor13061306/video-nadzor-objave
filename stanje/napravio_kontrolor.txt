@@ -4,3 +4,5 @@
 2026-11-12;2026-11-16_zicane-ili-wifi;Edukacija: žičane ili WiFi kamere (Reel, 3 AI fotke)
 2026-11-12;2026-11-17_uredan-rack;Rješenje: uredan rack za snimač i switch (tekst, bez fotke, nema slobodnih fotki)
 2026-11-15;2026-11-19_zastiti-pristup-kamerama;Savjet: zaštiti pristup kamerama (carousel, zvanična slika Hikvision kamere + tekst; nema slobodnih AI fotki za Reel)
+2026-11-16;2026-11-21_kuca-gdje-kamere;Lokacija: kuća pod nadzorom, 4 mjesta za kamere (carousel, zvanična slika Dahua kamere + tekst; nema slobodnih AI fotki za Reel)
+2026-11-16;2026-11-23_kamera-na-ulazu-lice;Edukacija: kamera na ulazu da se vidi lice (carousel, zvanična slika Dahua kamere + tekst; nema slobodnih AI fotki za Reel)
