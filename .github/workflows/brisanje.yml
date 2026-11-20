@@ -1,0 +1,29 @@
+name: Brisanje objava (jednokratno)
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Koliko objava obrisati (0 = sve)"
+        default: "1"
+permissions:
+  contents: write
+jobs:
+  obrisi:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - name: Brisanje
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+        run: python alati/obrisi_sve.py "${{ github.event.inputs.limit }}"
+      - name: Sačuvaj log
+        run: |
+          git config user.name "video-nadzor-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add stanje/brisanje_log.txt && git commit -q -m "Log brisanja" && (git push -q || (git pull -q --rebase && git push -q))
