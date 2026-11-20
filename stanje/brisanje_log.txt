@@ -3,3 +3,55 @@ IG 2026-10-24 CAROUSEL_ALBUM https://www.instagram.com/p/De45S6YjSpX/ -> 400 {"e
 FB objava iz objavljeno.json: 23
 FB 2026-10-29_savjet-gdje-kamera 1465240648868632 -> 200 {"success":true}
 ---
+IG objava na profilu: 26
+IG 2026-10-24 CAROUSEL_ALBUM https://www.instagram.com/p/De45S6YjSpX/ -> 400 {"error":{"message":"Unsupported delete request. Object with ID '18110436005228978' does not exist, cannot be loaded due to missing permissions, or does not support this operation","type":"IGApiExcept
+IG 2026-10-26 IMAGE https://www.instagram.com/p/De9xCmtDThY/ -> 400 {"error":{"message":"Unsupported delete request. Object with ID '18145042738592140' does not exist, cannot be loaded due to missing permissions, or does not support this operation","type":"IGApiExcept
+IG 2026-10-28 IMAGE https://www.instagram.com/p/DfC8Qo7DSX4/ -> 400 {"error":{"message":"Unsupported delete request. Object with ID '17931893001421759' does not exist, cannot be loaded due to missing permissions, or does not support this operation","type":"IGApiExcept
+IG 2026-10-29 VIDEO https://www.instagram.com/reel/DfFjJR8Dd5_/ -> 400 {"error":{"message":"Unsupported delete request. Object with ID '18027787499921534' does not exist, cannot be loaded due to missing permissions, or does not support this operation","type":"IGApiExcept
+IG 2026-10-30 IMAGE https://www.instagram.com/p/DfIHAbTIG_J/ -> 400 {"error":{"message":"Unsupported delete request. Object with ID '17884765536529311' does not exist, cannot be loaded due to missing permissions, or does not support this operation","type":"IGApiExcept
+IG 2026-10-31 IMAGE https://www.instagram.com/p/DfKocJSlld4/ -> 400 {"error":{"message":"Unsupported delete request. Object with ID '17980614221916761' does not exist, cannot be loaded due to missing permissions, or does not support this operation","type":"IGApiExcept
+IG 2026-11-01 CAROUSEL_ALBUM https://www.instagram.com/p/DfNNMnTFSJV/ -> 400 {"error":{"message":"Unsupported delete request. Object with ID '17873811576640276' does not exist, cannot be loaded due to missing permissions, or does not support this operation","type":"IGApiExcept
+IG 2026-11-02 CAROUSEL_ALBUM https://www.instagram.com/p/DfP3Y9iiT0T/ -> 400 {"error":{"message":"Unsupported delete request. Object with ID '18129634558874264' does not exist, cannot be loaded due to missing permissions, or does not support this operation","type":"IGApiExcept
+IG 2026-11-03 IMAGE https://www.instagram.com/p/DfSWBPqmrwi/ -> 400 {"error":{"message":"Unsupported delete request. Object with ID '18125893697289675' does not exist, cannot be loaded due to missing permissions, or does not support this operation","type":"IGApiExcept
+IG 2026-11-04 IMAGE https://www.instagram.com/p/DfU67t9mxef/ -> 400 {"error":{"message":"Unsupported delete request. Object with ID '18118853662802961' does not exist, cannot be loaded due to missing permissions, or does not support this operation","type":"IGApiExcept
+IG 2026-11-05 CAROUSEL_ALBUM https://www.instagram.com/p/DfXfqSfERPC/ -> 400 {"error":{"message":"Unsupported delete request. Object with ID '17917531185537963' does not exist, cannot be loaded due to missing permissions, or does not support this operation","type":"IGApiExcept
+IG 2026-11-06 CAROUSEL_ALBUM https://www.instagram.com/p/DfaEfMOGgKX/ -> 400 {"error":{"message":"Unsupported delete request. Object with ID '18361111516173236' does not exist, cannot be loaded due to missing permissions, or does not support this operation","type":"IGApiExcept
+IG 2026-11-07 VIDEO https://www.instagram.com/reel/DfcpPyvCpB9/ -> 400 {"error":{"message":"Unsupported delete request. Object with ID '18347233822282815' does not exist, cannot be loaded due to missing permissions, or does not support this operation","type":"IGApiExcept
+IG 2026-11-08 CAROUSEL_ALBUM https://www.instagram.com/p/DffOE-vlTom/ -> 400 {"error":{"message":"Unsupported delete request. Object with ID '17966797584227729' does not exist, cannot be loaded due to missing permissions, or does not support this operation","type":"IGApiExcept
+IG 2026-11-09 CAROUSEL_ALBUM https://www.instagram.com/p/DfhyzXAkWPL/ -> 400 {"error":{"message":"Unsupported delete request. Object with ID '18043799234841709' does not exist, cannot be loaded due to missing permissions, or does not support this operation","type":"IGApiExcept
+IG 2026-11-10 IMAGE https://www.instagram.com/p/DfkXkCbG3Pa/ -> 400 {"error":{"message":"Unsupported delete request. Object with ID '18036863291850932' does not exist, cannot be loaded due to missing permissions, or does not support this operation","type":"IGApiExcept
+IG 2026-11-11 IMAGE https://www.instagram.com/p/Dfm8YJQlV8m/ -> 400 {"error":{"message":"Unsupported delete request. Object with ID '18098395397146512' does not exist, cannot be loaded due to missing permissions, or does not support this operation","type":"IGApiExcept
+IG 2026-11-12 VIDEO https://www.instagram.com/reel/DfphK2Djtp3/ -> 400 {"error":{"message":"Unsupported delete request. Object with ID '18109053454979899' does not exist, cannot be loaded due to missing permissions, or does not support this operation","type":"IGApiExcept
+IG 2026-11-13 CAROUSEL_ALBUM https://www.instagram.com/p/DfsGd3-GCjp/ -> 400 {"error":{"message":"Unsupported delete request. Object with ID '17930165571425346' does not exist, cannot be loaded due to missing permissions, or does not support this operation","type":"IGApiExcept
+IG 2026-11-14 VIDEO https://www.instagram.com/reel/Dfuqx2TD-Nz/ -> 400 {"error":{"message":"Unsupported delete request. Object with ID '18122279551998533' does not exist, cannot be loaded due to missing permissions, or does not support this operation","type":"IGApiExcept
+IG 2026-11-15 CAROUSEL_ALBUM https://www.instagram.com/p/DfxPjlkoFL7/ -> 400 {"error":{"message":"Unsupported delete request. Object with ID '18100070066395747' does not exist, cannot be loaded due to missing permissions, or does not support this operation","type":"IGApiExcept
+IG 2026-11-16 VIDEO https://www.instagram.com/reel/Dfz1Hlul6Sh/ -> 400 {"error":{"message":"Unsupported delete request. Object with ID '17885291655535150' does not exist, cannot be loaded due to missing permissions, or does not support this operation","type":"IGApiExcept
+IG 2026-11-17 IMAGE https://www.instagram.com/p/Df2ZUETGs1-/ -> 400 {"error":{"message":"Unsupported delete request. Object with ID '18005941538808977' does not exist, cannot be loaded due to missing permissions, or does not support this operation","type":"IGApiExcept
+IG 2026-11-18 IMAGE https://www.instagram.com/p/Df4-iUpnFeo/ -> 400 {"error":{"message":"Unsupported delete request. Object with ID '18100443788240774' does not exist, cannot be loaded due to missing permissions, or does not support this operation","type":"IGApiExcept
+IG 2026-11-19 CAROUSEL_ALBUM https://www.instagram.com/p/Df7iuXqljMn/ -> 400 {"error":{"message":"Unsupported delete request. Object with ID '18355714420284625' does not exist, cannot be loaded due to missing permissions, or does not support this operation","type":"IGApiExcept
+IG 2026-11-20 CAROUSEL_ALBUM https://www.instagram.com/p/Df-HmpolHKh/ -> 400 {"error":{"message":"Unsupported delete request. Object with ID '18112624742338187' does not exist, cannot be loaded due to missing permissions, or does not support this operation","type":"IGApiExcept
+FB objava iz objavljeno.json: 23
+FB 2026-10-29_savjet-gdje-kamera 1465240648868632 -> 400 {"error":{"message":"Unsupported delete request. Object with ID '1465240648868632' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Grap
+FB 2026-10-30_mini-rack 122105914353520885 -> 200 {"success":true}
+FB 2026-10-31_primjer-prilaz 122106358065520885 -> 200 {"success":true}
+FB 2026-11-01_sacuvaj-kamera-ne-radi 1364094053457507_122106739509520885 -> 200 {"success":true}
+FB 2026-11-02_megapikseli 1364094053457507_122107101159520885 -> 200 {"success":true}
+FB 2026-11-03_ugradni-ormar 122107429311520885 -> 200 {"success":true}
+FB 2026-11-04_oprema-dahua-turret 122107800273520885 -> 200 {"success":true}
+FB 2026-11-05_savjet-prije-kupovine 1364094053457507_122108139645520885 -> 200 {"success":true}
+FB 2026-11-06_noc-bijela-slika 1364094053457507_122108561127520885 -> 200 {"success":true}
+FB 2026-11-07_primjer-kuca-4-kamere 1701688928259378 -> 200 {"success":true}
+FB 2026-11-08_sacuvaj-odrzavanje 1364094053457507_122109306513520885 -> 200 {"success":true}
+FB 2026-11-09_kabl-do-kamere 1364094053457507_122109637233520885 -> 200 {"success":true}
+FB 2026-11-10_ormar-monitor 122109933753520885 -> 200 {"success":true}
+FB 2026-11-11_oprema-hikvision-colorvu 122110232925520885 -> 200 {"success":true}
+FB 2026-11-12_kuca-ili-radnja 1960573224923131 -> 200 {"success":true}
+FB 2026-11-13_izgubljen-snimak 1364094053457507_122110763547520885 -> 200 {"success":true}
+FB 2026-11-14_primjer-radnja 1684455233342867 -> 200 {"success":true}
+FB 2026-11-15_sacuvaj-pitanja-instalater 1364094053457507_122111287521520885 -> 200 {"success":true}
+FB 2026-11-16_zicane-ili-wifi 1145958555073457 -> 200 {"success":true}
+FB 2026-11-17_uredan-rack 122111747367520885 -> 200 {"success":true}
+FB 2026-11-18_oprema-dahua-nvr 122111986191520885 -> 200 {"success":true}
+FB 2026-11-19_zastiti-pristup-kamerama 1364094053457507_122112212553520885 -> 200 {"success":true}
+FB 2026-11-20_kamera-gasi-nocu 1364094053457507_122112453171520885 -> 200 {"success":true}
+---
