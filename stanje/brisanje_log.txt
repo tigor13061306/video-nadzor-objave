@@ -1,0 +1,5 @@
+IG objava na profilu: 26
+IG 2026-10-24 CAROUSEL_ALBUM https://www.instagram.com/p/De45S6YjSpX/ -> 400 {"error":{"message":"Unsupported delete request. Object with ID '18110436005228978' does not exist, cannot be loaded due to missing permissions, or does not support this operation","type":"IGApiExcept
+FB objava iz objavljeno.json: 23
+FB 2026-10-29_savjet-gdje-kamera 1465240648868632 -> 200 {"success":true}
+---
