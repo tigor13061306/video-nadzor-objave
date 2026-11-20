@@ -11,8 +11,8 @@ Ne odgovaraj. Samo navedi Igoru ko je pisao i šta pita (bez brojeva telefona u 
 ## Facebook grupe (preglednik, kao stranica "Pametnija firma", nikad Igorov lični profil)
 - Ciljne grupe: preduzetnici, mali biznis, računovođe, trgovci, ugostitelji, IT pomoć u BiH i regiji. Spisak u 07_statistika/grupe_pf.csv na računaru. Prvo predloži Igoru spisak od 8 do 10 grupa; učlanjuj se tek kad ga potvrdi.
 - Prije učlanjenja i objave pročitaj pravila grupe. Preskoči grupe koje ne primaju stranice ili zabranjuju poslovne objave.
-- Svaki dan: najviše 3 korisna odgovora na pitanja o Excelu, programima, AI-ju, internetu, backupu, nadzoru. Bez reklame i linkova.
-- Jednom sedmično (srijeda): jedna korisna objava, samo gdje pravila to dozvoljavaju; ista grupa najviše jednom u 3 sedmice.
+- Komentari u grupama i na tuđim objavama: SAMO uz Igorovo odobrenje, po pravila/prilike.md (prijedlog -> Igor odobri -> objava).
+- Objava u grupi (najviše jednom sedmično, srijeda): takođe prvo prijedlog Igoru, objavljuje se tek kad odobri.
 - Upiti firmi iz grupa: u 07_statistika/kupci_pf.csv i u poruci Igoru.
 
 ## Ne radimo
