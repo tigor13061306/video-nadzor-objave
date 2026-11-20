@@ -33,7 +33,7 @@ def main(src, out):
     d.text((M, y), "Pogledaj cijelu objavu", font=font("InterDisplay-Bold.otf", 58), fill=WHITE)
     d.text((M, y + 76), "na profilu  →", font=font("InterDisplay-Bold.otf", 58), fill=ACCENT)
     # poziv na odgovor: odgovor na priču stiže Igoru u DM
-    d.text((M, y + 186), "Imaš pitanje o kamerama? Odgovori na ovu priču.",
+    d.text((M, y + 186), "Pitanje za vašu firmu? Odgovorite na ovu priču.",
            font=font("Inter-Medium.otf", 36), fill=(170, 190, 210))
     img.save(out, quality=92)
     print("snimljeno:", out)

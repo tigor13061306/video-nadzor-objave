@@ -1,50 +1,10 @@
-datum;dan;format;tema;sablon;materijal;status;napomena
-2026-10-24;subota;carousel;5 grešaka pri postavljanju kamera;naslovna + foto_traka + foto_kutija;AI fotke iz odobreno;objavljeno;https://www.instagram.com/p/De45S6YjSpX/ (probna objava preko API-ja)
-2026-10-26;ponedjeljak;slika;Ista kamera danju i noću;dan_noc;AI_dvoriste_dan + AI_dvoriste_noc;objavljeno;https://www.instagram.com/p/De9xCmtDThY/
-2026-10-28;srijeda;slika;Tvoja kuća na telefonu;foto_kutija;AI_kuca_sumrak;objavljeno;https://www.instagram.com/p/DfC8Qo7DSX4/ (objavljeno ručno u 18:15, računar nije bio dostupan u 17:43)
-2026-10-29;četvrtak;reel;Gdje postaviti kameru: 3 pravila;reel od fotki;AI_kamera_ulaz_visina + AI_kamera_svjetlo_iza + AI_kamera_garaza;objavljeno;https://www.instagram.com/reel/DfFjJR8Dd5_/ (GitHub, ručno pokrenut u 18:31 jer zakazano pokretanje nije krenulo)
-2026-10-30;petak;slika;Uredna instalacija: snimač i mreža u jednom ormariću;foto_kutija;AI_mini_rack;objavljeno;https://www.instagram.com/p/DfIHAbTIG_J/
-2026-10-31;subota;slika;Primjer: prilaz i kapija noću;foto_traka;AI_prilaz_noc;objavljeno;https://www.instagram.com/p/DfKocJSlld4/ (GitHub; i na Facebook stranici)
-2026-11-01;nedjelja;carousel;Sačuvaj: kamera ne radi, provjeri ovo prije poziva;naslovna + tekst (stavke);AI_snimac_router_polica;objavljeno;https://www.instagram.com/p/DfNNMnTFSJV/ (GitHub; i na Facebook stranici)
-2026-11-02;ponedjeljak;carousel;2, 4 ili 8 MP: šta se stvarno vidi;naslovna + foto_traka;isti kadar u tri rezolucije (Gemini);objavljeno;https://www.instagram.com/p/DfP3Y9iiT0T/ (GitHub; i na Facebook stranici; napravio kontrolor)
-2026-11-03;utorak;slika;Oprema koja se ne vidi: ugradni ormar u hodniku;foto_kutija;AI_ugradni_ormar;objavljeno;https://www.instagram.com/p/DfSWBPqmrwi/ (napravio kontrolor)
-2026-11-04;srijeda;slika;Oprema koju ugrađujem: Dahua IPC-HDW2441T-S;proizvod;oprema/dahua/kamere/IPC-HDW2441T-S;objavljeno;https://www.instagram.com/p/DfU67t9mxef/ (OPREMA - bez AI napomene)
-2026-11-05;četvrtak;carousel;3 stvari koje provjeriš prije kupovine kamera;naslovna + tekst;bez fotke;objavljeno;https://www.instagram.com/p/DfXfqSfERPC/ (napravio kontrolor, tekst bez fotke)
-2026-11-06;petak;carousel;Noću slika bijela ili mutna: 4 razloga i rješenja;naslovna + foto_traka;AI_kamera_ispod_strehe, AI_kamera_iza_prozora, AI_kamera_paucina, AI_kamera_prljavo_staklo, AI_noc_bijela_slika;objavljeno;https://www.instagram.com/p/DfaEfMOGgKX/ (ČESTI PROBLEMI); AI napomena
-2026-11-07;subota;reel;Primjer: porodična kuća sa 4 kamere;reel od fotki;AI_kamera_garaza_vrata, AI_kuca_4_kamere, AI_kuca_ulaz_kamera;objavljeno;https://www.instagram.com/reel/DfcpPyvCpB9/ (LOKACIJA - AI primjer, ne Igorov rad); Reel
-2026-11-08;nedjelja;carousel;Sačuvaj: održavanje video nadzora svakih 6 mjeseci;naslovna + tekst;bez fotke (tekst);objavljeno;https://www.instagram.com/p/DffOE-vlTom/ (ZA ČUVANJE - checklista); napravljeno u oblaku 1.11. (računar nedostupan, bez Gemini-ja)
-2026-11-09;ponedjeljak;carousel;Kabl do kamere: UTP, PoE i zaštita od vlage;naslovna + foto_traka;AI_kabl_utp_krimpanje, AI_kanalica_zid, AI_razvodna_kutija_kamera;objavljeno;https://www.instagram.com/p/DfhyzXAkWPL/ (EDUKACIJA; AI napomena)
-2026-11-10;utorak;slika;Ormar sa monitorom za radnju i kancelariju;foto_kutija;AI_ormar_monitor;objavljeno;https://www.instagram.com/p/DfkXkCbG3Pa/ (RJEŠENJE; AI napomena)
-2026-11-11;srijeda;slika;Oprema koju ugrađujem: Hikvision DS-2CD2047G2-LU;proizvod;oprema/hikvision/kamere/DS-2CD2047G2-LU_naprijed;objavljeno;https://www.instagram.com/p/Dfm8YJQlV8m/ (OPREMA - bez AI napomene)
-2026-11-12;četvrtak;reel;Kamera za kuću ili za radnju: razlike;reel od fotki;AI_kamera_fasada_dan, AI_kamera_ugao_kuce, AI_radnja_kasa_kamera;objavljeno;https://www.instagram.com/reel/DfphK2Djtp3/ (SAVJET - Reel)
-2026-11-13;petak;carousel;Izgubio si snimak? Najčešći razlozi;naslovna + foto_traka;AI_disk_snimac, AI_snimac_ups, AI_telefon_reprodukcija;objavljeno;https://www.instagram.com/p/DfsGd3-GCjp/ (ČESTI PROBLEMI); AI napomena
-2026-11-14;subota;reel;Primjer: mala radnja sa kamerama (ulaz, magacin, parking);reel od fotki;AI_radnja_magacin, AI_radnja_parking, AI_radnja_spolja;objavljeno;https://www.instagram.com/reel/Dfuqx2TD-Nz/ (LOKACIJA - AI primjer, ne Igorov rad); Reel
-2026-11-15;nedjelja;carousel;Sačuvaj: 8 pitanja za instalatera prije ugradnje;naslovna + tekst;bez fotke (tekst);objavljeno;https://www.instagram.com/p/DfxPjlkoFL7/ (ZA ČUVANJE - checklista); zamijenjeno sa 22.11. (tabela diska traži provjeren proračun)
-2026-11-16;ponedjeljak;reel;Žičane ili WiFi kamere: kad koje;reel od fotki;AI_kuca_dvoriste_kamera, AI_snimac_ormaric, AI_telefon_obavjestenje;objavljeno;https://www.instagram.com/reel/Dfz1Hlul6Sh/ (EDUKACIJA - Reel); Reel; napravio kontrolor
-2026-11-17;utorak;slika;Uredan rack: snimač, switch i patch panel na jednom mjestu;tekst;bez fotke (tekst);spremno;RJEŠENJE; napravio kontrolor (tekst, nema slobodnih fotki)
-2026-11-18;srijeda;slika;Oprema koju ugrađujem: Dahua NVR2108HS-8P-I2;proizvod;oprema/dahua/snimaci/NVR2108HS-8P-I2;spremno;OPREMA - bez AI napomene
-2026-11-19;četvrtak;carousel;Zaštiti pristup kamerama: šifra i ažuriranje;naslovna + tekst;zvanična slika Hikvision kamere + tekst;spremno;SAVJET; napravio kontrolor (carousel, nema slobodnih AI fotki za Reel)
-2026-11-20;petak;carousel;Kamera se gasi noću: napajanje i PoE;tekst;bez fotke (tekst);spremno;ČESTI PROBLEMI; bez AI napomene
-2026-11-21;subota;carousel;Kuća pod nadzorom: 4 mjesta za kamere (ulaz, dvorište, kapija, zadnja strana);proizvod + tekst;zvanična slika Dahua IPC-HDBW2441E-S + tekst;spremno;LOKACIJA; napravio kontrolor (nema slobodnih AI fotki za Reel "Primjer: vikendica" - tema ostaje za kasnije)
-2026-11-22;nedjelja;carousel;Sačuvaj: kuća pod nadzorom prije odlaska na put;tekst;bez fotke (tekst);spremno;ZA ČUVANJE - checklista; zamijenjeno sa 29.11. (tabela diska traži provjeren proračun)
-2026-11-23;ponedjeljak;carousel;Kamera na ulazu: kako da se vidi lice;proizvod + tekst;zvanična slika Dahua IPC-HDW2441T-S + tekst;spremno;EDUKACIJA; napravio kontrolor (nema slobodnih AI fotki za Reel)
-2026-11-24;utorak;slika;Kamera daleko od kuće bez kopanja: bežični most;tekst;bez fotke (tekst);spremno;RJEŠENJE; nedjeljna priprema 16.11. iz oblaka, bez računara i Gemini-ja
-2026-11-25;srijeda;slika;Oprema koju ugrađujem: Hikvision DS-7608NXI-K2/8P;proizvod;oprema/hikvision/snimaci/DS-7608NXI-K2-8P;spremno;OPREMA - bez AI napomene; nedjeljna priprema 16.11. iz oblaka, bez računara i Gemini-ja
-2026-11-26;četvrtak;carousel;Obavještenja na telefonu: da te ne budi svaka mačka;proizvod + tekst;zvanična slika Hikvision DS-2CD2346G2-IU + tekst;spremno;SAVJET; nedjeljna priprema 16.11. iz oblaka, bez računara i Gemini-ja (nema slobodnih fotki za Reel)
-2026-11-27;petak;carousel;Slika kasni ili se zamrzava na telefonu;tekst;bez fotke (tekst);spremno;ČESTI PROBLEMI; nedjeljna priprema 16.11. iz oblaka, bez računara i Gemini-ja (nema slobodnih fotki za Reel)
-2026-11-28;subota;carousel;Dvorište i garaža: šta kamera treba da vidi;proizvod + tekst;zvanična slika Hikvision DS-2CD2047G2-LU + tekst;spremno;LOKACIJA; nedjeljna priprema 16.11. iz oblaka, bez računara i Gemini-ja; Reel 'Primjer: dvorište i garaža' ostaje za kad budu AI fotke
-2026-11-29;nedjelja;carousel;Sačuvaj: šta pripremiti prije dolaska instalatera;tekst;bez fotke (tekst);spremno;ZA ČUVANJE - checklista; zamijenjeno sa 06.12. (tabela diska traži provjeren proračun); nedjeljna priprema 16.11. iz oblaka, bez računara i Gemini-ja
-2026-11-30;ponedjeljak;carousel;Kamera bez interneta: kako ipak snima i kako je gledaš;proizvod + tekst;zvanična slika Dahua NVR2108HS-8P-I2 + tekst;spremno;EDUKACIJA; nedjeljna priprema 16.11. iz oblaka, bez računara i Gemini-ja (nema slobodnih fotki za Reel)
-2026-12-01;utorak;slika;Kamera za vikendicu bez struje i interneta: solarni panel i 4G;foto_kutija;AI vikendica sa solarnom kamerom (bez vidljivih kablova);za pripremu;RJEŠENJE - najkomentarisanije pitanje u grupama; tvrdnje samo provjerene
-2026-12-02;srijeda;slika;Oprema koju ugrađujem: Dahua IPC-HFW2441S-S;proizvod;oprema/dahua/kamere/IPC-HFW2441S-S;za pripremu;OPREMA - bez AI napomene
-2026-12-03;četvrtak;reel;Imaš stari sistem? Šta možeš zadržati kad mijenjaš kamere (kablovi, napajanje, snimač);reel od fotki;AI stari i novi snimač;za pripremu;SAVJET - Reel - tema iz FB grupa
-2026-12-04;petak;reel;Promijenio si ruter i kamere ne rade na telefonu: šta provjeriti;reel od fotki;AI ruter, snimač, telefon (3 fotke);za pripremu;ČESTI PROBLEMI - Reel
-2026-12-05;subota;reel;Primjer: mala firma sa parkingom;reel od fotki;AI firma sa parkingom i kamerama (3-4 AI fotke);za pripremu;LOKACIJA - AI primjer, ne Igorov rad
-2026-12-06;nedjelja;carousel;Sačuvaj: koliko dana snima disk od 1, 2 i 4 TB;naslovna + tekst;jedna AI fotka diska;za pripremu;ZA ČUVANJE - tabela; brojke samo iz kalkulatora proizvođača (Hikvision/Dahua), navedi pretpostavke: broj kamera, MP, H.265, 24 h snimanje; zamijenjeno sa 29.11.
-2026-12-07;ponedjeljak;reel;Koliko kamera treba za kuću: od 2 do 6;reel od fotki;AI kuća sa kamerama (3 fotke);za pripremu;EDUKACIJA - Reel
-2026-12-08;utorak;slika;Uredno vođenje kabla kroz strehu do kamere;foto_kutija;AI streha sa kamerom (bez vidljivih kablova);za pripremu;RJEŠENJE
-2026-12-09;srijeda;slika;Oprema koju ugrađujem: Hikvision DS-2CD2146G2-ISU;proizvod;oprema/hikvision/kamere/DS-2CD2146G2-ISU_kuciste;za pripremu;OPREMA - bez AI napomene
-2026-12-10;četvrtak;reel;Zima i kamere: snijeg, mraz i kondenz;reel od fotki;AI kamera zimi (3 fotke);za pripremu;SAVJET - Reel
-2026-12-11;petak;reel;Snimač pišti ili javlja grešku diska: šta znači;reel od fotki;AI snimač, disk, monitor (3 fotke);za pripremu;ČESTI PROBLEMI - Reel
-2026-12-12;subota;reel;Primjer: vikendica pod nadzorom;reel od fotki;AI vikendica (3-4 AI fotke);za pripremu;LOKACIJA - AI primjer, ne Igorov rad
-2026-12-13;nedjelja;carousel;Sačuvaj: podešavanja aplikacije za kamere na telefonu;naslovna + tekst;jedna AI fotka telefona;za pripremu;ZA ČUVANJE - podsjetnik
+datum;dan;stub;tema;cta;status;folder
+2026-11-23;ponedjeljak;automatizacija;Pitanja "imate li na stanju" i Viber bot;poruke;spremno;2026-11-23_pozivi-na-stanju
+2026-11-25;srijeda;nadzor sistema;Server pao u petak u 17h, saznali u ponedjeljak;poruke;spremno;2026-11-25_server-pao
+2026-11-27;petak;AI u poslu;5 poslova koje AI već danas radi u maloj firmi (i šta mu nikad ne dajete);komentar;za pripremu;
+2026-11-30;ponedjeljak;sigurnost;Backup koji niko nikad nije provjerio: 3 pitanja za vašu firmu;komentar;za pripremu;
+2026-12-02;srijeda;nadzor sistema;Nestane interneta u radnji, a vi saznate za 1 minut;poruke;za pripremu;
+2026-12-04;petak;automatizacija;Ponuda iz Excela za 10 sekundi umjesto 10 minuta;poruke;za pripremu;
+2026-12-07;ponedjeljak;AI u poslu;Lažni mail "od banke": kako ga prepoznati za 10 sekundi;komentar;za pripremu;
+2026-12-09;srijeda;automatizacija;Izvještaj koji sam stigne mailom u ponedjeljak ujutro;poruke;za pripremu;
+2026-12-11;petak;nadzor sistema;Disk se puni polako, a stane odjednom;poruke;za pripremu;

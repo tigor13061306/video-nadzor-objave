@@ -13,6 +13,13 @@ reel.json (putanje do fotki relativne u odnosu na folder reel.json):
   "trajanje_kadra": 3.5,
   "kraj": {"tekst": "Treba ti video nadzor?", "podtekst": "Piši u DM za ponudu"}
 }
+Dodatno po kadru (sve neobavezno):
+  "video": "klip.mp4"   umjesto "foto": kratki video kadar (zvuk klipa se ne koristi, ide muzika)
+  "trajanje": 2.0       trajanje ovog kadra u sekundama (video: najviše dužina klipa)
+  "oznaka": "Ulaz"      mala oznaka gore lijevo, npr. pozicija kamere (u boji akcenta)
+  "zoom": false         bez laganog zumiranja (za par prije/poslije, da kadar stoji isto)
+  "prelaz": "rez"       oštar rez umjesto pretapanja (npr. iz PRIJE u POSLIJE)
+Kadar bez "tekst" i "podtekst" nema donji okvir sa tekstom.
 Izlaz: video.mp4 i cover.jpg u folderu reel.json.
 """
 import json, os, subprocess, sys
@@ -22,7 +29,7 @@ from PIL import Image, ImageDraw, ImageFont, ImageOps
 W, H, FPS = 1080, 1920, 30
 GROUND = (14, 26, 43); RAISED = (19, 36, 58); ACCENT = (34, 195, 230)
 WHITE = (255, 255, 255); BODY = (197, 208, 220)
-HANDLE = "@video.nadzorkamere"
+HANDLE = "@pametnija.firma"
 M = 96
 FONTS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fonts")
 FADE = 12  # broj frejmova prelaza
@@ -53,13 +60,27 @@ def cover_fill(im, w, h, fx, fy, zoom):
     nw, nh = round(im.width * sc), round(im.height * sc)
     x = round((nw - w) * fx); y = round((nh - h) * fy)
     # izreži prvo u izvornoj rezoluciji pa smanji, brže je
-    box = (x / sc, y / sc, (x + w) / sc, (y + h) / sc)
+    box = (x / sc, y / sc, min(im.width, (x + w) / sc), min(im.height, (y + h) / sc))
     return im.resize((w, h), Image.BILINEAR, box=box)
+
+
+def badge(d, text):
+    """Mala oznaka gore lijevo, npr. PRIJE / POSLIJE."""
+    f = font("InterDisplay-Bold.otf", 52)
+    col = (120, 134, 150) if text.strip().upper().startswith("PRIJE") else ACCENT
+    tw = d.textlength(text, font=f)
+    x0, y0 = M - 30, 150
+    d.rounded_rectangle([x0, y0, x0 + tw + 60, y0 + 88], radius=20, fill=RAISED + (235,), outline=col, width=4)
+    d.text((x0 + 30, y0 + 44), text, font=f, fill=WHITE if col == ACCENT else BODY, anchor="lm")
 
 
 def overlay(k):
     """Providni sloj sa tekstom za jedan kadar (crta se jednom)."""
     ov = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(ov)
+    if k.get("oznaka"):
+        badge(d, k["oznaka"])
+    if not k.get("tekst") and not k.get("podtekst"):
+        return ov
     fT, fP = font("InterDisplay-Bold.otf", 64), font("Inter-Regular.otf", 40)
     tl = wrap(d, k.get("tekst", ""), fT, W - 2 * M - 80)
     pl = wrap(d, k.get("podtekst", ""), fP, W - 2 * M - 80) if k.get("podtekst") else []
@@ -75,6 +96,30 @@ def overlay(k):
     for ln in pl:
         d.text((M, y), ln, font=fP, fill=BODY); y += 52
     return ov
+
+
+def clip_len(path):
+    r = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", path],
+                       capture_output=True, text=True)
+    return float(r.stdout.strip())
+
+
+def video_frames(path):
+    """Kadrovi video klipa na 30 fps, kao PIL slike (izvorna veličina)."""
+    r = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height",
+                        "-of", "csv=p=0", path], capture_output=True, text=True)
+    vw, vh = [int(x) for x in r.stdout.strip().split(",")[:2]]
+    q = subprocess.Popen(["ffmpeg", "-loglevel", "error", "-i", path, "-vf", f"fps={FPS}", "-f", "rawvideo",
+                          "-pix_fmt", "rgb24", "-"], stdout=subprocess.PIPE)
+    n = vw * vh * 3
+    try:
+        while True:
+            b = q.stdout.read(n)
+            if len(b) < n:
+                break
+            yield Image.frombytes("RGB", (vw, vh), b)
+    finally:
+        q.stdout.close(); q.kill(); q.wait()
 
 
 def end_card(kraj):
@@ -93,9 +138,15 @@ def end_card(kraj):
 def main(path):
     base = os.path.dirname(os.path.abspath(path))
     spec = json.load(open(path, encoding="utf-8"))
-    per = int(spec.get("trajanje_kadra", 3.5) * FPS)
+    per_def = spec.get("trajanje_kadra", 3.5)
     out = os.path.join(base, "video.mp4")
-    total = len(spec["kadrovi"]) * per / FPS + 2.5
+    lens_s = []
+    for k in spec["kadrovi"]:
+        t = k.get("trajanje", per_def)
+        if k.get("video"):
+            t = min(k.get("trajanje", 99), clip_len(os.path.join(base, k["video"])))
+        lens_s.append(int(t * FPS))
+    total = sum(lens_s) / FPS + 2.5
     if spec.get("muzika", True):
         import muzika
         wav = os.path.join(base, "muzika.wav")
@@ -110,18 +161,35 @@ def main(path):
     p = subprocess.Popen(cmd, stdin=subprocess.PIPE)
     prev_last = None
     for i, k in enumerate(spec["kadrovi"]):
-        im = ImageOps.exif_transpose(Image.open(os.path.join(base, k["foto"]))).convert("RGB")
+        per = lens_s[i]
         fx, fy = k.get("fokus", [0.5, 0.5])
         ov = overlay(k)
+        fade = k.get("prelaz") != "rez"
+        if k.get("video"):
+            src = video_frames(os.path.join(base, k["video"]))
+        else:
+            im = ImageOps.exif_transpose(Image.open(os.path.join(base, k["foto"]))).convert("RGB")
+        fr = None
         for f in range(per):
-            z = 1.0 + 0.08 * f / per if i % 2 == 0 else 1.08 - 0.08 * f / per
-            fr = cover_fill(im, W, H, fx, fy, z).convert("RGBA")
+            if k.get("video"):
+                nxt = next(src, None)
+                if nxt is not None:
+                    raw = nxt
+                fr = cover_fill(raw, W, H, fx, fy, 1.0).convert("RGBA")
+            else:
+                if k.get("zoom", True):
+                    z = 1.0 + 0.08 * f / per if i % 2 == 0 else 1.08 - 0.08 * f / per
+                else:
+                    z = 1.0
+                fr = cover_fill(im, W, H, fx, fy, z).convert("RGBA")
             fr.alpha_composite(ov); fr = fr.convert("RGB")
-            if prev_last is not None and f < FADE:
+            if prev_last is not None and fade and f < FADE:
                 fr = Image.blend(prev_last, fr, (f + 1) / FADE)
-            if i == 0 and f == per // 2:
+            if i == spec.get("cover_kadar", 0) and f == per // 2:
                 fr.save(os.path.join(base, "cover.jpg"), quality=92)
             p.stdin.write(fr.tobytes())
+        if k.get("video"):
+            src.close()
         prev_last = fr
     end = end_card(spec.get("kraj", {}))
     for f in range(int(2.5 * FPS)):

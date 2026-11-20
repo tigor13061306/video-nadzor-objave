@@ -1,4 +1,4 @@
-"""Dnevna objava na Instagram (@video.nadzorkamere), pokreće je GitHub Actions.
+"""Dnevna objava na Instagram (@pametnija.firma) i Facebook stranicu "Pametnija firma", pokreće je GitHub Actions.
 
 - Objavljuje svaki folder objave/GGGG-MM-DD_tema/ čiji je datum danas ili ranije,
   a nije upisan u stanje/objavljeno.json (tako se propuštene objave same nadoknade).
@@ -19,7 +19,7 @@ RAW = "https://raw.githubusercontent.com/tigor13061306/video-nadzor-objave/main/
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STANJE = os.path.join(ROOT, "stanje", "objavljeno.json")
 AI_RED = "[Pri objavi uključi AI info]"
-AI_TEKST = "Fotografije su ilustrativne, napravljene AI alatom."
+AI_TEKST = "Fotografije i glas su napravljeni AI alatom."
 NAJRANIJE = dt.time(17, 40)
 MAX_NADOKNADA_DANA = 7
 
@@ -110,7 +110,10 @@ def objavi_folder(api, ime):
         params = {"media_type": "REELS", "video_url": base + "video.mp4", "caption": tekst, "share_to_feed": "true"}
         if os.path.exists(os.path.join(folder, "cover.jpg")):
             params["cover_url"] = base + "cover.jpg"
-        c = api.post(IG + "/media", **params)
+        # AI oznaka preko API-ja (is_ai_generated); ako je API ne prihvati, objava ide bez nje (napomena je u opisu)
+        c = api.post(IG + "/media", is_ai_generated="true", **params) if os.path.exists(os.path.join(folder, "ai.txt")) else {}
+        if "id" not in c:
+            c = api.post(IG + "/media", **params)
         vrsta, prva = "reel", "cover.jpg"
     else:
         slike = sorted(f for f in os.listdir(folder) if re.fullmatch(r"\d\d\.jpg", f))
