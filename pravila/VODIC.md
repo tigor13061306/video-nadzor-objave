@@ -43,3 +43,6 @@ objave/GGGG-MM-DD_tema/: video.mp4, cover.jpg (kadar iz prve 2-3 s, 1080x1920), 
 - "Instagram – kontrolor" (oblak, 17:45): objava izašla? spremne objave ispravne? zaliha.
 - "Instagram – nedjeljna priprema" (računar, nedjelja 18:32): fotke + glas preko Gemini-ja, Reelsi za dvije sedmice, na GitHub.
 - "Instagram – dnevna objava i zajednica" (računar, 18:21): komentari, poruke (samo navede), Facebook grupe za preduzetnike.
+
+## Posebne objave van rasporeda
+Folder sa fajlom odmah.txt objavljuje se odmah kad se pokrene workflow (promjena stanje/pokreni.txt), i prije 17:43. Takve objave čekaju u cekaju/ (objavi.py ih ne vidi) i premještaju se u objave/ tek u trenutku objave. Prvi put 21.11.2026: 4 Reela, jedan svaka 2 sata (Igorov zahtjev, samo taj dan).

@@ -305,3 +305,46 @@ def tiles(im, t, start, items, x0=150, y0=1100, w=780):
         d.ellipse([cx + 26, cy + 34, cx + 54, cy + 62], fill=col + (int(255 * p),))
         d.text((cx + 72, cy + 48), name, font=f("Inter-SemiBold.otf", 36), fill=WH + (int(255 * p),), anchor="lm")
     im = im.convert("RGBA"); im.alpha_composite(lay); return im.convert("RGB")
+
+
+def list_items(im, t, start, items, y0=520, gap=150, every=0.7, num=True, colr=None):
+    """Stavke koje se pojavljuju jedna po jedna (broj u krugu + tekst)."""
+    lay = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
+    fo = f("Inter-SemiBold.otf", 50)
+    for i, txt in enumerate(items):
+        p = prog(t, start + i * every, 0.35)
+        if p <= 0: continue
+        a = int(255 * p); x = 110 + (1 - p) * 60; y = y0 + i * gap
+        c = colr[i] if colr else A
+        d.rounded_rectangle([x, y, W - 110, y + gap - 30], radius=28, fill=R + (int(230 * p),), outline=c + (a,), width=3)
+        if num:
+            d.ellipse([x + 26, y + (gap - 30) / 2 - 34, x + 94, y + (gap - 30) / 2 + 34], fill=c + (a,))
+            d.text((x + 60, y + (gap - 30) / 2), str(i + 1), font=f("InterDisplay-Bold.otf", 44), fill=G + (a,), anchor="mm")
+        lines = wrap(d, txt, fo, W - 220 - 130)
+        ty = y + (gap - 30) / 2 - (len(lines) - 1) * 30
+        for ln in lines:
+            d.text((x + 124, ty), ln, font=fo, fill=WH + (a,), anchor="lm"); ty += 60
+    im = im.convert("RGBA"); im.alpha_composite(lay); return im.convert("RGB")
+
+
+def steps(im, t, start, items, y0=560, every=0.9):
+    """Koraci postupka povezani strelicama, svaki dobije zelenu kvačicu."""
+    lay = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
+    fo = f("Inter-SemiBold.otf", 50); bh = 150; gap = 90
+    for i, txt in enumerate(items):
+        p = prog(t, start + i * every, 0.35)
+        if p <= 0: continue
+        a = int(255 * p); y = y0 + i * (bh + gap)
+        done = t >= start + i * every + 0.5
+        col = GRN if done else A
+        d.rounded_rectangle([140, y, W - 140, y + bh], radius=30, fill=R + (int(235 * p),), outline=col + (a,), width=4)
+        d.text((200, y + bh / 2), txt, font=fo, fill=WH + (a,), anchor="lm")
+        if done:
+            cx, cy = W - 210, y + bh / 2
+            d.ellipse([cx - 34, cy - 34, cx + 34, cy + 34], fill=GRN + (a,))
+            d.line([cx - 16, cy, cx - 4, cy + 13, cx + 18, cy - 14], fill=G + (a,), width=8)
+        if i < len(items) - 1 and prog(t, start + (i + 1) * every, 0.3) > 0:
+            ax = W / 2; ay0 = y + bh + 12; ay1 = y + bh + gap - 12
+            d.line([ax, ay0, ax, ay1], fill=A + (a,), width=6)
+            d.polygon([(ax - 16, ay1 - 18), (ax + 16, ay1 - 18), (ax, ay1)], fill=A + (a,))
+    im = im.convert("RGBA"); im.alpha_composite(lay); return im.convert("RGB")

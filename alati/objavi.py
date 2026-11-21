@@ -225,7 +225,8 @@ def main():
         if not m or ime in stanje or not os.path.exists(os.path.join(ROOT, "objave", ime, "opis.txt")):
             continue
         d = dt.date.fromisoformat(m.group(1))
-        if d > danas or (d == danas and sada.time() < NAJRANIJE):
+        odmah = os.path.exists(os.path.join(ROOT, "objave", ime, "odmah.txt"))  # posebna objava van rasporeda
+        if d > danas or (d == danas and sada.time() < NAJRANIJE and not odmah):
             continue
         if (danas - d).days > MAX_NADOKNADA_DANA:
             log("preskačem staru objavu (više od 7 dana):", ime)
