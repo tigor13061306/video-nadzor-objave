@@ -225,7 +225,14 @@ def main():
         if not m or ime in stanje or not os.path.exists(os.path.join(ROOT, "objave", ime, "opis.txt")):
             continue
         d = dt.date.fromisoformat(m.group(1))
-        odmah = os.path.exists(os.path.join(ROOT, "objave", ime, "odmah.txt"))  # posebna objava van rasporeda
+        # posebna objava van rasporeda; odmah.txt može sadržati "HH:MM" = ne prije tog vremena
+        fo = os.path.join(ROOT, "objave", ime, "odmah.txt")
+        odmah = os.path.exists(fo)
+        if odmah:
+            mt = re.search(r"(\d{1,2}):(\d{2})", open(fo, encoding="utf-8").read())
+            if mt and d == danas and sada.time() < dt.time(int(mt.group(1)), int(mt.group(2))):
+                log("posebna objava čeka svoje vrijeme:", ime, mt.group(0))
+                continue
         if d > danas or (d == danas and sada.time() < NAJRANIJE and not odmah):
             continue
         if (danas - d).days > MAX_NADOKNADA_DANA:
