@@ -1,0 +1,223 @@
+{
+ "vrijeme": "2026-11-22T09:48Z",
+ "objave": {
+  "2026-11-21_ai-u-firmi": {
+   "link": "https://www.instagram.com/reel/Df_y72ugp_r/",
+   "objavljeno": "2026-11-21T09:26+01:00",
+   "ig": {
+    "views": 103,
+    "reach": 97,
+    "likes": 0,
+    "comments": 0,
+    "shares": 0,
+    "saved": 1,
+    "total_interactions": 1,
+    "ig_reels_avg_watch_time": 5420,
+    "ig_reels_video_view_total_time": 552883,
+    "follows": {
+     "greska": "The Media Insights API does not support the follows metric for this media product type."
+    },
+    "profile_visits": {
+     "greska": "The Media Insights API does not support the profile_visits metric for this media product type."
+    }
+   },
+   "fb": {
+    "total_video_views": {
+     "greska": "(#200) read_insights permission missing (https://developers.facebook.com/docs/permissions/reference/read_insights)"
+    },
+    "total_video_views_unique": {
+     "greska": "(#100) The value must be a valid insights metric"
+    },
+    "total_video_avg_time_watched": {
+     "greska": "(#200) read_insights permission missing (https://developers.facebook.com/docs/permissions/reference/read_insights)"
+    },
+    "total_video_complete_views": {
+     "greska": "(#200) read_insights permission missing (https://developers.facebook.com/docs/permissions/reference/read_insights)"
+    },
+    "total_video_impressions": {
+     "greska": "(#100) The value must be a valid insights metric"
+    },
+    "total_video_10s_views": {
+     "greska": "(#200) read_insights permission missing (https://developers.facebook.com/docs/permissions/reference/read_insights)"
+    },
+    "total_video_retention_graph": {
+     "greska": "(#200) read_insights permission missing (https://developers.facebook.com/docs/permissions/reference/read_insights)"
+    },
+    "total_video_view_total_time": {
+     "greska": "(#200) read_insights permission missing (https://developers.facebook.com/docs/permissions/reference/read_insights)"
+    },
+    "post": {
+     "id": "1700617494811305",
+     "permalink_url": "/reel/1700617494811305/",
+     "length": 37.866,
+     "views": 0
+    }
+   }
+  },
+  "2026-11-21_backup-provjera": {
+   "link": "https://www.instagram.com/reel/DgAcXTgjYV7/",
+   "objavljeno": "2026-11-21T15:28+01:00",
+   "ig": {
+    "views": 112,
+    "reach": 104,
+    "likes": 0,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 0,
+    "ig_reels_avg_watch_time": 4792,
+    "ig_reels_video_view_total_time": 517595,
+    "follows": {
+     "greska": "The Media Insights API does not support the follows metric for this media product type."
+    },
+    "profile_visits": {
+     "greska": "The Media Insights API does not support the profile_visits metric for this media product type."
+    }
+   },
+   "fb": {
+    "total_video_views": {
+     "greska": "(#200) read_insights permission missing (https://developers.facebook.com/docs/permissions/reference/read_insights)"
+    },
+    "total_video_views_unique": {
+     "greska": "(#100) The value must be a valid insights metric"
+    },
+    "total_video_avg_time_watched": {
+     "greska": "(#200) read_insights permission missing (https://developers.facebook.com/docs/permissions/reference/read_insights)"
+    },
+    "total_video_complete_views": {
+     "greska": "(#200) read_insights permission missing (https://developers.facebook.com/docs/permissions/reference/read_insights)"
+    },
+    "total_video_impressions": {
+     "greska": "(#100) The value must be a valid insights metric"
+    },
+    "total_video_10s_views": {
+     "greska": "(#200) read_insights permission missing (https://developers.facebook.com/docs/permissions/reference/read_insights)"
+    },
+    "total_video_retention_graph": {
+     "greska": "(#200) read_insights permission missing (https://developers.facebook.com/docs/permissions/reference/read_insights)"
+    },
+    "total_video_view_total_time": {
+     "greska": "(#200) read_insights permission missing (https://developers.facebook.com/docs/permissions/reference/read_insights)"
+    },
+    "post": {
+     "id": "1446445213715013",
+     "permalink_url": "/reel/1446445213715013/",
+     "length": 36.941,
+     "views": 0
+    }
+   }
+  },
+  "2026-11-21_internet-radnja": {
+   "link": "https://www.instagram.com/reel/DgAsUFOCC5E/",
+   "objavljeno": "2026-11-21T17:47+01:00",
+   "ig": {
+    "views": 132,
+    "reach": 111,
+    "likes": 1,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 1,
+    "ig_reels_avg_watch_time": 6085,
+    "ig_reels_video_view_total_time": 705911,
+    "follows": {
+     "greska": "The Media Insights API does not support the follows metric for this media product type."
+    },
+    "profile_visits": {
+     "greska": "The Media Insights API does not support the profile_visits metric for this media product type."
+    }
+   },
+   "fb": {
+    "total_video_views": {
+     "greska": "(#200) read_insights permission missing (https://developers.facebook.com/docs/permissions/reference/read_insights)"
+    },
+    "total_video_views_unique": {
+     "greska": "(#100) The value must be a valid insights metric"
+    },
+    "total_video_avg_time_watched": {
+     "greska": "(#200) read_insights permission missing (https://developers.facebook.com/docs/permissions/reference/read_insights)"
+    },
+    "total_video_complete_views": {
+     "greska": "(#200) read_insights permission missing (https://developers.facebook.com/docs/permissions/reference/read_insights)"
+    },
+    "total_video_impressions": {
+     "greska": "(#100) The value must be a valid insights metric"
+    },
+    "total_video_10s_views": {
+     "greska": "(#200) read_insights permission missing (https://developers.facebook.com/docs/permissions/reference/read_insights)"
+    },
+    "total_video_retention_graph": {
+     "greska": "(#200) read_insights permission missing (https://developers.facebook.com/docs/permissions/reference/read_insights)"
+    },
+    "total_video_view_total_time": {
+     "greska": "(#200) read_insights permission missing (https://developers.facebook.com/docs/permissions/reference/read_insights)"
+    },
+    "post": {
+     "id": "1136277825860283",
+     "permalink_url": "/reel/1136277825860283/",
+     "length": 25.925,
+     "views": 0
+    }
+   }
+  },
+  "2026-11-21_ponuda-excel": {
+   "link": "https://www.instagram.com/reel/DgA7N8ekcgw/",
+   "objavljeno": "2026-11-21T19:57+01:00",
+   "ig": {
+    "views": 90,
+    "reach": 86,
+    "likes": 1,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 1,
+    "ig_reels_avg_watch_time": 3717,
+    "ig_reels_video_view_total_time": 330876,
+    "follows": {
+     "greska": "The Media Insights API does not support the follows metric for this media product type."
+    },
+    "profile_visits": {
+     "greska": "The Media Insights API does not support the profile_visits metric for this media product type."
+    }
+   },
+   "fb": {
+    "total_video_views": {
+     "greska": "(#200) read_insights permission missing (https://developers.facebook.com/docs/permissions/reference/read_insights)"
+    },
+    "total_video_views_unique": {
+     "greska": "(#100) The value must be a valid insights metric"
+    },
+    "total_video_avg_time_watched": {
+     "greska": "(#200) read_insights permission missing (https://developers.facebook.com/docs/permissions/reference/read_insights)"
+    },
+    "total_video_complete_views": {
+     "greska": "(#200) read_insights permission missing (https://developers.facebook.com/docs/permissions/reference/read_insights)"
+    },
+    "total_video_impressions": {
+     "greska": "(#100) The value must be a valid insights metric"
+    },
+    "total_video_10s_views": {
+     "greska": "(#200) read_insights permission missing (https://developers.facebook.com/docs/permissions/reference/read_insights)"
+    },
+    "total_video_retention_graph": {
+     "greska": "(#200) read_insights permission missing (https://developers.facebook.com/docs/permissions/reference/read_insights)"
+    },
+    "total_video_view_total_time": {
+     "greska": "(#200) read_insights permission missing (https://developers.facebook.com/docs/permissions/reference/read_insights)"
+    },
+    "post": {
+     "id": "1786162353514834",
+     "permalink_url": "/reel/1786162353514834/",
+     "length": 28.932,
+     "views": 0
+    }
+   }
+  }
+ },
+ "profil": {
+  "username": "pametnija.firma",
+  "followers_count": 3,
+  "media_count": 4,
+  "id": "28085898407749791"
+ }
+}
