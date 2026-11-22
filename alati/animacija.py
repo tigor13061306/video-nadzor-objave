@@ -432,10 +432,38 @@ def cflow(im, t, d, text, y=1560, hl=None, lead=0.1, tail=0.3, maxw=4):
         if w[-1] in '.,:?!' or (len(cur) >= maxw and w.lower() not in SLABE) or len(cur) >= maxw + 2:
             chunks.append(' '.join(cur)); cur = []
     if cur: chunks.append(' '.join(cur))
+    if len(chunks) > 1 and len(chunks[-1].split()) == 1 and len(chunks[-2].split()) <= 5 and chunks[-2][-1] not in '.?!':
+        chunks[-2:] = [chunks[-2] + ' ' + chunks[-1]]   # bez usamljene zadnje riječi
     tot = sum(len(c) for c in chunks); span = max(0.5, d - lead - tail); acc = lead
     for c in chunks:
         dur = span * len(c) / tot
         if t < acc + dur or c is chunks[-1]:
             return caption(im, t, c, y=y, hl=hl)
         acc += dur
+    return im
+
+
+_vid = {}
+
+
+def video_bg(path, t, dur, dark=0.4, zoom=1.0):
+    """Kadar iz video klipa (npr. Gemini Omni), razvučen na trajanje scene, sa istim zatamnjenjem kao photo_bg."""
+    if path not in _vid:
+        n = int(subprocess.check_output(["ffprobe", "-v", "error", "-count_frames", "-select_streams", "v:0",
+                                          "-show_entries", "stream=nb_read_frames", "-of", "csv=p=0", path]).strip())
+        raw = subprocess.check_output(["ffmpeg", "-v", "error", "-i", path, "-vf",
+                                       f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H}",
+                                       "-f", "rawvideo", "-pix_fmt", "rgb24", "-"])
+        fr = [Image.frombytes("RGB", (W, H), raw[i * W * H * 3:(i + 1) * W * H * 3]) for i in range(len(raw) // (W * H * 3))]
+        _vid[path] = fr
+    fr = _vid[path]
+    im = fr[min(len(fr) - 1, int(len(fr) * t / dur))]
+    if zoom != 1.0:
+        cw, ch = W / zoom, H / zoom
+        im = im.resize((W, H), Image.BILINEAR, box=((W - cw) / 2, (H - ch) / 2, (W + cw) / 2, (H + ch) / 2))
+    if dark:
+        grad = Image.new("L", (1, H))
+        for yy in range(H):
+            grad.putpixel((0, yy), int(255 * dark * (0.55 + 0.45 * (yy / H) ** 1.5)))
+        im = Image.composite(Image.new("RGB", (W, H), G), im, grad.resize((W, H)))
     return im

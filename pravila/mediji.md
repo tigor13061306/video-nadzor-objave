@@ -12,6 +12,11 @@ Budžet: Google AI Studio projekat ima upozorenje na 5 $ mjesečno. Sedmično na
 - Više kadrova istog mjesta: u istom razgovoru (prethodni odgovor kao historija).
 - Svaku fotku pogledaj prije upotrebe; natpise i brendove ne koristi ili ih isjeci zumom.
 
+## Video kadar (proba od 23.11.2026)
+- Model `gemini-omni-1.2-flash` preko `POST /v1beta/interactions`: {model, input: prompt, response_format: {type: 'video', aspect_ratio: '9:16', duration: '4s', resolution: '720p'}}. Odgovor: steps[].content[].data (base64 mp4, 720x1280, 24 fps). Veo modeli za ovaj ključ NISU dostupni.
+- Cijena oko 0,07 $ po sekundi (4 s ≈ 0,28 $). Samo pozadinski kadar sa pokretom kamere, BEZ teksta, ljudi i logotipa (napisati u promptu). Zvuk iz kadra se ne koristi.
+- U Reel: video_bg(...) iz alati/animacija.py. Najviše 1 kadar po Reelu dok Igor ne odluči na osnovu statistike.
+
 ## Glas
 - Model `gemini-3.8-flash-tts` preko `POST /v1beta/interactions`, glas `algieba` (Igorov izbor), WAV 24 kHz.
 - Stil (od 22.11.2026, Igor izabrao uzorak A: autoritativni konsultant): "Confident, authoritative senior business consultant presenting to a company's management board. Calm, measured pace, firm and clear, assured emphasis on key words. Standard Bosnian literary pronunciation, ijekavica, Bosnian accent. Pronounce every word fully and exactly as written, every syllable, no colloquial shortening or swallowed vowels (say 'koliko', never 'kolko'). Human and natural, not a radio ad, not robotic."
