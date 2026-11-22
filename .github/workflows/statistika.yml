@@ -1,0 +1,33 @@
+name: Statistika objava
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "stanje/statistika_pokreni.txt"
+  schedule:
+    - cron: "17 6 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: objava
+  cancel-in-progress: false
+
+jobs:
+  statistika:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install requests
+      - env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+        run: python alati/statistika.py
+      - run: |
+          git config user.name "video-nadzor-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add stanje/statistika.json && (git diff --cached --quiet || (git commit -q -m "Statistika" && (git push -q || (git pull -q --rebase && git push -q))))
