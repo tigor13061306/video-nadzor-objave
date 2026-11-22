@@ -23,17 +23,28 @@ def s3(t, d):
     im = top_pill(im, t, 0.0, 'Nadzor sistema', 'svake minute, 0-24', y=150, size=84)
     im = tiles(im, t, 0.3, [('ERP-SRV', True), ('SQL-01', True), ('FILE-SRV', True), ('MAIL', True), ('FW-01', True), ('SW-CORE', True), ('BACKUP', True), ('VPN', True)], x0=110, y0=520, w=860)
     return handle_bar(cflow(im, t, d, GL[2], hl={'svake', 'minute.'}))
+ZB = FT + 'zabbix/'
+K0 = (0, 0, W0 := 1067, 132)          # jedan red: SQL-01 High PROBLEM
+KT = (0, 0, 1072, 488)                # zbijena tabela: Severity, Status, Host, Problem (zaglavlje + 7 redova)
 def s4(t, d):
-    im = GRID.copy()
-    im = trend_chart(im, t, 0.0, 'SQL-01: disk D:', v0=58, v1=93, prag=90, dur=min(2.4, d * 0.55), y0=330, h=430)
-    im = problem_table(im, t, min(2.4, d * 0.55), [(0.1, '08:14', 'visoko', 'SQL-01', 'Disk D: popunjen više od 90 %', None)], y0=960)
+    im = GRID.copy(); half = d * 0.5
+    if t < half:   # pravi graf iz sistema za nadzor: disk se puni 3 sata, pa preko praga
+        im = top_pill(im, t, 0.0, 'SQL-01: disk D:', 'pravi sistem za nadzor, demo podaci', y=230, size=72)
+        im = screen_card(im, t, half, ZB + 'zabbix_graf_disk.png', (0, 0, 1316, 546), (600, 10, 1316, 307), y0=560, w=1040, mark=(1180, 70, 1250, 150), mark_from=half * 0.6)
+    else:          # u listi problema se pojavi: SQL-01, High, PROBLEM
+        tt = t - half
+        im = top_pill(im, tt, 0.0, 'Upozorenje stiže odmah', 'lista problema, demo podaci', y=230, size=72)
+        im = screen_card(im, tt, d - half, ZB + 'zabbix_03_problemi_00_kompakt.png', K0, K0, y0=620, w=1040, mark=(12, 66, W0 - 12, 128), mark_from=0.3)
     return handle_bar(cflow(im, t, d, GL[3], y=1560, hl={'upozorenje.'}))
 def s5(t, d):
-    im = GRID.copy()
-    im = slam(im, t, 0.0, 'Riješeno prije zastoja', size=86, y=300, color=GRN, box=False)
-    im = problem_table(im, t, 0.2, [(0.0, '08:14', 'visoko', 'SQL-01', 'Disk D: popunjen više od 90 %', 1.2),
-                                     (0.2, '07:52', 'upoz', 'FILE-SRV', 'Backup traje duže od 2 h', 1.6),
-                                     (0.4, '06:30', 'info', 'FW-01', 'Restart VPN servisa', 2.0)], y0=470)
+    im = GRID.copy(); half = d * 0.42
+    if t < half:   # svi problemi crveni
+        im = top_pill(im, t, 0.0, 'Sve na jednom ekranu', 'serveri, kamere, UPS, backup', y=230, size=72)
+        im = screen_card(im, t, half, ZB + 'zabbix_03_problemi_07_kompakt.png', KT, KT, y0=480, w=1040)
+    else:          # isti problemi: RESOLVED, zeleno
+        tt = t - half
+        im = slam(im, tt, 0.0, 'Riješeno prije zastoja', size=84, y=300, color=GRN, box=False)
+        im = screen_card(im, tt, d - half, ZB + 'zabbix_05_rijeseno_04_kompakt.png', KT, KT, y0=480, w=1040)
     return handle_bar(cflow(im, t, d, GL[4], y=1560, hl={'riješeno.', 'zeleni'}))
 def s6(t, d):
     return end_card(t, 'Želite ovo u svojoj firmi?', 'Pišite nam u poruke')

@@ -5,7 +5,7 @@
 2. NE dodaji nikakav drugi tekst: bez naslova, natpisa, logotipa, vodenih žigova, brojeva, datuma, emojija i hashtagova. U AI video kadru nema nikakvog čitljivog teksta.
 3. Ne prevodi, ne skraćuj, ne ispravljaj i ne „poboljšavaj“ tekst. Jezik je bosanski, ijekavica.
 4. Ako neki element ne možeš napraviti tačno kako piše, izostavi ga. Ne izmišljaj zamjenu.
-5. Bez ljudi, lica, ruku, tablica ni brendova. Ime i logotip bilo kog alata za nadzor (Zabbix i slični) se NE pojavljuju u videu; prikaz samo podsjeća na takav alat (lista problema, ozbiljnost u boji, PROBLEM / RIJEŠENO, graf sa pragom).
+5. Bez ljudi, lica, ruku, tablica ni brendova. Scene 4 i 5 su PRAVI snimci ekrana iz demo Zabbixa (izmišljeni serveri i podaci, oznaka „demo podaci“); logo i ime Zabbix nisu u kadru, u glasu se kaže „sistem za nadzor“.
 6. Video model (Gemini Omni) pravi SAMO pozadinski kadar bez teksta. Sav tekst, titlove, glas i muziku dodaje naš alat (alati/animacija.py).
 
 ## TEHNIČKI PODACI
@@ -74,36 +74,40 @@ Bijeli tekst Inter Display Bold 64 px, centriran, na crnoj zaobljenoj traci (67 
   12,5 – 13,4 s: „[tirkizno]svake [tirkizno]minute.“
 - Zvuk: whoosh na 8,7 s, tick na 9,0 i 9,3 s.
 
-## SCENA 4 | 13,7 – 18,7 s
+## SCENA 4 | 13,7 – 18,7 s (PRAVI ZABBIX, demo podaci)
 - Slika: mreža.
-- Graf (tamna kartica od x 80 do x 1020, od y 220 do y 830):
-  naslov gore lijevo, bijelo, 38 px: „SQL-01: disk D:“
-  osa lijevo, sivo, 26 px: „50“, „70“, „90“; ispod grafa, sivo, 28 px: „Popunjenost diska %“
-  crvena isprekidana linija na 90, na sredini iznad nje crveno, 28 px: „prag 90 %“
-  tirkizna linija se crta slijeva nadesno za 2,4 s (od 13,7 do 16,1 s), raste od 58 do 93; dio iznad 90 je crven; na kraju crveni krug koji pulsira.
-- Tabela problema (od y 960, x 60 – 1020), od 16,1 s:
-  zaglavlje, sivo, 30 px: „Vrijeme“, „Ozbiljnost“, „Server / problem“, „Status“
-  red (od 16,2 s): „08:14“ | narandžasta oznaka „Visoko“ | tirkizno „SQL-01“, ispod bijelo „Disk D: popunjen više od 90 %“ | crveno „PROBLEM“
+- 13,7 – 16,2 s:
+  gore, tamna podloga centrirana na y 230: „SQL-01: disk D:“ (bijelo, 72 px), ispod „pravi sistem za nadzor, demo podaci“ (tirkizno, 44 px)
+  okvir monitora (širina 1040 px, od y 560): PRAVI Zabbix graf materijal/pf/zabbix/zabbix_graf_disk.png (chart.php, 3 sata: disk raste polako od 57 % do 79 %, pa skoči na 93 % i poslije čišćenja padne na 61 %); preko grafa naša isprekidana crvena linija na 90 % i natpis „Okidač: disk > 90 %“ (tačno na Zabbix osi 90 %)
+  kamera: od cijelog grafa (0,0 – 1316x546) zumira na desni dio (600,10 – 1316x307); od 14,9 s crveni okvir koji pulsira oko skoka preko 90 %
+- 16,2 – 18,7 s:
+  gore: „Upozorenje stiže odmah“ (bijelo, 72 px), ispod „lista problema, demo podaci“ (tirkizno, 44 px)
+  okvir (širina 1040 px, od y 620): PRAVI Zabbix red iz liste problema, zbijen na kolone Severity | Status | Host | Problem: „High“ (narandžasto polje) | „PROBLEM“ (crveno) | „SQL-01“ | „Disk D: popunjen više od 90 %“; od 16,5 s crveni okvir oko reda
 - Glas: „Na devedeset posto, IT dobije upozorenje. Danima prije zastoja.“
 - Titl:
   13,8 – 15,3 s: „Na devedeset posto,“
   15,3 – 16,8 s: „IT dobije [tirkizno]upozorenje.“
   16,8 – 18,4 s: „Danima prije zastoja.“
-- Zvuk: whoosh na 13,7 s, alarm na 16,1 s.
+- Zvuk: whoosh na 13,7 s, alarm na 16,2 s.
 
-## SCENA 5 | 18,7 – 23,5 s
+## SCENA 5 | 18,7 – 23,5 s (PRAVI ZABBIX, demo podaci)
 - Slika: mreža.
-- Tekst na ekranu: od 18,7 s, centrirano na y 300, zeleno, 86 px, bez podloge: „Riješeno prije zastoja“
-- Tabela problema (od y 470), od 18,9 s, tri reda:
-  „08:14“ | „Visoko“ | „SQL-01“ / „Disk D: popunjen više od 90 %“ | „PROBLEM“ → od 20,1 s zelena oznaka „OK“ i zeleno „RIJEŠENO“
-  „07:52“ | žuta „Upozorenje“ | „FILE-SRV“ / „Backup traje duže od 2 h“ | „PROBLEM“ → od 20,5 s „OK“ i „RIJEŠENO“
-  „06:30“ | plava „Info“ | „FW-01“ / „Restart VPN servisa“ | „PROBLEM“ → od 20,9 s „OK“ i „RIJEŠENO“
+- 18,7 – 20,7 s:
+  gore: „Sve na jednom ekranu“ (bijelo, 72 px), ispod „serveri, kamere, UPS, backup“ (tirkizno, 44 px)
+  okvir (širina 1040 px, od y 480): PRAVA Zabbix lista problema, zbijena na kolone Severity | Status | Host | Problem, 7 redova, svi „PROBLEM“ (crveno):
+  Warning ERP-SRV „ERP sporo odgovara (više od 5 s)“; High FW-01 „VPN tunel Centrala–Magacin ne radi“; Warning BACKUP-SRV „Zadnji uspješan backup stariji od 24 h“; Disaster UPS Server sala „Nestanak struje: UPS radi na bateriji“; High Hladnjača 2 „Hladnjača 2: temperatura iznad +4 °C“; High NVR-Magacin „Snimač ne snima: disk 2 u grešci“; Average NVR-Magacin „Kamera Ulaz-2 nema slike“
+- 20,7 – 23,5 s:
+  gore, od 20,7 s, zeleno, 84 px, bez podloge, udari: „Riješeno prije zastoja“
+  ista lista iz Zabbixa poslije rješavanja: svih 7 redova „RESOLVED“ (zeleno)
 - Glas: „Prostor se oslobodi, a problem dobije zeleni status: riješeno.“
 - Titl:
   18,8 – 20,3 s: „Prostor se oslobodi,“
   20,3 – 21,9 s: „a problem dobije [tirkizno]zeleni“
   21,9 – 23,2 s: „status: [tirkizno]riješeno.“
-- Zvuk: whoosh na 18,7 s, ping na 20,1 / 20,5 / 20,9 s.
+- Zvuk: whoosh na 18,7 s, ping na 20,7 / 21,1 / 21,5 s.
+
+### Kako su nastali Zabbix snimci
+Demo Zabbix 7 u Dockeru na Igorovom računaru (alati/zabbix_demo, kopija u C:\claude\video nadzor\Pametnija_firma\zabbix_demo): pokreni.bat podigne Zabbix i pokrene režiju (rezija.py), koja preko API-ja napravi izmišljene servere i okidače, upiše 3 sata istorije, odigra scenarij i napravi snimke ekrana (Playwright, 2560x1600); grafovi.bat napravi grafove iz istih podataka. Liste problema su zbijene na 4 kolone (Severity, Status, Host, Problem) da se čitaju na telefonu. Logo Zabbix nije u kadru. Svi serveri i podaci su izmišljeni.
 
 ## SCENA 6 (KRAJ) | 23,5 – 26,5 s
 - Ravna tamna pozadina, bez mreže i bez oznake gore lijevo.
@@ -126,6 +130,8 @@ Disk se puni polako. A stane odjednom.
 
 Kad se disk na serveru napuni, baza ne može ništa upisati i ERP staje usred radnog dana: nema faktura, nema otpreme. Sistem za nadzor prati svaki server, disk i servis svake minute i na 90 % šalje upozorenje IT-u, danima prije zastoja.
 
+U videu je pravi sistem za nadzor sa demo podacima (izmišljeni serveri).
+
 Želite ovo u svojoj firmi? Pišite nam u poruke.
 
 Fotografije i glas su napravljeni AI alatom. Uvodni video kadar je takođe napravljen AI alatom.
@@ -133,4 +139,4 @@ Fotografije i glas su napravljeni AI alatom. Uvodni video kadar je takođe napra
 #nadzorsistema #zabbix #digitalizacija #bih #it
 
 ## ALT TEKST (doslovno)
-Animirani video: prolaz kroz server salu sa crvenim svjetlom upozorenja, zatim posljedice zastoja ERP-a, pregled servera sa zelenim statusom, graf popunjenosti diska koji prelazi prag od 90 % i lista problema u kojoj svi problemi dobiju status riješeno.
+Animirani video: prolaz kroz server salu sa crvenim svjetlom upozorenja, zatim posljedice zastoja ERP-a, pregled servera sa zelenim statusom, pravi graf popunjenosti diska iz sistema za nadzor koji prelazi prag od 90 % i prava lista problema u kojoj svi problemi dobiju status riješeno (demo podaci).

@@ -527,3 +527,41 @@ def trend_chart(im, t, start, label, v0=55, v1=93, prag=90, dur=2.2, y0=560, h=5
         cx, cy = pts[-1][:2]; r = 16 + 6 * math.sin(t * 12)
         d.ellipse([cx - r, cy - r, cx + r, cy + r], outline=RED + (255,), width=5)
     im = im.convert("RGBA"); im.alpha_composite(lay); return im.convert("RGB")
+
+
+_scr = {}
+
+
+def screen_card(im, t, d, path, box_a, box_b=None, y0=430, w=1000, h=None, mark=None, mark_from=0.6, label=None):
+    """Snimak ekrana (npr. pravi Zabbix) u okviru monitora, sa pomjeranjem/zumom od box_a do box_b
+    (koordinate u pikselima snimka). mark = (x0,y0,x1,y1) u koordinatama snimka: crveni okvir koji pulsira od mark_from s."""
+    if path not in _scr:
+        _scr[path] = Image.open(path).convert("RGB")
+    src = _scr[path]; box_b = box_b or box_a
+    u = ease(t / max(d, 0.01))
+    bx = [a + (b - a) * u for a, b in zip(box_a, box_b)]
+    bw, bh = bx[2] - bx[0], bx[3] - bx[1]
+    h = h or int(w * bh / bw)
+    x0 = (W - w) // 2
+    crop = src.resize((w, h), Image.LANCZOS, box=tuple(bx))
+    lay = Image.new("RGBA", (W, H), (0, 0, 0, 0)); dr = ImageDraw.Draw(lay)
+    dr.rounded_rectangle([x0 - 18, y0 - 18, x0 + w + 18, y0 + h + 18], radius=26, fill=(8, 12, 20, 255), outline=(60, 72, 90, 255), width=4)
+    im = im.convert("RGBA"); im.alpha_composite(lay); im = im.convert("RGB")
+    im.paste(crop, (x0, y0))
+    if mark and t >= mark_from:
+        sx, sy = w / bw, h / bh
+        mx0, my0 = x0 + (mark[0] - bx[0]) * sx, y0 + (mark[1] - bx[1]) * sy
+        mx1, my1 = x0 + (mark[2] - bx[0]) * sx, y0 + (mark[3] - bx[1]) * sy
+        a = int(160 + 95 * (0.5 + 0.5 * math.sin((t - mark_from) * 8)))
+        lay = Image.new("RGBA", (W, H), (0, 0, 0, 0)); dr = ImageDraw.Draw(lay)
+        dr.rounded_rectangle([max(x0, mx0 - 8), max(y0, my0 - 8), min(x0 + w, mx1 + 8), min(y0 + h, my1 + 8)], radius=10, outline=RED + (a,), width=6)
+        im = im.convert("RGBA"); im.alpha_composite(lay); im = im.convert("RGB")
+    if label:
+        im = top_pill(im, t, 0.0, label[0], label[1] if len(label) > 1 else None, y=y0 - 230, size=72)
+    return im
+
+
+def screen_seq(paths, t, d):
+    """Izabere snimak iz niza (npr. 18 snimaka grafa uživo) prema vremenu u sceni."""
+    i = min(len(paths) - 1, int(len(paths) * t / max(d, 0.01)))
+    return paths[i]

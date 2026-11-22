@@ -39,6 +39,7 @@ Prva 4 Reela (21.11.): prosječno gledanje 3,7 do 6,1 s od 26 do 38 s. Ljudi odl
 
 ## Nadzor sistema (Igorov zahtjev 22.11.2026)
 Reelsi o nadzoru sistema vizuelno podsjećaju na Zabbix, ali ga ne potenciraju: lista problema (problem_table: vrijeme, ozbiljnost u boji Info/Upozorenje/Visoko/Kritično, server, opis, PROBLEM → RIJEŠENO), graf sa isprekidanim pragom (trend_chart), pregled servera sa zelenim/crvenim statusom (tiles). U videu se NE pojavljuju ime ni logotip Zabbix; u glasu i opisu se kaže "sistem za nadzor". U hashtagu smije #zabbix. Uzor: objave/2026-11-25_disk-nadzor.
+PRAVE Zabbix scene (od 22.11.2026): demo Zabbix u Dockeru na Igorovom računaru (alati/zabbix_demo; na računaru Pametnija_firma\zabbix_demo): pokreni.bat (Zabbix + režija sa scenarijem i snimcima ekrana), grafovi.bat (grafovi iz istih podataka), ugasi.bat. Za novi scenarij: dopuni STAVKE i korake u skripte/rezija.py. NIKAD snimci iz Zabbixa koji Igor koristi na poslu. U videu oznaka 'demo podaci', bez logotipa Zabbix; liste problema zbiti na kolone Severity, Status, Host, Problem (čitljivo na telefonu); u Reel preko screen_card(...) iz alati/animacija.py. Snimci: materijal/pf/zabbix/.
 
 ## Pravljenje Reela
 0. Prvo napiši prompt.md u folder objave, po uzoru na objave/2026-11-22_upiti-stanje-erp/prompt.md: za svaku scenu tačno vrijeme, slika, DOSLOVAN tekst na ekranu (pozicija, veličina, boja, kad ulazi), doslovna rečenica glasa, titlovi sa vremenima i zvuk. Ništa se ne izmišlja u toku pravljenja: scenarij.py radi tačno ono što piše u prompt.md.

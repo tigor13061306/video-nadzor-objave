@@ -1,1 +1,1 @@
-Animirani video: prolaz kroz server salu sa crvenim svjetlom upozorenja, zatim posljedice zastoja ERP-a, pregled servera sa zelenim statusom, graf popunjenosti diska koji prelazi prag od 90 % i lista problema u kojoj svi problemi dobiju status riješeno.
+Animirani video: prolaz kroz server salu sa crvenim svjetlom upozorenja, zatim posljedice zastoja ERP-a, pregled servera sa zelenim statusom, pravi graf popunjenosti diska iz sistema za nadzor koji prelazi prag od 90 % i prava lista problema u kojoj svi problemi dobiju status riješeno (demo podaci).

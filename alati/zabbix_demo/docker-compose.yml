@@ -1,0 +1,57 @@
+# Demo Zabbix za snimke Reelsa (@pametnija.firma). Izmišljeni serveri, bez ikakvih stvarnih podataka.
+# Pokretanje:  docker compose up -d     (Zabbix web: http://localhost:8088, Admin / zabbix)
+# Režija (scenarij + snimci) se pokrene sama; snimci idu u .\snimci
+# Gašenje:     docker compose down
+name: pf-zabbix-demo
+services:
+  postgres-server:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: zabbix
+      POSTGRES_PASSWORD: zabbix_demo
+      POSTGRES_DB: zabbix
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  zabbix-server:
+    image: zabbix/zabbix-server-pgsql:alpine-7.0-latest
+    environment:
+      DB_SERVER_HOST: postgres-server
+      POSTGRES_USER: zabbix
+      POSTGRES_PASSWORD: zabbix_demo
+      POSTGRES_DB: zabbix
+      ZBX_CACHEUPDATEFREQUENCY: "10"
+      TZ: Europe/Sarajevo
+    depends_on: [postgres-server]
+    restart: unless-stopped
+
+  zabbix-web:
+    image: zabbix/zabbix-web-nginx-pgsql:alpine-7.0-latest
+    environment:
+      ZBX_SERVER_HOST: zabbix-server
+      DB_SERVER_HOST: postgres-server
+      POSTGRES_USER: zabbix
+      POSTGRES_PASSWORD: zabbix_demo
+      POSTGRES_DB: zabbix
+      PHP_TZ: Europe/Sarajevo
+    ports:
+      - "8088:8080"
+    depends_on: [zabbix-server]
+    restart: unless-stopped
+
+  rezija:
+    image: mcr.microsoft.com/playwright/python:v1.49.0-noble
+    working_dir: /app
+    environment:
+      TZ: Europe/Sarajevo
+      ZBX_URL: http://zabbix-web:8080
+    volumes:
+      - ./skripte:/app
+      - ./snimci:/out
+    command: bash -c "pip install -q playwright==1.49.0 requests && python /app/rezija.py"
+    depends_on: [zabbix-web]
+    restart: "no"
+
+volumes:
+  pgdata:
