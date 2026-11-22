@@ -1,0 +1,6 @@
+Nestala je struja. Baterija drži server još devet minuta.
+Šta se desi u desetoj? Baza podataka može ostati oštećena.
+Prvo: uređaj za rezervno napajanje mora uredno ugasiti server.
+Drugo: upozorenje na telefon čim server pređe na bateriju.
+Treće: to testirajte dva puta godišnje, prije nego što zatreba.
+Kada ste zadnji put testirali gašenje? Napišite u komentar.

@@ -1,0 +1,1 @@
+Čeka glas (Gemini TTS): 6 rečenica iz glas.txt -> materijal/pf/glas/2026-11-30_lozinke-pristup_1..6.wav. Zatim: python3 scenarij.py (render), cover.jpg iz 1. s, opis_nacrt.txt -> opis.txt, obriši ceka.txt (premjesti u _to_delete).
