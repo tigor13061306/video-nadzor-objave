@@ -426,9 +426,10 @@ def mail_card(im, t, start, od, predmet, tekst, mark=None, y0=430):
 def cflow(im, t, d, text, y=1560, hl=None, lead=0.1, tail=0.3, maxw=4):
     """Titl koji teče uz glas: po 2-4 riječi, vrijeme po broju slova."""
     words = text.split(); chunks, cur = [], []
+    SLABE = {'i', 'a', 'u', 'za', 'na', 'da', 'od', 'do', 'sa', 'iz', 'po', 'o', 'pa', 'ili', 'ne', 'je', 'se', 'to'}
     for w in words:
         cur.append(w)
-        if len(cur) >= maxw or w[-1] in '.,:?!':
+        if w[-1] in '.,:?!' or (len(cur) >= maxw and w.lower() not in SLABE) or len(cur) >= maxw + 2:
             chunks.append(' '.join(cur)); cur = []
     if cur: chunks.append(' '.join(cur))
     tot = sum(len(c) for c in chunks); span = max(0.5, d - lead - tail); acc = lead
