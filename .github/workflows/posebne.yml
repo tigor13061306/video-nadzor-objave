@@ -1,0 +1,51 @@
+name: Posebne objave (niz)
+
+# Objavljuje foldere sa odmah.txt ("Ne prije HH:MM") jedan po jedan, u istom pokretanju,
+# bez oslanjanja na GitHub raspored (koji kasni satima). Pokreće se promjenom stanje/posebne_pokreni.txt.
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "stanje/posebne_pokreni.txt"
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: objava
+  cancel-in-progress: false
+
+jobs:
+  niz:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests pillow
+      - name: Git korisnik
+        run: |
+          git config user.name "video-nadzor-bot"
+          git config user.email "actions@users.noreply.github.com"
+      - name: Objave po rasporedu iz odmah.txt
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+        run: |
+          preostalo() { python - <<'P'
+          import json, os
+          st = json.load(open("stanje/objavljeno.json", encoding="utf-8"))
+          n = [d for d in os.listdir("objave") if os.path.exists(f"objave/{d}/odmah.txt") and d not in st]
+          print(len(n))
+          P
+          }
+          for i in $(seq 1 64); do
+            git pull -q --rebase || true
+            [ "$(preostalo)" = "0" ] && { echo "sve posebne objave su objavljene"; exit 0; }
+            python alati/objavi.py || echo "objavi.py greška, pokušavam u sljedećem krugu"
+            sleep 300
+          done

@@ -3,12 +3,12 @@ datum;dan;stub;tema;cta;status;folder
 2026-11-21;subota;sigurnost;Backup koji niko nije provjerio: 3 pitanja (posebna objava);komentar;objavljeno;2026-11-21_backup-provjera
 2026-11-21;subota;nadzor sistema;Nestane interneta u radnji, a vi saznate za minut (posebna objava);poruke;objavljeno;2026-11-21_internet-radnja
 2026-11-21;subota;automatizacija;Ponuda iz Excela za 10 sekundi (posebna objava);poruke;objavljeno;2026-11-21_ponuda-excel
-2026-11-23;ponedjeljak;automatizacija;Upiti o stanju robe: bot iz ERP-a odgovara partnerima;poruke;spremno;2026-11-23_upiti-stanje-erp
-2026-11-25;srijeda;nadzor sistema;Server stao u petak u 17:05, saznali u ponedjeljak (63 sata);poruke;spremno;2026-11-25_server-petak
-2026-11-27;petak;sigurnost;Lažna faktura: mail o promjeni računa dobavljača, 3 provjere;komentar;spremno;2026-11-27_lazna-faktura
-2026-11-30;ponedjeljak;automatizacija;Izvještaj koji sam stigne mailom u ponedjeljak ujutro;poruke;za pripremu;
-2026-12-02;srijeda;nadzor sistema;Disk se puni polako, a stane odjednom;poruke;za pripremu;
-2026-12-04;petak;AI u poslu;Kako napisati dobar zadatak za AI: 3 pravila;komentar;za pripremu;
-2026-12-07;ponedjeljak;sigurnost;Lozinka na papiriću ispod tastature;komentar;za pripremu;
-2026-12-09;srijeda;automatizacija;Podsjetnik kupcu za neplaćen račun, sam od sebe;poruke;za pripremu;
-2026-12-11;petak;nadzor sistema;Nestane struje: UPS i uredno gašenje servera;poruke;za pripremu;
+2026-11-22;nedjelja;automatizacija;Upiti o stanju robe: bot iz ERP-a odgovara partnerima (posebna objava);poruke;spremno;2026-11-22_upiti-stanje-erp
+2026-11-22;nedjelja;nadzor sistema;Server stao u petak u 17:05, saznali u ponedjeljak (63 sata) (posebna objava);poruke;spremno;2026-11-22_server-petak
+2026-11-22;nedjelja;sigurnost;Lažna faktura: mail o promjeni računa dobavljača, 3 provjere (posebna objava);komentar;spremno;2026-11-22_lazna-faktura
+2026-11-23;ponedjeljak;automatizacija;Izvještaj koji sam stigne mailom u ponedjeljak ujutro;poruke;za pripremu;
+2026-11-25;srijeda;nadzor sistema;Disk se puni polako, a stane odjednom;poruke;za pripremu;
+2026-11-27;petak;AI u poslu;Kako napisati dobar zadatak za AI: 3 pravila;komentar;za pripremu;
+2026-11-30;ponedjeljak;sigurnost;Lozinka na papiriću ispod tastature;komentar;za pripremu;
+2026-12-02;srijeda;automatizacija;Podsjetnik kupcu za neplaćen račun, sam od sebe;poruke;za pripremu;
+2026-12-04;petak;nadzor sistema;Nestane struje: UPS i uredno gašenje servera;poruke;za pripremu;
