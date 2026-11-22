@@ -3,7 +3,7 @@
 Profil: Instagram @pametnija.firma i Facebook stranica "Pametnija firma" (isti nalozi kao bivši @video.nadzorkamere, preimenovani 20.11.2026; stare objave obrisane). Vlasnik: Igor. Plan i identitet: dokument "Pametnija firma: identitet i plan prve dvije sedmice" (claude.ai artefakt).
 
 ## Cilj i publika
-- Publika: vlasnici i menadžeri malih i srednjih firmi u BiH i regiji (trgovine, servisi, ugostiteljstvo, proizvodnja, računovodstva), firme bez svog IT odjela.
+- Publika (od 22.11.2026, Igorova odluka): ozbiljne firme, srednje i veće (otprilike 30+ zaposlenih, više lokacija, ERP, server, IT ili bez dovoljno IT ljudi): direktori, menadžeri, finansije, IT odgovorni. NE male radnje i firmice. Primjeri: proizvodnja, distribucija, lanci prodavnica, logistika, zdravstvo, građevina, javna preduzeća.
 - Cilj: upiti firmi za automatizaciju (botovi, izvještaji, povezivanje programa), nadzor sistema (Zabbix, Grafana, upozorenje na telefon) i savjet za AI.
 
 ## Pravila sadržaja (Igorova)
@@ -12,20 +12,29 @@ Profil: Instagram @pametnija.firma i Facebook stranica "Pametnija firma" (isti n
 3. Poziv na akciju:
    - objave koje nude uslugu firmama (automatizacija, nadzor, ponuda): "Pišite nam u poruke." NIKAD poziv na komentar ("napišite X u komentar");
    - opšte korisne objave (savjet za sve): poziv na komentar je u redu.
-4. Obraćanje sa "vi". Kratko, konkretno, bez žargona, uvijek primjer iz naših firmi.
+4. Obraćanje sa "vi". Korporativan, autoritativan ton: govorimo kao iskusan konsultant upravi firme. Kratko i konkretno, jezik posla (zastoj, trošak, rizik, proces, izvještaj, odgovornost), bez šala i bez "kafanskog" tona. Primjeri iz ozbiljnih firmi, ne iz male radnje.
 5. Tvrdnje i brojke samo provjerene ili jasno označene kao "primjer računa". Bez cijena, izmišljenih rezultata i recenzija. AI fotke nikad kao Igorov urađeni posao.
 6. U opisu svake objave: "Fotografije i glas su napravljeni AI alatom." i fajl ai.txt u folderu (objavi.py tada šalje i AI oznaku).
-7. Najviše 5 hashtagova: #automatizacija #malibiznis #bih + 1 do 2 tematska.
+7. Najviše 5 hashtagova: #automatizacija #digitalizacija #bih + 1 do 2 tematska.
 8. Bez lica, tablica, logotipa i brendova na fotkama. Nikad podaci, snimci ni ekrani iz Igorove službe.
 
 ## Izgled
-Tamno plava #0E1A2B, tirkizna #22C3E6, bijeli tekst, font Inter (alati/fonts), znak "PF". Reel 1080x1920, 20 do 35 s. Prve 2 sekunde: slika problema + kratko pitanje.
+Tamno plava #0E1A2B, tirkizna #22C3E6, bijeli tekst, font Inter (alati/fonts), znak "PF". Reel 1080x1920, 15 do 25 s. Fotke: moderne kancelarije, open space, sale za sastanke, server sale, proizvodne hale, magacini, ekrani sa grafovima. NE seoske kancelarije, stari namještaj ni male radnje.
 
 ## Raspored
 3 Reela sedmično: ponedjeljak, srijeda, petak (objava od 17:43). Stubovi: automatizacija poslova, nadzor sistema, AI u poslu, sigurnost firme, studije slučaja (samo uz dozvolu klijenta, bez imena). Plan: pravila/plan_objava.csv. Priprema dvije sedmice unaprijed.
 
 ## Folder objave
 objave/GGGG-MM-DD_tema/: video.mp4, cover.jpg (kadar iz prve 2-3 s, 1080x1920), opis.txt, alt.txt (jedna rečenica šta se vidi), ai.txt, scenarij.py (skripta po kojoj je video napravljen). Bez opis.txt GitHub neće objaviti.
+
+## Zadržavanje pažnje (od 22.11.2026)
+Prva 4 Reela (21.11.): prosječno gledanje 3,7 do 6,1 s od 26 do 38 s. Ljudi odlaze baš u trenutku kad se prvi put nešto promijeni (5-6 s), jer je prva scena mirna fotka sa dva okvira teksta. Zato:
+1. Prva sekunda: pokret i jaka tvrdnja ili broj, ne pitanje tipa "imate li...?". Velik tekst (3-6 riječi) koji udari odmah u 0.0 s, glas počinje u 0.1 s, bez uvoda.
+2. Promjena slike najmanje svakih 1.5-2 s (novi kadar, zum, tekst koji ulazi, grafikon, brojač). Nijedna scena duža od 3 s bez pokreta.
+3. Prvih 3 s mora otvoriti "petlju": obećanje koje se ispuni tek na kraju (npr. "Treći razlog košta najviše").
+4. Kraće: 15-25 s, glas brži i bez pauza između rečenica.
+5. Tekst na ekranu = ono što glas govori (titl u 2-4 riječi), jer većina gleda bez zvuka.
+6. Bez kraja koji se razvlači: poziv i logo najviše 2 s.
 
 ## Pravljenje Reela
 1. Scenarij: 4 do 6 scena (problem, posljedica, rješenje, rezultat, kraj). Po sceni jedna kratka rečenica glasa i kratak tekst na ekranu.
