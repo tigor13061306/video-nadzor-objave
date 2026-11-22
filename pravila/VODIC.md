@@ -3,7 +3,7 @@
 Profil: Instagram @pametnija.firma i Facebook stranica "Pametnija firma" (isti nalozi kao bivši @video.nadzorkamere, preimenovani 20.11.2026; stare objave obrisane). Vlasnik: Igor. Plan i identitet: dokument "Pametnija firma: identitet i plan prve dvije sedmice" (claude.ai artefakt).
 
 ## Cilj i publika
-- Publika (od 22.11.2026, Igorova odluka): ozbiljne firme, srednje i veće (otprilike 30+ zaposlenih, više lokacija, ERP, server, IT ili bez dovoljno IT ljudi): direktori, menadžeri, finansije, IT odgovorni. NE male radnje i firmice. Primjeri: proizvodnja, distribucija, lanci prodavnica, logistika, zdravstvo, građevina, javna preduzeća.
+- Publika (od 22.11.2026, Igorova odluka): ozbiljne firme koje imaju ozbiljne sisteme (ERP, serveri, više lokacija, magacin, finansije, mreža), bez obzira na broj zaposlenih: direktori, menadžeri, finansije, IT odgovorni. NE male radnje i "firmice". NIKAD ne spominjati broj zaposlenih ni veličinu firme (ne gađamo ničiji ego).
 - Cilj: upiti firmi za automatizaciju (botovi, izvještaji, povezivanje programa), nadzor sistema (Zabbix, Grafana, upozorenje na telefon) i savjet za AI.
 
 ## Pravila sadržaja (Igorova)
@@ -32,7 +32,8 @@ Prva 4 Reela (21.11.): prosječno gledanje 3,7 do 6,1 s od 26 do 38 s. Ljudi odl
 1. Prva sekunda: pokret i jaka tvrdnja ili broj, ne pitanje tipa "imate li...?". Velik tekst (3-6 riječi) koji udari odmah u 0.0 s, glas počinje u 0.1 s, bez uvoda.
 2. Promjena slike najmanje svakih 1.5-2 s (novi kadar, zum, tekst koji ulazi, grafikon, brojač). Nijedna scena duža od 3 s bez pokreta.
 3. Prvih 3 s mora otvoriti "petlju": obećanje koje se ispuni tek na kraju (npr. "Treći razlog košta najviše").
-4. Kraće: 15-25 s, glas brži i bez pauza između rečenica.
+4. Kraće: 15-25 s (najviše 28 s). Glas A je miran, zato poslije rezanja tišine: duge pauze unutar rečenice skrati (silenceremove stop_duration=0.28) i atempo=1.1. Tekst glasa: najviše 6 rečenica od 4 do 12 riječi.
+7. Alati za brzi rez (alati/animacija.py): slam (tekst udari u 0.0 s), cflow (titl glasa po 2-4 riječi), line_chart, mail_card; uskladi(..., lead=0.1, pad=0.3); render(..., xf=4). Uzor: objave/2026-11-25_server-petak/scenarij.py.
 5. Tekst na ekranu = ono što glas govori (titl u 2-4 riječi), jer većina gleda bez zvuka.
 6. Bez kraja koji se razvlači: poziv i logo najviše 2 s.
 

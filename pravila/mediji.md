@@ -8,15 +8,15 @@ Budžet: Google AI Studio projekat ima upozorenje na 5 $ mjesečno. Sedmično na
 
 ## Fotke
 - Model `gemini-3.1-flash-image`, format 9:16 za Reel.
-- Fotorealistično, mali grad u BiH, evropski izgled, kao prava fotka telefonom. Bez teksta, logotipa, brendova, lica i tablica.
+- Fotorealistično, moderna ozbiljna firma u BiH (kancelarije, open space, server sala, magacin, finansije, proizvodnja), kao prava fotka telefonom. Ljude u pozadini zamutiti (dubina polja), logotipe na uređajima zamutiti. Bez teksta, logotipa, brendova, lica i tablica.
 - Više kadrova istog mjesta: u istom razgovoru (prethodni odgovor kao historija).
 - Svaku fotku pogledaj prije upotrebe; natpise i brendove ne koristi ili ih isjeci zumom.
 
 ## Glas
 - Model `gemini-3.8-flash-tts` preko `POST /v1beta/interactions`, glas `algieba` (Igorov izbor), WAV 24 kHz.
-- Stil (od 22.11.2026, autoritativniji i korporativni; Igor bira između uzoraka A/B/C u materijal/pf/glas/uzorak_korp_*.wav, dok ne izabere koristi se A): "Confident, authoritative senior business consultant presenting to a company's management board. Calm, measured pace, firm and clear, assured emphasis on key words. Standard Bosnian literary pronunciation, ijekavica, Bosnian accent. Pronounce every word fully and exactly as written, every syllable, no colloquial shortening or swallowed vowels (say 'koliko', never 'kolko'). Human and natural, not a radio ad, not robotic."
+- Stil (od 22.11.2026, Igor izabrao uzorak A: autoritativni konsultant): "Confident, authoritative senior business consultant presenting to a company's management board. Calm, measured pace, firm and clear, assured emphasis on key words. Standard Bosnian literary pronunciation, ijekavica, Bosnian accent. Pronounce every word fully and exactly as written, every syllable, no colloquial shortening or swallowed vowels (say 'koliko', never 'kolko'). Human and natural, not a radio ad, not robotic."
 - Stari stil (do 21.11., "kafanski", gutao slova, npr. "kolko"): više se ne koristi.
-- Tekst glasa: ijekavica, kratke rečenice, riječi koje se izgovaraju (brojevi slovima ako treba, bez VELIKIH slova).
+- Tekst glasa: pravilna gramatika i pun izgovor (koliko, ne kolko; nekoliko, ne nekolko), književni jezik, ijekavica, kratke rečenice, riječi koje se izgovaraju (brojevi slovima ako treba, bez VELIKIH slova).
 - Poslije preuzimanja odreži tišinu: `ffmpeg -i in.wav -af "silenceremove=start_periods=1:start_threshold=-45dB,areverse,silenceremove=start_periods=1:start_threshold=-45dB,areverse" out.wav`
 
 ## JavaScript (na stranici https://generativelanguage.googleapis.com/)

@@ -167,14 +167,14 @@ def end_card(t, title, sub):
     return im
 
 
-def render(scenes, out, sfx=(), seed="pf", voice=()):
+def render(scenes, out, sfx=(), seed="pf", voice=(), xf=8):
     """scenes: [(trajanje, funkcija)], sfx: [(vrijeme, vrsta)]. Prelaz: 8 frejmova pretapanja."""
     total = sum(s[0] for s in scenes)
     tmp = out + ".tmp.mp4"
     cmd = ["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS),
            "-i", "-", "-c:v", "libx264", "-preset", "veryfast", "-crf", "19", "-pix_fmt", "yuv420p", tmp]
     pr = subprocess.Popen(cmd, stdin=subprocess.PIPE)
-    prev_last = None; XF = 8
+    prev_last = None; XF = xf
     for i, (dur, fn) in enumerate(scenes):
         n = int(round(dur * FPS))
         for k in range(n):
@@ -348,3 +348,93 @@ def steps(im, t, start, items, y0=560, every=0.9):
             d.line([ax, ay0, ax, ay1], fill=A + (a,), width=6)
             d.polygon([(ax - 16, ay1 - 18), (ax + 16, ay1 - 18), (ax, ay1)], fill=A + (a,))
     im = im.convert("RGBA"); im.alpha_composite(lay); return im.convert("RGB")
+
+
+# ---- brzi rez (od 22.11.2026): tekst koji udari, titl, grafikon, mail ----
+def slam(im, t, start, text, size=130, y=760, color=WH, box=True, font="InterDisplay-Bold.otf"):
+    """Tekst udari odmah: skala 1.35 -> 1.0 za 0.18 s, sa tamnom podlogom."""
+    if t < start: return im
+    p = prog(t, start, 0.18); sc = 1.35 - 0.35 * p
+    fo = f(font, int(size * sc))
+    lay = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
+    lines = wrap(d, text, fo, W - 140); lh = size * sc * 1.08
+    yy = y - (len(lines) - 1) * lh / 2
+    if box:
+        bw = max(d.textlength(l, font=fo) for l in lines) + 90; bh = len(lines) * lh + 60
+        d.rounded_rectangle([(W - bw) / 2, yy - lh / 2 - 30, (W + bw) / 2, yy - lh / 2 - 30 + bh], radius=30, fill=G + (215,))
+    for ln in lines:
+        d.text((W / 2, yy), ln, font=fo, fill=color + (255,), anchor="mm"); yy += lh
+    im = im.convert("RGBA"); im.alpha_composite(lay); return im.convert("RGB")
+
+
+def caption(im, t, text, y=1560, start=0.0, hl=None):
+    """Titl glasa: bijeli tekst na tamnoj traci; hl = riječ koja je tirkizna."""
+    if t < start or not text: return im
+    lay = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
+    fo = f("InterDisplay-Bold.otf", 64); lines = wrap(d, text, fo, W - 200)
+    lh = 80; h = len(lines) * lh + 40; yy = y - h / 2
+    bw = max(d.textlength(l, font=fo) for l in lines) + 80
+    d.rounded_rectangle([(W - bw) / 2, yy, (W + bw) / 2, yy + h], radius=24, fill=(0, 0, 0, 170))
+    yy += 20 + lh / 2
+    for ln in lines:
+        x = W / 2 - d.textlength(ln, font=fo) / 2
+        for w in ln.split(" "):
+            c = A if hl and w.strip(".,:?!").lower() in hl else WH
+            d.text((x, yy), w, font=fo, fill=c + (255,), anchor="lm"); x += d.textlength(w + " ", font=fo)
+        yy += lh
+    im = im.convert("RGBA"); im.alpha_composite(lay); return im.convert("RGB")
+
+
+def line_chart(im, t, start, label, crash_at=0.6, y0=520, h=520, dur=2.0):
+    """Graf rada sistema koji se crta i na crash_at padne na nulu (crveno)."""
+    lay = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
+    x0, x1 = 110, W - 110
+    d.rounded_rectangle([x0 - 30, y0 - 90, x1 + 30, y0 + h + 40], radius=30, fill=R + (235,), outline=(50, 70, 95, 255), width=3)
+    d.text((x0, y0 - 45), label, font=f("Inter-SemiBold.otf", 40), fill=B + (255,), anchor="lm")
+    p = max(0.0, min(1.0, (t - start) / dur)); n = 80; pts = []
+    for i in range(int(n * p) + 1):
+        u = i / n; x = x0 + (x1 - x0) * u
+        v = 0.0 if u > crash_at else 0.62 + 0.12 * math.sin(u * 23) + 0.06 * math.sin(u * 61)
+        pts.append((x, y0 + h - v * h))
+    for i in range(1, len(pts)):
+        col = RED if (pts[i][0] - x0) / (x1 - x0) > crash_at else GRN
+        d.line([pts[i - 1], pts[i]], fill=col + (255,), width=8)
+    im = im.convert("RGBA"); im.alpha_composite(lay); return im.convert("RGB")
+
+
+def mail_card(im, t, start, od, predmet, tekst, mark=None, y0=430):
+    """Mail u inboxu; mark = dio teksta koji se zacrveni nakon 1 s."""
+    p = prog(t, start, 0.3)
+    if p <= 0: return im
+    lay = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
+    a = int(255 * p); x0, x1 = 90, W - 90; yy = y0 + (1 - p) * 80
+    d.rounded_rectangle([x0, yy, x1, yy + 760], radius=34, fill=(246, 248, 251, a))
+    d.text((x0 + 50, yy + 70), "Od:", font=f("Inter-Regular.otf", 38), fill=(110, 120, 135, a), anchor="lm")
+    hot = mark and t > start + 1.0
+    d.text((x0 + 130, yy + 70), od, font=f("Inter-SemiBold.otf", 40), fill=(RED if hot else (20, 30, 45)) + (a,), anchor="lm")
+    d.line([x0 + 40, yy + 125, x1 - 40, yy + 125], fill=(220, 225, 232, a), width=3)
+    ty = yy + 190
+    for ln in wrap(d, predmet, f("InterDisplay-Bold.otf", 52), x1 - x0 - 100):
+        d.text((x0 + 50, ty), ln, font=f("InterDisplay-Bold.otf", 52), fill=(20, 30, 45, a), anchor="lm"); ty += 66
+    ty += 30
+    for ln in wrap(d, tekst, f("Inter-Regular.otf", 42), x1 - x0 - 100):
+        c = RED if (hot and mark in ln) else (60, 70, 85)
+        d.text((x0 + 50, ty), ln, font=f("Inter-Regular.otf", 42), fill=c + (a,), anchor="lm"); ty += 58
+    im = im.convert("RGBA"); im.alpha_composite(lay); return im.convert("RGB")
+
+
+def cflow(im, t, d, text, y=1560, hl=None, lead=0.1, tail=0.3, maxw=4):
+    """Titl koji teče uz glas: po 2-4 riječi, vrijeme po broju slova."""
+    words = text.split(); chunks, cur = [], []
+    for w in words:
+        cur.append(w)
+        if len(cur) >= maxw or w[-1] in '.,:?!':
+            chunks.append(' '.join(cur)); cur = []
+    if cur: chunks.append(' '.join(cur))
+    tot = sum(len(c) for c in chunks); span = max(0.5, d - lead - tail); acc = lead
+    for c in chunks:
+        dur = span * len(c) / tot
+        if t < acc + dur or c is chunks[-1]:
+            return caption(im, t, c, y=y, hl=hl)
+        acc += dur
+    return im
