@@ -467,3 +467,63 @@ def video_bg(path, t, dur, dark=0.4, zoom=1.0):
             grad.putpixel((0, yy), int(255 * dark * (0.55 + 0.45 * (yy / H) ** 1.5)))
         im = Image.composite(Image.new("RGB", (W, H), G), im, grad.resize((W, H)))
     return im
+
+
+# ---- nadzor sistema (izgled kao kod alata za nadzor tipa Zabbix, bez imena i logotipa) ----
+SEV = {"info": ((80, 140, 220), "Info"), "upoz": ((230, 190, 60), "Upozorenje"),
+       "visoko": ((240, 130, 50), "Visoko"), "krit": ((235, 87, 87), "Kritično")}
+
+
+def problem_table(im, t, start, rows, y0=560, x0=60, x1=None):
+    """Tabela problema: rows = [(od_s, vrijeme, sev, host, problem, rijeseno_od_s ili None)]."""
+    x1 = x1 or W - 60
+    lay = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
+    p0 = prog(t, start, 0.3)
+    if p0 <= 0: return im
+    a0 = int(255 * p0)
+    d.rounded_rectangle([x0, y0, x1, y0 + 90 + len(rows) * 150], radius=24, fill=(16, 28, 44, int(245 * p0)), outline=(50, 70, 95, a0), width=3)
+    fh = f("Inter-SemiBold.otf", 30)
+    for xx, txt in ((x0 + 30, "Vrijeme"), (x0 + 200, "Ozbiljnost"), (x0 + 450, "Server / problem")):
+        d.text((xx, y0 + 45), txt, font=fh, fill=B + (a0,), anchor="lm")
+    d.text((x1 - 30, y0 + 45), "Status", font=fh, fill=B + (a0,), anchor="rm")
+    for i, (st, vr, sev, host, prob, res) in enumerate(rows):
+        p = prog(t, start + st, 0.3)
+        if p <= 0: continue
+        a = int(255 * p); y = y0 + 90 + i * 150
+        done = res is not None and t >= start + res
+        col, lab = SEV[sev]
+        d.line([x0 + 20, y, x1 - 20, y], fill=(40, 58, 80, a), width=2)
+        d.text((x0 + 30, y + 75), vr, font=f("Inter-SemiBold.otf", 34), fill=WH + (a,), anchor="lm")
+        d.rounded_rectangle([x0 + 190, y + 40, x0 + 420, y + 110], radius=12, fill=(GRN if done else col) + (a,))
+        d.text((x0 + 305, y + 75), "OK" if done else lab, font=f("Inter-SemiBold.otf", 30), fill=G + (a,), anchor="mm")
+        d.text((x0 + 450, y + 50), host, font=f("Inter-SemiBold.otf", 32), fill=A + (a,), anchor="lm")
+        stt = "RIJEŠENO" if done else "PROBLEM"
+        d.text((x1 - 30, y + 50), stt, font=f("InterDisplay-Bold.otf", 30), fill=(GRN if done else RED) + (a,), anchor="rm")
+        d.text((x0 + 450, y + 102), prob, font=f("Inter-Regular.otf", 30), fill=WH + (a,), anchor="lm")
+    im = im.convert("RGBA"); im.alpha_composite(lay); return im.convert("RGB")
+
+
+def trend_chart(im, t, start, label, v0=55, v1=93, prag=90, dur=2.2, y0=560, h=520, osa="Popunjenost diska %"):
+    """Graf koji raste od v0 do v1; isprekidana crvena linija praga; preko praga linija postane crvena."""
+    lay = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
+    x0, x1 = 120, W - 100
+    d.rounded_rectangle([x0 - 40, y0 - 110, x1 + 40, y0 + h + 70], radius=30, fill=(16, 28, 44, 240), outline=(50, 70, 95, 255), width=3)
+    d.text((x0, y0 - 60), label, font=f("Inter-SemiBold.otf", 38), fill=WH + (255,), anchor="lm")
+    d.text((x0, y0 + h + 35), osa, font=f("Inter-Regular.otf", 28), fill=B + (255,), anchor="lm")
+    def Y(v): return y0 + h - (v - 40) / 60 * h
+    for v in (50, 70, 90):
+        d.line([x0, Y(v), x1, Y(v)], fill=(34, 50, 70, 255), width=2)
+        d.text((x0 - 12, Y(v)), str(v), font=f("Inter-Regular.otf", 26), fill=B + (255,), anchor="rm")
+    for xx in range(int(x0), int(x1), 34):
+        d.line([xx, Y(prag), xx + 18, Y(prag)], fill=RED + (255,), width=4)
+    d.text(((x0 + x1) / 2, Y(prag) - 26), f"prag {prag} %", font=f("Inter-SemiBold.otf", 28), fill=RED + (255,), anchor="mm")
+    p = max(0.0, min(1.0, (t - start) / dur)); n = 90; pts = []
+    for i in range(int(n * p) + 1):
+        u = i / n; v = v0 + (v1 - v0) * (u ** 1.6) + 1.2 * math.sin(u * 40)
+        pts.append((x0 + (x1 - x0) * u, Y(v), v))
+    for i in range(1, len(pts)):
+        d.line([pts[i - 1][:2], pts[i][:2]], fill=(RED if pts[i][2] >= prag else A) + (255,), width=7)
+    if pts and pts[-1][2] >= prag:
+        cx, cy = pts[-1][:2]; r = 16 + 6 * math.sin(t * 12)
+        d.ellipse([cx - r, cy - r, cx + r, cy + r], outline=RED + (255,), width=5)
+    im = im.convert("RGBA"); im.alpha_composite(lay); return im.convert("RGB")

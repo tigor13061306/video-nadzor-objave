@@ -1,0 +1,9 @@
+Disk se puni polako. A stane odjednom.
+
+Kad se disk na serveru napuni, baza ne može ništa upisati i ERP staje usred radnog dana: nema faktura, nema otpreme. Sistem za nadzor prati svaki server, disk i servis svake minute i na 90 % šalje upozorenje IT-u, danima prije zastoja.
+
+Želite ovo u svojoj firmi? Pišite nam u poruke.
+
+Fotografije i glas su napravljeni AI alatom. Uvodni video kadar je takođe napravljen AI alatom.
+
+#nadzorsistema #zabbix #digitalizacija #bih #it
