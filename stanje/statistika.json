@@ -1,5 +1,5 @@
 {
- "vrijeme": "2026-11-22T17:38Z",
+ "vrijeme": "2026-11-23T18:16Z",
  "objave": {
   "2026-11-21_ai-u-firmi": {
    "link": "https://www.instagram.com/reel/Df_y72ugp_r/",
@@ -65,8 +65,8 @@
     "shares": 0,
     "saved": 0,
     "total_interactions": 0,
-    "ig_reels_avg_watch_time": 4694,
-    "ig_reels_video_view_total_time": 521037,
+    "ig_reels_avg_watch_time": 4656,
+    "ig_reels_video_view_total_time": 521533,
     "follows": {
      "greska": "The Media Insights API does not support the follows metric for this media product type."
     },
@@ -164,15 +164,15 @@
    "link": "https://www.instagram.com/reel/DgA7N8ekcgw/",
    "objavljeno": "2026-11-21T19:57+01:00",
    "ig": {
-    "views": 104,
-    "reach": 98,
+    "views": 105,
+    "reach": 99,
     "likes": 1,
     "comments": 0,
     "shares": 0,
     "saved": 0,
     "total_interactions": 1,
-    "ig_reels_avg_watch_time": 4423,
-    "ig_reels_video_view_total_time": 473297,
+    "ig_reels_avg_watch_time": 4361,
+    "ig_reels_video_view_total_time": 475419,
     "follows": {
      "greska": "The Media Insights API does not support the follows metric for this media product type."
     },
@@ -277,8 +277,8 @@
     "shares": 0,
     "saved": 0,
     "total_interactions": 0,
-    "ig_reels_avg_watch_time": 7642,
-    "ig_reels_video_view_total_time": 886562,
+    "ig_reels_avg_watch_time": 7548,
+    "ig_reels_video_view_total_time": 890718,
     "follows": {
      "greska": "The Media Insights API does not support the follows metric for this media product type."
     },
@@ -323,15 +323,15 @@
    "link": "https://www.instagram.com/reel/DgCyWZYIIL_/",
    "objavljeno": "2026-11-22T13:18+01:00",
    "ig": {
-    "views": 76,
-    "reach": 68,
+    "views": 107,
+    "reach": 100,
     "likes": 0,
     "comments": 0,
     "shares": 0,
     "saved": 0,
     "total_interactions": 0,
-    "ig_reels_avg_watch_time": 3125,
-    "ig_reels_video_view_total_time": 225050,
+    "ig_reels_avg_watch_time": 3895,
+    "ig_reels_video_view_total_time": 424597,
     "follows": {
      "greska": "The Media Insights API does not support the follows metric for this media product type."
     },
@@ -371,12 +371,65 @@
      "views": 0
     }
    }
+  },
+  "2026-11-23_izvjestaj-uprava": {
+   "link": "https://www.instagram.com/reel/DgF178xgS_I/",
+   "objavljeno": "2026-11-23T17:47+01:00",
+   "ig": {
+    "views": 24,
+    "reach": 23,
+    "likes": 0,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 0,
+    "ig_reels_avg_watch_time": 1614,
+    "ig_reels_video_view_total_time": 37125,
+    "follows": {
+     "greska": "The Media Insights API does not support the follows metric for this media product type."
+    },
+    "profile_visits": {
+     "greska": "The Media Insights API does not support the profile_visits metric for this media product type."
+    }
+   },
+   "fb": {
+    "total_video_views": {
+     "greska": "(#200) read_insights permission missing (https://developers.facebook.com/docs/permissions/reference/read_insights)"
+    },
+    "total_video_views_unique": {
+     "greska": "(#100) The value must be a valid insights metric"
+    },
+    "total_video_avg_time_watched": {
+     "greska": "(#200) read_insights permission missing (https://developers.facebook.com/docs/permissions/reference/read_insights)"
+    },
+    "total_video_complete_views": {
+     "greska": "(#200) read_insights permission missing (https://developers.facebook.com/docs/permissions/reference/read_insights)"
+    },
+    "total_video_impressions": {
+     "greska": "(#100) The value must be a valid insights metric"
+    },
+    "total_video_10s_views": {
+     "greska": "(#200) read_insights permission missing (https://developers.facebook.com/docs/permissions/reference/read_insights)"
+    },
+    "total_video_retention_graph": {
+     "greska": "(#200) read_insights permission missing (https://developers.facebook.com/docs/permissions/reference/read_insights)"
+    },
+    "total_video_view_total_time": {
+     "greska": "(#200) read_insights permission missing (https://developers.facebook.com/docs/permissions/reference/read_insights)"
+    },
+    "post": {
+     "id": "1128795083369248",
+     "permalink_url": "/reel/1128795083369248/",
+     "length": 25.941,
+     "views": 0
+    }
+   }
   }
  },
  "profil": {
   "username": "pametnija.firma",
   "followers_count": 3,
-  "media_count": 7,
+  "media_count": 8,
   "id": "28085898407749791"
  }
 }
