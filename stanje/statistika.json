@@ -1,5 +1,5 @@
 {
- "vrijeme": "2026-11-23T18:16Z",
+ "vrijeme": "2026-11-24T17:51Z",
  "objave": {
   "2026-11-21_ai-u-firmi": {
    "link": "https://www.instagram.com/reel/Df_y72ugp_r/",
@@ -330,8 +330,8 @@
     "shares": 0,
     "saved": 0,
     "total_interactions": 0,
-    "ig_reels_avg_watch_time": 3895,
-    "ig_reels_video_view_total_time": 424597,
+    "ig_reels_avg_watch_time": 3887,
+    "ig_reels_video_view_total_time": 431520,
     "follows": {
      "greska": "The Media Insights API does not support the follows metric for this media product type."
     },
@@ -376,15 +376,15 @@
    "link": "https://www.instagram.com/reel/DgF178xgS_I/",
    "objavljeno": "2026-11-23T17:47+01:00",
    "ig": {
-    "views": 24,
-    "reach": 23,
+    "views": 88,
+    "reach": 87,
     "likes": 0,
     "comments": 0,
     "shares": 0,
     "saved": 0,
     "total_interactions": 0,
-    "ig_reels_avg_watch_time": 1614,
-    "ig_reels_video_view_total_time": 37125,
+    "ig_reels_avg_watch_time": 2717,
+    "ig_reels_video_view_total_time": 250017,
     "follows": {
      "greska": "The Media Insights API does not support the follows metric for this media product type."
     },
