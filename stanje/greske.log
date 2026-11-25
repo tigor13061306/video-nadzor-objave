@@ -2,3 +2,4 @@
 2026-11-22 14:44:55 Gemini: poslije ~8 min pauze sve prošlo (glas d25d, Omni kadar serverska).
 2026-11-22 18:38:12 Nedjeljna priprema: Gemini nije pokrenut. Čitanje ključeva sa računara (gemini_kljuc.txt, github_kljuc.txt, instagram_kljuc.json) odbila je sigurnosna provjera okruženja (Unauthorized Access); preglednik na generativelanguage.googleapis.com otvoren, ali bez ključa. Mreža računara (device_bash) ne doseže generativelanguage.googleapis.com ni graph.instagram.com (proxy allow list). Reelsi 27.11-04.12 pripremljeni bez glasa (ceka.txt), Instagram ključ na računaru nije obnovljen.
 2026-11-25 18:43 Priprema (GitHub): gotovo 2026-11-27_ai-zadatak (27.5 s), 2026-11-30_lozinke-pristup (27.0 s), 2026-12-02_naplata-podsjetnik (25.8 s), 2026-12-04_nestanak-struje (26.8 s); glas 24, fotke 0; greške: nema
+2026-11-25 19:15 Priprema (GitHub): gotovo 2026-11-27_ai-fakture (25.3 s); glas 6, fotke 1; greške: nema
