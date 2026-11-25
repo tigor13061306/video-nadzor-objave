@@ -1,5 +1,7 @@
 # Fotke i glas preko Gemini API-ja (@pametnija.firma)
 
+OD 25.11.2026: glas i fotke pravi GitHub Actions (priprema.yml, alati/priprema.py, Secret GEMINI_API_KEY), bez računara. Način sa preglednikom ispod je samo rezerva.
+
 Ključevi (tajno, nikad na GitHub ni u poruke): na Igorovom računaru `C:\claude\video nadzor\Instagram_video_nadzor\alati\gemini_kljuc.txt` i `github_kljuc.txt`. Igor je dao trajno odobrenje da se čitaju.
 
 Mreža iz Claude okruženja ne doseže Google, zato se sve radi u UGRAĐENOM PREGLEDNIKU Claude aplikacije na stranici `https://generativelanguage.googleapis.com/` (javascript), a rezultat se odmah šalje na GitHub (`materijal/pf/...`) i odatle preuzima (`gh api ... -H "Accept: application/vnd.github.raw"` ili raw adresa sa SHA commita).

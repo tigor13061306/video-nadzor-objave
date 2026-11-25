@@ -54,9 +54,15 @@ PRAVE Zabbix scene (od 22.11.2026): demo Zabbix u Dockeru na Igorovom računaru 
 - kljuc.yml obnavlja Instagram ključ 1. i 15. u mjesecu; provjera.yml ponedjeljkom provjerava ključeve.
 - Komentari: alati/komentari.py, upiti -> GitHub issue (mail Igoru).
 
+## Priprema bez računara (od 25.11.2026)
+- Glas, nove fotke i render pravi GitHub Actions (.github/workflows/priprema.yml, alati/priprema.py) sa ključem iz GitHub Secret GEMINI_API_KEY. Igorov računar NIJE potreban.
+- Folder koji čeka: glas.txt (jedna rečenica po sceni), scenarij.py, prompt.md, opis_nacrt.txt, alt.txt, ai.txt, ceka.txt i po potrebi fotke.json ({"AI_pf_ime.jpg": "opis fotke na engleskom"}) za fotke kojih nema u materijal/pf/.
+- Pokretanje: promijeni stanje/priprema_pokreni.txt (upiši vrijeme); radi i sam svaki dan u 11:07. Rezultat: materijal/pf/glas/<folder>_N.wav, video.mp4, cover.jpg, opis.txt, ceka.txt u _to_delete/, u planu "spremno". Greške: stanje/greske.log i GitHub issue (mail Igoru).
+- Poslije pripreme obavezno pogledati nove fotke i kadrove (bar 2 po sceni). Loša fotka: novo ime u fotke.json i ponovno pokretanje.
+
 ## Zakazani zadaci
 - "Instagram – kontrolor" (oblak, 17:45): objava izašla? spremne objave ispravne? zaliha.
-- "Instagram – nedjeljna priprema" (računar, nedjelja 18:32): fotke + glas preko Gemini-ja, Reelsi za dvije sedmice, na GitHub.
+- "Instagram – nedjeljna priprema" (oblak, nedjelja 18:32): scenariji za dvije sedmice, glas, fotke i render preko GitHub Actions (priprema.yml), bez računara.
 - "Instagram – dnevna objava i zajednica" (računar, 18:21): komentari, poruke (samo navede), Facebook grupe za preduzetnike.
 
 ## Posebne objave van rasporeda
