@@ -1,0 +1,44 @@
+name: Priprema Reelsa (glas, fotke, render)
+
+# Radi bez Igorovog računara: Gemini ključ je u GitHub Secrets (GEMINI_API_KEY).
+# Obrađuje foldere u objave/ koji imaju ceka.txt (vidi alati/priprema.py).
+on:
+  push:
+    paths:
+      - "stanje/priprema_pokreni.txt"
+  schedule:
+    - cron: "7 10 * * *"   # svaki dan 11:07 po bosanskom vremenu, rezerva
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: objava
+  cancel-in-progress: false
+
+jobs:
+  priprema:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          pip install requests pillow numpy
+      - name: Glas, fotke i render
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python alati/priprema.py
+      - name: Commit
+        if: always()
+        run: |
+          git config user.name "video-nadzor-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A objave materijal pravila stanje _to_delete
+          git diff --cached --quiet || (git commit -q -m "Priprema Reelsa (GitHub)" && (git push -q || (git pull -q --rebase && git push -q)))

@@ -1,5 +1,5 @@
-Lozinka za ERP stoji ispod tastature. Tri koraka to rješavaju.
-Ko je vidi, ulazi u sistem. A u zapisu stoji vaše ime.
+Lozinka za ERP ispod tastature. Ko je pročita, radi pod vašim imenom.
+Ista lozinka često otvara i mail. Tri koraka to rješavaju.
 Prvo: lozinke čuvajte u menadžeru lozinki, ne na papiru.
 Drugo: uključite prijavu u dva koraka za ERP i mail.
 Treće: svako svoj nalog, a pri odlasku pristup se gasi.

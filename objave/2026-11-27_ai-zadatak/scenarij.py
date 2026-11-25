@@ -5,10 +5,10 @@ FT = '../../materijal/pf/'; GRID = grid_bg(); GL = '../../materijal/pf/glas/2026
 T = [l.strip() for l in open('glas.txt', encoding='utf-8') if l.strip()]
 def s1(t, d):
     im = photo_bg(FT + 'AI_pf_openspace.jpg', t, d, 1.0, 1.2, 0.5, 0.55, dark=0.45)
-    im = slam(im, t, 0.0, 'Loš zadatak.', size=120, y=500)
-    im = slam(im, t, 0.5, 'Loš odgovor.', size=120, y=680, color=RED)
-    im = slam(im, t, 0.9, '3 pravila za AI u firmi', size=58, y=870, color=A, font='Inter-SemiBold.otf')
-    return handle_bar(cflow(im, t, d, T[0], hl={'tri', 'pravila'}))
+    im = slam(im, t, 0.0, 'Izvještaj od AI-ja?', size=110, y=500)
+    im = slam(im, t, 0.5, 'Opšte fraze.', size=120, y=680, color=RED)
+    im = slam(im, t, 0.9, '3 pravila to mijenjaju', size=58, y=870, color=A, font='Inter-SemiBold.otf')
+    return handle_bar(cflow(im, t, d, T[0], hl={'opšte', 'fraze.'}))
 def s2(t, d):
     im = GRID.copy()
     im = slam(im, t, 0.0, '1  Uloga i čitalac', size=90, y=400, color=A)

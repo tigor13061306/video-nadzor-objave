@@ -17,14 +17,14 @@ Na ekranu SAMO doslovni tekst iz ovog prompta. Bez dodatnog teksta, logotipa i l
 
 ### Scena 1: Kuka (2.2 s)
 - Slika: AI_pf_finansije.jpg, zum 115->135 % na tastaturu
-- Tekst: „Lozinka za ERP:“ bijelo 110 px y480 (0.0); „ispod tastature.“ crveno y650 (0.5); „3 koraka to rješavaju“ tirkizno 58 px y830 (1.0)
-- Glas: „Lozinka za ERP stoji ispod tastature. Tri koraka to rješavaju.“
+- Tekst: „Lozinka za ERP:“ bijelo 110 px y480 (0.0); „ispod tastature.“ crveno y650 (0.5); „= pristup pod vašim imenom“ tirkizno 58 px y830 (1.0)
+- Glas: „Lozinka za ERP ispod tastature. Ko je pročita, radi pod vašim imenom.“
 - Zvuk: whoosh, alarm
 
 ### Scena 2: Rizik (2.2 s)
 - Slika: mreža
 - Tekst: „Rizik“ crveno 120 px; crvene kartice „Ko je vidi, ima pristup“, „U zapisu stoji vaše ime“, „Često ista i za mail“ (svakih 0.4 s)
-- Glas: „Ko je vidi, ulazi u sistem. A u zapisu stoji vaše ime.“
+- Glas: „Ista lozinka često otvara i mail. Tri koraka to rješavaju.“
 - Zvuk: alarm + 3x tick
 
 ### Scena 3: Korak 1 (2.0 s)

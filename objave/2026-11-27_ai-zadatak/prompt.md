@@ -17,14 +17,14 @@ Na ekranu SAMO doslovni tekst iz ovog prompta. Bez dodatnog teksta, logotipa i l
 
 ### Scena 1: Kuka (plan 2.2 s)
 - Slika: AI_pf_openspace.jpg, zum 100->120 %, tamno 45 %
-- Tekst: „Loš zadatak.“ bijelo 120 px y480 (0.0 s); „Loš odgovor.“ crveno 120 px y680 (0.5 s); „3 pravila za AI u firmi“ tirkizno 58 px y870 (0.9 s)
-- Glas: „Loš zadatak daje loš odgovor. Tri pravila to mijenjaju.“
+- Tekst: „Izvještaj od AI-ja?“ bijelo 110 px y500 (0.0 s); „Opšte fraze.“ crveno 120 px y680 (0.5 s); „3 pravila to mijenjaju“ tirkizno 58 px y870 (0.9 s)
+- Glas: „Pitali ste AI za izvještaj. Dobili ste opšte fraze.“
 - Zvuk: whoosh 0.0, alarm 0.5
 
 ### Scena 2: Pravilo 1 (2.0 s)
 - Slika: mreža
 - Tekst: „1  Uloga i čitalac“ tirkizno 90 px y400; kartice „„Ti si finansijski analitičar.““ i „„Izvještaj čita uprava.““ (od 0.3 s, razmak 0.6 s)
-- Glas: „Prvo: recite mu ulogu i za koga piše.“
+- Glas: „Tri pravila to mijenjaju. Prvo: recite mu ulogu i za koga piše.“
 - Zvuk: pop, 2x tick
 
 ### Scena 3: Pravilo 2 (2.0 s)

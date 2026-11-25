@@ -7,13 +7,13 @@ def s1(t, d):
     im = photo_bg(FT + 'AI_pf_finansije.jpg', t, d, 1.15, 1.35, 0.6, 0.6, dark=0.45)
     im = slam(im, t, 0.0, 'Lozinka za ERP:', size=110, y=480)
     im = slam(im, t, 0.5, 'ispod tastature.', size=110, y=650, color=RED)
-    im = slam(im, t, 1.0, '3 koraka to rješavaju', size=58, y=830, color=A, font='Inter-SemiBold.otf')
-    return handle_bar(cflow(im, t, d, T[0], hl={'tri', 'koraka'}))
+    im = slam(im, t, 1.0, '= pristup pod vašim imenom', size=58, y=830, color=A, font='Inter-SemiBold.otf')
+    return handle_bar(cflow(im, t, d, T[0], hl={'vašim', 'imenom.'}))
 def s2(t, d):
     im = GRID.copy()
     im = slam(im, t, 0.0, 'Rizik', size=120, y=400, color=RED, box=False)
     im = list_items(im, t, 0.2, ['Ko je vidi, ima pristup', 'U zapisu stoji vaše ime', 'Često ista i za mail'], y0=580, gap=170, every=0.4, num=False, colr=[RED, RED, RED])
-    return handle_bar(cflow(im, t, d, T[1], y=1400, hl={'ime.'}))
+    return handle_bar(cflow(im, t, d, T[1], y=1400, hl={'tri', 'koraka'}))
 def s3(t, d):
     im = photo_bg(FT + 'AI_pf_openspace.jpg', t, d, 1.2, 1.4, 0.4, 0.55, dark=0.5)
     im = slam(im, t, 0.0, '1  Menadžer lozinki', size=96, y=600, color=A)
