@@ -1,0 +1,9 @@
+Ulazne fakture se i dalje prepisuju ručno? Svaka pogrešna cifra se vidi tek na PDV-u.
+
+AI pročita PDF fakture (dobavljač, broj, datum, iznosi, PDV) i pripremi stavku za knjiženje u vašem ERP sistemu. Knjigovođa samo provjeri i potvrdi, a sumnjive fakture su označene. (Broj faktura u videu je primjer.)
+
+Želite ovo u svojoj firmi? Pišite nam u poruke.
+
+Fotografije i glas su napravljeni AI alatom.
+
+#automatizacija #digitalizacija #bih #ai #erp

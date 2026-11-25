@@ -1,0 +1,6 @@
+Ponedjeljak ujutro. Na stolu stotinu ulaznih faktura.
+Svaku neko prepisuje ručno. Jedna pogrešna cifra, i PDV ne štima.
+AI pročita PDF: dobavljača, broj, datum, iznose i PDV.
+Zatim pripremi stavku za knjiženje u vašem ERP sistemu.
+Knjigovođa samo provjeri i potvrdi. Sumnjive su označene crveno.
+Želite ovo u svojoj firmi? Pišite nam u poruke.
