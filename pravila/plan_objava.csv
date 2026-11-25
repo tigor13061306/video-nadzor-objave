@@ -8,11 +8,12 @@ datum;dan;stub;tema;cta;status;folder;link
 2026-11-22;nedjelja;sigurnost;Lažna faktura: mail o promjeni računa dobavljača, 3 provjere (posebna objava);komentar;objavljeno;2026-11-22_lazna-faktura;https://www.instagram.com/reel/DgCyWZYIIL_/
 2026-11-23;ponedjeljak;automatizacija;Izvještaj za upravu: opet ručno? (proba sa Gemini Omni video kadrom);poruke;spremno;2026-11-23_izvjestaj-uprava;
 2026-11-25;srijeda;nadzor sistema;Disk: 100 %. Server stao. (nadzor kao Zabbix, Omni kadar);poruke;spremno;2026-11-25_disk-nadzor;
-2026-11-27;petak;AI u poslu;Loš zadatak, loš odgovor: 3 pravila za zadatak AI-ju;komentar;spremno;2026-11-27_ai-zadatak;
+2026-11-25;srijeda;AI u poslu;AI izvještaj: opšte fraze, 3 pravila za zadatak AI-ju (posebna objava, Igor tražio odmah);komentar;spremno;2026-11-25_ai-zadatak;
+2026-11-27;petak;AI u poslu;AI čita ulazne fakture (PDF) i priprema knjiženje u ERP-u;poruke;u pripremi;2026-11-27_ai-fakture;
 2026-11-30;ponedjeljak;sigurnost;Lozinka za ERP ispod tastature: 3 koraka (menadžer lozinki, prijava u dva koraka, svako svoj nalog);komentar;spremno;2026-11-30_lozinke-pristup;
 2026-12-02;srijeda;automatizacija;Naplata potraživanja: podsjetnik kupcu iz ERP-a, sam od sebe;poruke;spremno;2026-12-02_naplata-podsjetnik;
 2026-12-04;petak;nadzor sistema;Nestane struje: uredno gašenje servera, upozorenje na telefon, test 2x godišnje;komentar;spremno;2026-12-04_nestanak-struje;
-2026-12-07;ponedjeljak;AI u poslu;AI čita ulazne fakture (PDF) i priprema knjiženje u ERP-u;poruke;za pripremu;;
+2026-12-07;ponedjeljak;AI u poslu;Zapisnik sa sastanka: AI izvuče zaključke, zadatke i rokove;komentar;za pripremu;;
 2026-12-09;srijeda;sigurnost;Odlazak zaposlenog: koje pristupe gasite istog dana (mail, ERP, VPN, dijeljeni folderi);komentar;za pripremu;;
 2026-12-11;petak;automatizacija;Zaključak mjeseca: izvod iz banke se sam uparuje sa fakturama;poruke;za pripremu;;
 2026-12-14;ponedjeljak;nadzor sistema;Istekao SSL certifikat: web i mail stali, a upozorenje je moglo stići 30 dana ranije;komentar;za pripremu;;
