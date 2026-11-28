@@ -1,5 +1,5 @@
 {
- "vrijeme": "2026-11-27T16:44Z",
+ "vrijeme": "2026-11-28T15:36Z",
  "objave": {
   "2026-11-21_ai-u-firmi": {
    "link": "https://www.instagram.com/reel/Df_y72ugp_r/",
@@ -330,8 +330,8 @@
     "shares": 0,
     "saved": 0,
     "total_interactions": 0,
-    "ig_reels_avg_watch_time": 3847,
-    "ig_reels_video_view_total_time": 434781,
+    "ig_reels_avg_watch_time": 3823,
+    "ig_reels_video_view_total_time": 435882,
     "follows": {
      "greska": "The Media Insights API does not support the follows metric for this media product type."
     },
@@ -530,12 +530,65 @@
      "views": 0
     }
    }
+  },
+  "2026-11-27_ai-fakture": {
+   "link": "https://www.instagram.com/reel/DgQJK4FCjqN/",
+   "objavljeno": "2026-11-27T17:48+01:00",
+   "ig": {
+    "views": 78,
+    "reach": 76,
+    "likes": 0,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 0,
+    "ig_reels_avg_watch_time": 4104,
+    "ig_reels_video_view_total_time": 328354,
+    "follows": {
+     "greska": "The Media Insights API does not support the follows metric for this media product type."
+    },
+    "profile_visits": {
+     "greska": "The Media Insights API does not support the profile_visits metric for this media product type."
+    }
+   },
+   "fb": {
+    "total_video_views": {
+     "greska": "(#200) read_insights permission missing (https://developers.facebook.com/docs/permissions/reference/read_insights)"
+    },
+    "total_video_views_unique": {
+     "greska": "(#100) The value must be a valid insights metric"
+    },
+    "total_video_avg_time_watched": {
+     "greska": "(#200) read_insights permission missing (https://developers.facebook.com/docs/permissions/reference/read_insights)"
+    },
+    "total_video_complete_views": {
+     "greska": "(#200) read_insights permission missing (https://developers.facebook.com/docs/permissions/reference/read_insights)"
+    },
+    "total_video_impressions": {
+     "greska": "(#100) The value must be a valid insights metric"
+    },
+    "total_video_10s_views": {
+     "greska": "(#200) read_insights permission missing (https://developers.facebook.com/docs/permissions/reference/read_insights)"
+    },
+    "total_video_retention_graph": {
+     "greska": "(#200) read_insights permission missing (https://developers.facebook.com/docs/permissions/reference/read_insights)"
+    },
+    "total_video_view_total_time": {
+     "greska": "(#200) read_insights permission missing (https://developers.facebook.com/docs/permissions/reference/read_insights)"
+    },
+    "post": {
+     "id": "1704837654573117",
+     "permalink_url": "/reel/1704837654573117/",
+     "length": 25.348,
+     "views": 0
+    }
+   }
   }
  },
  "profil": {
   "username": "pametnija.firma",
   "followers_count": 4,
-  "media_count": 10,
+  "media_count": 11,
   "id": "28085898407749791"
  }
 }
